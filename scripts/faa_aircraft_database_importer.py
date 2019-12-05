@@ -29,17 +29,17 @@ faa_download_extract_path = f'{temp_path}/FAA_ReleasableAircraft'
 faa_aircraft_registration_master_filepath = f'{faa_download_extract_path}/MASTER.txt'
 faa_aircraft_reference_filepath = f'{faa_download_extract_path}/ACFTREF.txt'
 
-print('FAA Database Importer v1.0 by Kevin Elliott <kevin@welikeinc.com>')
+print('FAA Database Importer v1.0')
 print()
 
 print('Configuration')
-print('  Database Type: PostgreSQL')
-print(f'  Database Host: {database_host}')
-print(f'  Database Port: {database_port}')
-print(f'  Database USer: {database_user}')
-print(f'  Temp Path: {temp_path}')
-print(f'  FAA Database URL: {faa_database_zip_url}')
-
+print()
+print(f'FAA Database URL : {faa_database_zip_url}')
+print(f'Database Type    : postgres')
+print(f'Database Host    : {database_host}')
+print(f'Database Port    : {database_port}')
+print(f'Database USer    : {database_user}')
+print(f'Temp Path        : {temp_path}')
 print()
 
 print('Source Data')
@@ -56,11 +56,12 @@ print()
 
 print('Database Setup')
 # Drop tables
-# TODO: Make this optional
+# TODO: Make this configurable as CLI option, default false
 print('  * Dropping existing database tables')
 output = os.popen("psql -h localhost -p 5432 airframes < db/faa/drop.sql").read()
 
 # Create tables
+# TODO: Make this configurable as CLI option, default true (SQL has IF NOT EXISTS)
 print('  * Creating database tables')
 output = os.popen("psql -h localhost -p 5432 airframes < db/faa/create.sql").read()
 
