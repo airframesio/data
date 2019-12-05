@@ -12,21 +12,25 @@ Import data from the FAA Aircraft database, which contains:
 ### Installation & Usage
 
 1. Clone this whole repository
+
 ``
 git clone https://github.com/airframesio/data.git
 ```
 
 2. Enter the new `data` directory
+
 ```
 cd data
 ```
 
 3. Customize the script's configuration (database params, etc) **Will be CLI options in future**
+
 ```
 vi scripts/faa_aircraft_database_importer.py
 ```
 
 4. Run it
+
 ```
 scripts/faa_aircraft_database_importer.py
 ```
