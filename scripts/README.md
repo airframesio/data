@@ -75,3 +75,17 @@ Data Process & Import
 
 Complete.
 ```
+
+
+### TODO
+
+Lots of stuff to do here still. I will try to improve as time permits. Feel free to submit a pull request!
+
+* CLI options to set the config
+  * optional DB drop
+  * optional DB create
+  * choose which datasets to import
+  * database connection details
+  * database table names
+  * log output / suppression
+* Extract into classes/methods to encourage code reuse and cleaner implementation to replace the hack job I put in quick
