@@ -13,7 +13,7 @@ Import data from the FAA Aircraft database, which contains:
 
 1. Clone this whole repository
 
-``
+```
 git clone https://github.com/airframesio/data.git
 ```
 
