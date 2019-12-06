@@ -1,7 +1,7 @@
 ALTER TABLE flights
 ADD COLUMN departing_airport VARCHAR(10),
 ADD COLUMN destination_airport VARCHAR(10),
-ADD COLUMN messages_count INTEGER NOT NULL DEFAULT 0
+ADD COLUMN messages_count INTEGER NOT NULL DEFAULT 0,
 ADD COLUMN status VARCHAR(255) NOT NULL DEFAULT 'active',
 ADD COLUMN latitude FLOAT,
 ADD COLUMN longitude FLOAT,
