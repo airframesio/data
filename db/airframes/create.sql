@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS stations (
 CREATE TABLE IF NOT EXISTS airframes (
   id SERIAL PRIMARY KEY,
   tail VARCHAR(255),
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
   UNIQUE (tail)
 );
 
@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS flights (
   id SERIAL PRIMARY KEY,
   airframe_id INTEGER NOT NULL,
   flight VARCHAR(255),
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE IF NOT EXISTS messages (
@@ -57,8 +57,8 @@ CREATE TABLE IF NOT EXISTS messages (
   longitude FLOAT,
   altitude  INTEGER,
   block_end BOOLEAN,
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE IF NOT EXISTS vdl_ground_stations (
@@ -74,8 +74,8 @@ CREATE TABLE IF NOT EXISTS vdl_ground_stations (
   airport_country_code VARCHAR(2),
   airport_latitude FLOAT,
   airport_longitude FLOAT,
-  created_at TIMESTAMP DEFAULT NOW(),
-  updated_at TIMESTAMP DEFAULT NOW()
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE INDEX IF NOT EXISTS idx_flights_airframe_id ON flights (airframe_id);

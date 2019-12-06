@@ -1,4 +1,5 @@
 CREATE TABLE IF NOT EXISTS faa_aircraft_registration_master (
+  id SERIAL PRIMARY KEY,
   unique_id VARCHAR(8),
   n_number VARCHAR(5),
   mode_s_code INTEGER,
@@ -34,8 +35,11 @@ CREATE TABLE IF NOT EXISTS faa_aircraft_registration_master (
   expiration_date DATE,
   last_action_date DATE
 );
+CREATE INDEX idx_faa_arm_mode_s_code_hex ON faa_aircraft_registration_master (mode_s_code_hex);
+CREATE INDEX idx_faa_arm_n_number ON faa_aircraft_registration_master (n_number);
 
 CREATE TABLE IF NOT EXISTS faa_aircraft_reference (
+  id SERIAL PRIMARY KEY,
   combo_code VARCHAR(7),
   manufacturer_code VARCHAR(3),
   model_code VARCHAR(2),
@@ -53,6 +57,7 @@ CREATE TABLE IF NOT EXISTS faa_aircraft_reference (
 );
 
 CREATE TABLE IF NOT EXISTS faa_engine_reference (
+  id SERIAL PRIMARY KEY,
   combo_code VARCHAR(5),
   manufacturer_name VARCHAR(10),
   model_name VARCHAR(13),
@@ -62,6 +67,7 @@ CREATE TABLE IF NOT EXISTS faa_engine_reference (
 );
 
 CREATE TABLE IF NOT EXISTS faa_reserved_n_numbers (
+  id SERIAL PRIMARY KEY,
   n_number VARCHAR(5),
   registrant_name VARCHAR(50),
   registrant_address_line1 VARCHAR(33),
@@ -76,6 +82,7 @@ CREATE TABLE IF NOT EXISTS faa_reserved_n_numbers (
 );
 
 CREATE TABLE IF NOT EXISTS faa_aircraft_deregistered (
+  id SERIAL PRIMARY KEY,
   n_number VARCHAR(5),
   mode_s_code INTEGER,
   mode_s_code_hex VARCHAR(10),
