@@ -6,8 +6,8 @@
 # Downloads, parses and imports the FAA Aircraft database to a local database.
 # Database is automatically set up, but to review schema, see GitHub (https://github.com/airframesio/data/tree/master/db/faa).
 #
-# Maintainer: Kevin Elliott <kevin@welikeinc.com>
-# Source: https://github.com/airframesio/data/tree/master/scripts/faa_aircraft_database_importer.py
+# Maintainer : Kevin Elliott <kevin@welikeinc.com>
+# Source     : https://github.com/airframesio/data/tree/master/scripts/faa_aircraft_database_importer.py
 #
 
 import os
@@ -16,10 +16,12 @@ from pgdb import Connection
 
 # Configuration
 # TODO: Make this configurable as CLI options
-database_host = 'localhost'
-database_port = 5432
-database_user = 'kevin'
-database_name = 'airframes'
+database_host    = 'localhost'
+database_port    = 5432
+database_user    = 'kevin'
+database_name    = 'airframes'
+database_pass    = ''
+database_sslmode = 'require'
 
 # Filepaths
 temp_path = '/tmp'
@@ -58,16 +60,16 @@ print('Database Setup')
 # Drop tables
 # TODO: Make this configurable as CLI option, default false
 print('  * Dropping existing database tables')
-output = os.popen("psql -h localhost -p 5432 airframes < db/faa/drop.sql").read()
+output = os.popen(f'PGPASSWORD={database_pass} psql -h {database_host} -p {database_port} -U {database_user} {database_name} < db/faa/drop.sql').read()
 
 # Create tables
 # TODO: Make this configurable as CLI option, default true (SQL has IF NOT EXISTS)
 print('  * Creating database tables')
-output = os.popen("psql -h localhost -p 5432 airframes < db/faa/create.sql").read()
+output = os.popen(f'PGPASSWORD={database_pass} psql -h {database_host} -p {database_port} -U {database_user} {database_name} < db/faa/create.sql').read()
 
 # Connect to the DB
 print('  * Connecting to the database')
-connection = Connection(user=database_user, database=database_name, host=database_host, port=database_port)
+connection = Connection(user=database_user, database=database_name, host=database_host, password=database_pass, port=database_port, sslmode=database_sslmode)
 
 print()
 
