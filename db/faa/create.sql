@@ -33,7 +33,9 @@ CREATE TABLE IF NOT EXISTS faa_aircraft_registration_master (
   airworthiness_date DATE,
   cert_issue_date DATE,
   expiration_date DATE,
-  last_action_date DATE
+  last_action_date DATE,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 CREATE INDEX idx_faa_arm_mode_s_code_hex ON faa_aircraft_registration_master (mode_s_code_hex);
 CREATE INDEX idx_faa_arm_n_number ON faa_aircraft_registration_master (n_number);
@@ -53,7 +55,9 @@ CREATE TABLE IF NOT EXISTS faa_aircraft_reference (
   number_of_engines INTEGER,
   max_number_of_seats INTEGER,
   weight VARCHAR(7),
-  cruising_speed_mph INTEGER
+  cruising_speed_mph INTEGER,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE IF NOT EXISTS faa_engine_reference (
@@ -63,7 +67,10 @@ CREATE TABLE IF NOT EXISTS faa_engine_reference (
   model_name VARCHAR(13),
   type_code INTEGER,
   horsepower INTEGER,
-  thrust_lbs INTEGER
+  thrust_lbs INTEGER,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+
 );
 
 CREATE TABLE IF NOT EXISTS faa_reserved_n_numbers (
@@ -78,7 +85,9 @@ CREATE TABLE IF NOT EXISTS faa_reserved_n_numbers (
   reserve_date DATE,
   reservation_type_code VARCHAR(2),
   expiration_notice_date DATE,
-  changed_n_number VARCHAR(5)
+  changed_n_number VARCHAR(5),
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE IF NOT EXISTS faa_aircraft_deregistered (
@@ -119,5 +128,7 @@ CREATE TABLE IF NOT EXISTS faa_aircraft_deregistered (
   kit_manufacturer_model VARCHAR(20),
   airworthiness_date DATE,
   cancel_date DATE,
-  last_action_date DATE
+  last_action_date DATE,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );

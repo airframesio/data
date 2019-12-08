@@ -1,5 +1,8 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE IF NOT EXISTS stations (
   id SERIAL PRIMARY KEY,
+  uuid UUID NOT NULL DEFAULT uuid_generate_v4(),
   ident VARCHAR(255),
   ip_address VARCHAR(255),
   user_id INTEGER,
@@ -24,6 +27,23 @@ CREATE TABLE IF NOT EXISTS flights (
   id SERIAL PRIMARY KEY,
   airframe_id INTEGER NOT NULL,
   flight VARCHAR(255),
+  departing_airport VARCHAR(10),
+  destination_airport VARCHAR(10),
+  messages_count INTEGER NOT NULL DEFAULT 0,
+  status VARCHAR(255) NOT NULL DEFAULT 'active',
+  latitude FLOAT,
+  longitude FLOAT,
+  altitude INTEGER,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS flight_coordinates (
+  id SERIAL PRIMARY KEY,
+  flight_id INTEGER NOT NULL,
+  latitude FLOAT,
+  longitude FLOAT,
+  altitude INTEGER,
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
@@ -32,6 +52,7 @@ CREATE TABLE IF NOT EXISTS messages (
   id SERIAL PRIMARY KEY,
   timestamp TIMESTAMP,
   source VARCHAR(10),
+  source_type VARCHAR(10),
   link_direction VARCHAR(10),
   from_hex VARCHAR(10),
   to_hex VARCHAR(10),
@@ -57,7 +78,16 @@ CREATE TABLE IF NOT EXISTS messages (
   longitude FLOAT,
   altitude  INTEGER,
   block_end BOOLEAN,
-  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS message_decodes (
+  id SERIAL PRIMARY KEY,
+  message_id INTEGER NOT NULL,
+  decoded_text TEXT,
+  decoded_data JSONB NOT NULL DEFAULT '{}',
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
@@ -83,6 +113,7 @@ CREATE INDEX IF NOT EXISTS idx_messages_airframe_id ON messages (airframe_id);
 CREATE INDEX IF NOT EXISTS idx_messages_flight_id ON messages (flight_id);
 CREATE INDEX IF NOT EXISTS idx_messages_label ON messages (label);
 CREATE INDEX IF NOT EXISTS idx_messages_source ON messages (source);
+CREATE INDEX IF NOT EXISTS idx_messages_source_type ON messages (source_type);
 CREATE INDEX IF NOT EXISTS idx_messages_station_id ON messages (station_id);
 CREATE INDEX IF NOT EXISTS idx_messages_timestamp ON messages (timestamp);
 CREATE INDEX IF NOT EXISTS idx_stations_id ON stations (id);

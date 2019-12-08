@@ -12,4 +12,5 @@ ADD COLUMN altitude INTEGER,
 ADD COLUMN block_end BOOLEAN;
 
 ALTER TABLE stations
+ADD COLUMN messages_count INTEGER NOT NULL DEFAULT 0,
 ADD UNIQUE (ident);
