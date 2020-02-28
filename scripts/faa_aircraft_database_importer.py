@@ -21,7 +21,7 @@ database_port    = 5432
 database_user    = 'kevin'
 database_name    = 'airframes'
 database_pass    = ''
-database_sslmode = 'require'
+database_sslmode = 'disable'
 
 # Filepaths
 temp_path = '/tmp'
@@ -100,7 +100,7 @@ with open(faa_aircraft_registration_master_filepath) as f:
         clean(data[30]),
         clean(data[0]),
         int(data[21].strip()),
-        clean(data[34]),
+        clean(data[33]),
         clean(data[1]),
         clean(data[20]),
         clean(data[2]),
