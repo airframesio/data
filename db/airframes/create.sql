@@ -38,15 +38,57 @@ CREATE TABLE IF NOT EXISTS flights (
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE IF NOT EXISTS flight_coordinates (
+CREATE TABLE IF NOT EXISTS flight_positions (
   id SERIAL PRIMARY KEY,
   flight_id INTEGER NOT NULL,
+  message_id INTEGER NOT NULL,
   latitude FLOAT,
   longitude FLOAT,
   altitude INTEGER,
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
+
+CREATE TABLE IF NOT EXISTS leaderboards (
+  id SERIAL PRIMARY KEY,
+  date DATE NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+CREATE INDEX index_l_date ON leaderboards (date);
+
+CREATE TABLE IF NOT EXISTS leaderboard_ranks (
+  id SERIAL PRIMARY KEY,
+  leaderboard_id INTEGER NOT NULL,
+  station_id INTEGER NOT NULL,
+  points INTEGER NOT NULL DEFAULT 0,
+  points_detail JSONB NOT NULL DEFAULT '{}',
+  ranking INTEGER NOT NULL DEFAULT -1,
+  airframe_all_time_count INTEGER NOT NULL DEFAULT 0,
+  airframe_this_month_count INTEGER NOT NULL DEFAULT 0,
+  airframe_last_24_hours_count INTEGER NOT NULL DEFAULT 0,
+  flight_all_time_count INTEGER NOT NULL DEFAULT 0,
+  flight_this_month_count INTEGER NOT NULL DEFAULT 0,
+  flight_last_24_hours_count INTEGER NOT NULL DEFAULT 0,
+  message_all_time_count INTEGER NOT NULL DEFAULT 0,
+  message_this_month_count INTEGER NOT NULL DEFAULT 0,
+  message_last_24_hours_count INTEGER NOT NULL DEFAULT 0,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+CREATE INDEX index_lr_leaderboard_id ON leaderboard_ranks (leaderboard_id);
+CREATE INDEX index_lr_ranking ON leaderboard_ranks (ranking);
+CREATE UNIQUE INDEX index_lr_lsr ON leaderboard_ranks (leaderboard_id, station_id, ranking);
+CREATE INDEX index_lr_points ON leaderboard_ranks (points);
+CREATE INDEX index_lr_airframe_all_time_count ON leaderboard_ranks (airframe_all_time_count);
+CREATE INDEX index_lr_airframe_this_month_count ON leaderboard_ranks (airframe_this_month_count);
+CREATE INDEX index_lr_airframe_last_24_hours_count ON leaderboard_ranks (airframe_last_24_hours_count);
+CREATE INDEX index_lr_flight_all_time_count ON leaderboard_ranks (flight_all_time_count);
+CREATE INDEX index_lr_flight_this_month_count ON leaderboard_ranks (flight_this_month_count);
+CREATE INDEX index_lr_flight_last_24_hours_count ON leaderboard_ranks (flight_last_24_hours_count);
+CREATE INDEX index_lr_message_all_time_count ON leaderboard_ranks (message_all_time_count);
+CREATE INDEX index_lr_message_this_month_count ON leaderboard_ranks (message_this_month_count);
+CREATE INDEX index_lr_message_last_24_hours_count ON leaderboard_ranks(message_last_24_hours_count);
 
 CREATE TABLE IF NOT EXISTS messages (
   id SERIAL PRIMARY KEY,
@@ -91,6 +133,88 @@ CREATE TABLE IF NOT EXISTS message_decodes (
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
+CREATE TABLE IF NOT EXISTS message_reports (
+  id SERIAL PRIMARY KEY,
+  message_id INTEGER NOT NULL,
+  station_id INTEGER NOT NULL,
+  first_to_report BOOLEAN NOT NULL DEFAULT false,
+  source_name VARCHAR(255),
+  source_application VARCHAR(255),
+  source_type VARCHAR(255),
+  source_protocol VARCHAR(255),
+  source_format VARCHAR(255),
+  source_network_protocol VARCHAR(255),
+  source_remote_ip VARCHAR(255),
+  frequency FLOAT,
+  channel INTEGER,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS report_daily_counts (
+  id SERIAL PRIMARY KEY,
+  station_id INTEGER NOT NULL,
+  date DATE,
+  airframes_count INTEGER DEFAULT 0,
+  flights_count INTEGER DEFAULT 0,
+  messages_count INTEGER DEFAULT 0,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+CREATE UNIQUE INDEX index_rdc_station_id_date ON report_daily_counts (station_id, date);
+
+INSERT INTO report_daily_counts (station_id, date, messages_count)
+  SELECT station_id, DATE(created_at) as date, COUNT(*) as messages_count
+  FROM messages
+  WHERE station_id IS NOT NULL AND created_at > current_date - interval '1 month'
+  GROUP BY station_id, date
+  ORDER BY station_id, date
+ON CONFLICT (station_id, date) DO UPDATE
+  SET messages_count = excluded.messages_count;
+
+
+CREATE TABLE IF NOT EXISTS report_hourly_counts (
+  id SERIAL PRIMARY KEY,
+  station_id INTEGER NOT NULL,
+  hour TIMESTAMP,
+  airframes_count INTEGER DEFAULT 0,
+  flights_count INTEGER DEFAULT 0,
+  messages_count INTEGER DEFAULT 0,
+  created_at TIME NOT NULL DEFAULT NOW(),
+  updated_at TIME NOT NULL DEFAULT NOW()
+);
+CREATE UNIQUE INDEX index_rhc_station_id_hour ON report_hourly_counts (station_id, hour);
+
+INSERT INTO report_hourly_counts (station_id, hour, messages_count)
+  SELECT station_id, DATE_TRUNC('hour', created_at) as hour, COUNT(*) as messages_count
+  FROM messages
+  WHERE station_id IS NOT NULL AND created_at > current_date - interval '1 day'
+  GROUP BY station_id, hour
+  ORDER BY station_id, hour
+ON CONFLICT (station_id, hour) DO UPDATE
+  SET messages_count = excluded.messages_count;
+
+CREATE TABLE IF NOT EXISTS report_monthly_counts (
+  id SERIAL PRIMARY KEY,
+  station_id INTEGER NOT NULL,
+  date DATE,
+  airframes_count INTEGER DEFAULT 0,
+  flights_count INTEGER DEFAULT 0,
+  messages_count INTEGER DEFAULT 0,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+CREATE UNIQUE INDEX index_rmc_station_id_date ON report_monthly_counts (station_id, date);
+
+INSERT INTO report_monthly_counts (station_id, date, messages_count)
+  SELECT station_id, DATE_TRUNC('month', created_at) as date, COUNT(*) as messages_count
+  FROM messages
+  WHERE station_id IS NOT NULL AND created_at > current_date - interval '1 year'
+  GROUP BY station_id, date
+  ORDER BY station_id, date
+ON CONFLICT (station_id, date) DO UPDATE
+  SET messages_count = excluded.messages_count;
+
 CREATE TABLE IF NOT EXISTS vdl_ground_stations (
   id SERIAL PRIMARY KEY,
   icao_hex VARCHAR(10),
@@ -109,13 +233,23 @@ CREATE TABLE IF NOT EXISTS vdl_ground_stations (
 );
 
 CREATE INDEX IF NOT EXISTS idx_flights_airframe_id ON flights (airframe_id);
+CREATE INDEX IF NOT EXISTS idx_flights_status ON flights (status);
+CREATE INDEX IF NOT EXISTS idx_flights_updated_at ON flights (updated_at);
+CREATE INDEX IF NOT EXISTS idx_flight_positions_created_at ON flight_positions (created_at);
+CREATE INDEX IF NOT EXISTS idx_flight_positions_flight_id ON flight_positions (flight_id);
+CREATE INDEX IF NOT EXISTS idx_flight_positions_message_id ON flight_positions (message_id);
+CREATE INDEX IF NOT EXISTS idx_flight_positions_updated_at ON flight_positions (updated_at);
 CREATE INDEX IF NOT EXISTS idx_messages_airframe_id ON messages (airframe_id);
+CREATE INDEX IF NOT EXISTS idx_messages_created_at ON messages (created_at);
 CREATE INDEX IF NOT EXISTS idx_messages_flight_id ON messages (flight_id);
 CREATE INDEX IF NOT EXISTS idx_messages_label ON messages (label);
+CREATE INDEX IF NOT EXISTS idx_messages_message_number ON messages (message_number);
 CREATE INDEX IF NOT EXISTS idx_messages_source ON messages (source);
 CREATE INDEX IF NOT EXISTS idx_messages_source_type ON messages (source_type);
 CREATE INDEX IF NOT EXISTS idx_messages_station_id ON messages (station_id);
+CREATE INDEX IF NOT EXISTS idx_messages_tail ON messages (tail);
 CREATE INDEX IF NOT EXISTS idx_messages_timestamp ON messages (timestamp);
+CREATE INDEX IF NOT EXISTS idx_messages_updated_at ON messages (updated_at);
 CREATE INDEX IF NOT EXISTS idx_stations_id ON stations (id);
 CREATE INDEX IF NOT EXISTS idx_stations_ident ON stations (ident);
 CREATE INDEX IF NOT EXISTS idx_vgs_icao_hex ON vdl_ground_stations (icao_hex);
