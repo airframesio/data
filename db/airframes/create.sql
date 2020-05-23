@@ -5,13 +5,17 @@ CREATE TABLE IF NOT EXISTS stations (
   uuid UUID NOT NULL DEFAULT uuid_generate_v4(),
   ident VARCHAR(255),
   ip_address VARCHAR(255),
-  user_id INTEGER,
+  user_id UUID,
   email VARCHAR(255),
   latitude FLOAT,
   longitude FLOAT,
+  source_application VARCHAR(255),
+  source_type VARCHAR(255),
+  source_protocol VARCHAR(255),
   created_at TIMESTAMP,
   updated_at TIMESTAMP,
   last_report_at TIMESTAMP,
+  status VARCHAR(255) NOT NULL DEFAULT 'pending-reception',
   UNIQUE (ident)
 );
 
@@ -214,6 +218,19 @@ INSERT INTO report_monthly_counts (station_id, date, messages_count)
   ORDER BY station_id, date
 ON CONFLICT (station_id, date) DO UPDATE
   SET messages_count = excluded.messages_count;
+
+CREATE TABLE IF NOT EXISTS users (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  username VARCHAR(255) UNIQUE NOT NULL,
+  password VARCHAR(255),
+  encrypted_password VARCHAR(255),
+  name VARCHAR(255),
+  email VARCHAR(255) UNIQUE NOT NULL,
+  api_key TEXT NOT NULL DEFAULT MD5(random()::text),
+  status VARCHAR(100) NOT NULL DEFAULT 'pending-confirmation',
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
 
 CREATE TABLE IF NOT EXISTS vdl_ground_stations (
   id SERIAL PRIMARY KEY,
