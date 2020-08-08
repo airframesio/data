@@ -1,4 +1,5 @@
-DROP TABLE IF EXISTS message_decodes;
+DROP TABLE IF EXISTS message_decodings;
+DROP TABLE IF EXISTS message_reports;
 DROP TABLE IF EXISTS messages;
 DROP TABLE IF EXISTS flight_coordinates;
 DROP TABLE IF EXISTS flights;

@@ -2,16 +2,23 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS stations (
   id SERIAL PRIMARY KEY,
-  uuid UUID NOT NULL DEFAULT uuid_generate_v4(),
+  uuid UUID NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
   ident VARCHAR(255),
   ip_address VARCHAR(255),
   user_id UUID,
-  email VARCHAR(255),
+  description TEXT,
   latitude FLOAT,
   longitude FLOAT,
+  altitude FLOAT,
+  nearest_airport_icao VARCHAR(4),
   source_application VARCHAR(255),
   source_type VARCHAR(255),
   source_protocol VARCHAR(255),
+  system_platform VARCHAR(255),
+  system_os VARCHAR(255),
+  equipment_sdr VARCHAR(255),
+  equipment_filters VARCHAR(255),
+  equipment_antenna VARCHAR(255),
   created_at TIMESTAMP,
   updated_at TIMESTAMP,
   last_report_at TIMESTAMP,
@@ -128,11 +135,17 @@ CREATE TABLE IF NOT EXISTS messages (
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE IF NOT EXISTS message_decodes (
-  id SERIAL PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS message_decodings (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   message_id INTEGER NOT NULL,
-  decoded_text TEXT,
-  decoded_data JSONB NOT NULL DEFAULT '{}',
+  decoder_name VARCHAR(20),
+  decoder_version VARCHAR(10),
+  decoder_type VARCHAR(20),
+  decoder_plugin VARCHAR(20),
+  decode_level VARCHAR(10),
+  result_raw JSONB NOT NULL DEFAULT '{}',
+  result_formatted JSONB NOT NULL DEFAULT '{}',
+  remaining_undecoded JSONB NOT NULL DEFAULT '{}',
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
