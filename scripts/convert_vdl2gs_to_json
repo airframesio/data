@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+#
+# convert_vdl2gs_to_json
+#
+# Convert a VDL2 Ground Stations CSV file taken from https://acars-vdl2.groups.io/g/main/table?id=12248 to JSON
+#
+
+require 'json'
+
+if ARGV.size < 2
+  puts "syntax: convert_vdl2gs_to_json <path-to-csv-input> <path-to-json-output>"
+  exit 1
+end
+
+CSV_FILE=ARGV[0]
+JSON_FILE=ARGV[1]
+puts "Reading #{CSV_FILE}"
+
+def chop_line(line = '')
+  d = line.split(',')
+  {
+    id: d[0],
+    airport: {
+      icao: d[1],
+      iata: d[2],
+      name: d[3],
+      city: d[4],
+      country_code: d[5],
+      latitude: d[6],
+      longitude: d[7]
+    }
+  }
+end
+
+ground_stations = []
+File.open(CSV_FILE) do |f|
+  headers = f.readline
+  while line = f.readline
+    line = line.chomp
+    ground_stations.push chop_line(line)
+  end
+rescue EOFError
+  break
+end
+
+content = {
+  count: ground_stations.size,
+  ground_stations: ground_stations
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+puts "Wrote #{content[:count]} VDL ground stations to #{JSON_FILE}."
