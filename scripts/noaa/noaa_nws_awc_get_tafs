@@ -5,7 +5,7 @@ require 'ox'
 require 'net/http'
 
 if ARGV.size < 1
-  puts "syntax: aviation_weather_get_metars <path-to-json-output-file>"
+  puts "syntax: noaa_nws_awc_get_tafs <path-to-json-output-file>"
   exit 1
 end
 
@@ -39,7 +39,7 @@ content = {
   resource_type: 'tafs',
   attribution: {
     name: 'NOAA NWS Aviation Weather Center',
-    url: 'https://www.aviationweather.gov/adds/dataserver_current/current/tafs.cache.xml'
+    url: SOURCE_URL
   },
   count: tafs.size,
   tafs: tafs
