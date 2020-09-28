@@ -1,0 +1,75 @@
+#!/usr/bin/env ruby
+
+require 'net/http'
+require 'json'
+
+if ARGV.size < 1
+  puts "syntax: faa_nfdc_get_fixes <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+BASE_URL = 'https://nfdc.faa.gov/nfdcApps/controllers/PublicDataController/getLidData'
+ORIGIN   = 'https://www.faa.gov'
+REFERER  = 'https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/loc_id_search/Fixes_Waypoints/'
+
+def retrieve_page(page, count = 1000)
+  uri = URI.parse(BASE_URL)
+  header = {
+    'Accept': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    'Origin': ORIGIN,
+    'Referer': REFERER,
+    'Accept-Encoding': 'gzip, deflat, br'
+  }
+  payload = {
+    'dataType': 'LIDFIXESWAYPOINTS',
+    'start': page,
+    'length': count,
+    'sortcolumn': 'fix_identifier',
+    'sortdir': 'asc',
+    'searchval': ''
+  }
+  puts "Retrieving page #{page} (count: #{count})"
+  Net::HTTP.post_form(uri, payload)
+end
+
+count = 1000
+res = retrieve_page(0, count)
+fixes = []
+if res.code == "200"
+  results = JSON.parse(res.body)
+  total_records = results['totalrows']
+  total_pages = total_records / count
+  puts "There are #{total_records} total records, so there is #{total_pages} pages of #{count} records at a time."
+  data = results['data']
+  fixes += data
+  # puts data.first
+  for i in 1..total_pages do
+    res = retrieve_page(i)
+    if res.code == "200"
+      fixes += results['data']
+      sleep(0.2)
+    else
+      puts "There was an error: #{res.code}. Exiting..."
+    end
+  end
+else
+  puts "Error: #{res.code}"
+end
+
+content = {
+  attribution: {
+    name: 'FAA NFDC',
+    url: 'https://nfdc.faa.gov/nfdcApps/controllers/PublicDataController/getLidData'
+  },
+  count: fixes.size,
+  fixes: fixes
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{fixes.size} fixes/waypoints and wrote to #{JSON_FILE}."
