@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+if [ "$#" != "2" ]; then
+  echo "syntax: faa_adip_airport_details <IATA code> <path to save to>"
+  exit 1
+fi
+
+IATA=$1
+OUTPUT_PATH=$2
+OUTPUT_FILE=$OUTPUT_PATH/$IATA.json
+
+echo "Retrieving public FAA ADIP auth token"
+TOKEN=$(curl -s https://adip.faa.gov/agis/public/shared/js/commons.js | grep PUBTOKEN | sed -E "s/.*\"(.+)\".*/\\1/")
+
+echo "Retrieving airport details for ${IATA}..."
+
+curl -s 'https://adip.faa.gov/agisServices/public-api/getAirportDetails' \
+  -X 'POST' \
+  -H 'Content-Type: application/json;charset=utf-8' \
+  -H 'Pragma: no-cache' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H "Authorization: Basic ${TOKEN}" \
+  -H 'Cache-Control: no-cache' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  --data-binary "{\"locId\":\"${IATA}\"}" \
+  --output $OUTPUT_FILE
+echo "Saved to ${OUTPUT_FILE}."
