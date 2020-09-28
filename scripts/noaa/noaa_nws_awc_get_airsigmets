@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'ox'
+require 'net/http'
+
+if ARGV.size < 1
+  puts "syntax: noaa_nws_awc_get_airsigmets <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml'
+
+uri = URI(SOURCE_URL)
+res = Net::HTTP.get(uri)
+content = Ox.load(res, mode: :hash)
+info = content[:response][7][:data][0]
+airsigmets = content[:response][7][:data][1..-1].map do |i|
+  a = i[:AIRSIGMET]
+  a[:altitude] = a[:altitude] ? a[:altitude][0] : {}
+  a[:hazard] = a[:hazard] ? a[:hazard][0] : {}
+  a[:area] = a[:area] ? a[:area][1..-1] : []
+  a
+end
+
+content = {
+  resource_type: 'airsigmets',
+  attribution: {
+    name: 'NOAA NWS Aviation Weather Center',
+    url: SOURCE_URL
+  },
+  count: airsigmets.size,
+  airsigmets: airsigmets
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{airsigmets.size} AIRMETs/SIGMETs and wrote to #{JSON_FILE}."

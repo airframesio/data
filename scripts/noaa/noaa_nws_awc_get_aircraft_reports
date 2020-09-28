@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'ox'
+require 'net/http'
+
+if ARGV.size < 1
+  puts "syntax: noaa_nws_awc_get_aircraft_reports <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/aircraftreports.cache.xml'
+
+uri = URI(SOURCE_URL)
+res = Net::HTTP.get(uri)
+content = Ox.load(res, mode: :hash)
+info = content[:response][7][:data][0]
+ars = content[:response][7][:data][1..-1].map do |i|
+  ar = i[:AircraftReport]
+  # puts ar
+  ar[:sky_condition] = ar[:sky_condition] ? ar[:sky_condition].flatten : []
+  ar
+end
+
+content = {
+  resource_type: 'aircraft_reports',
+  attribution: {
+    name: 'NOAA NWS Aviation Weather Center',
+    url: SOURCE_URL
+  },
+  count: ars.size,
+  aircraft_reports: ars
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{ars.size} Aircraft Reports and wrote to #{JSON_FILE}."
