@@ -3,7 +3,6 @@
 require 'json'
 require 'ox'
 require 'net/http'
-require 'metar'
 
 if ARGV.size < 1
   puts "syntax: aviation_weather_get_metars <path-to-json-output-file>"
@@ -25,9 +24,10 @@ metars = content[:response][7][:data][1..-1].map do |i|
 end
 
 content = {
+  resource_type: 'metars',
   attribution: {
     name: 'NOAA NWS Aviation Weather Center',
-    url: 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.csv'
+    url: 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.xml'
   },
   count: metars.size,
   metars: metars
