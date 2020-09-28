@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'ox'
+require 'net/http'
+
+if ARGV.size < 1
+  puts "syntax: aviation_weather_get_metars <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/tafs.cache.xml'
+
+uri = URI(SOURCE_URL)
+res = Net::HTTP.get(uri)
+content = Ox.load(res, mode: :hash)
+puts content.to_s[0..500]
+info = content[:response][7][:data][0]
+tafs = content[:response][7][:data][1..-1].map do |i|
+  taf = i[:TAF]
+  if taf[:forecast]
+    if taf[:forecast].is_a?(Array)
+      taf[:forecast] = taf[:forecast].map do |f|
+        f[:sky_condition] = f[:sky_condition] ? f[:sky_condition].flatten : []
+        f
+      end.flatten
+    else
+      taf[:forecast] = [taf[:forecast]]
+    end
+  else
+    taf[:forecast] = []
+  end
+  taf
+end
+
+content = {
+  resource_type: 'tafs',
+  attribution: {
+    name: 'NOAA NWS Aviation Weather Center',
+    url: 'https://www.aviationweather.gov/adds/dataserver_current/current/tafs.cache.xml'
+  },
+  count: tafs.size,
+  tafs: tafs
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{tafs.size} TAFs and wrote to #{JSON_FILE}."
