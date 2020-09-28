@@ -2,6 +2,7 @@
 
 require 'net/http'
 require 'json'
+require 'active_support/core_ext/string/inflections'
 
 if ARGV.size < 1
   puts "syntax: faa_nfdc_get_fixes <path-to-json-output-file>"
@@ -13,6 +14,124 @@ JSON_FILE = ARGV[0]
 BASE_URL = 'https://nfdc.faa.gov/nfdcApps/controllers/PublicDataController/getLidData'
 ORIGIN   = 'https://www.faa.gov'
 REFERER  = 'https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/loc_id_search/Fixes_Waypoints/'
+
+def convert_dms_to_degrees(dms = '')
+  dms.scan(/(\d+)-(\d+)-(\d+)/).map { |x,y,z| x.to_f + y.to_f/60 + z.to_f/3600 }.first
+end
+
+def decode_facility(fac = '')
+  case fac
+  when 'C'
+    'VORTAC'
+  when 'D'
+    'VOR/DME'
+  when 'DD'
+    'LDA/DME'
+  when 'LA'
+    'LDA'
+  when 'LC'
+    'LOC'
+  when 'LD'
+    'ILS/DME'
+  when 'LE'
+    'LOC/DME'
+  when 'LO'
+    'LOM'
+  when 'LM'
+    'LMM'
+  when 'LS'
+    'ILS'
+  when 'MS'
+    'MLS'
+  when 'R'
+    'NDB'
+  when 'RD'
+    'NDB/DME'
+  when 'SD'
+    'SDF/DME'
+  when 'SF'
+    'SDF'
+  when 'T'
+    'TACAN'
+  when 'V'
+    'VOR'
+  else
+    fac
+  end
+end
+
+def decode_description(desc = '')
+  latitude = longitude = 0.0
+  navaids = []
+
+  results = []
+  if desc.gsub(/(?<dms>\d+-\d+-\d+\.\d{4})(?<dir>\w)/) { |m| results << $~ }
+    # DMS coordinates
+    results.each do |result|
+      if ['N', 'S'].include?(result[:dir])
+        degrees = convert_dms_to_degrees(result[:dms]).round(6)
+        latitude = degrees * (result[:dir] == 'S' ? -1 : 1)
+      end
+      if ['E', 'W'].include?(result[:dir])
+        degrees = convert_dms_to_degrees(result[:dms]).round(6)
+        longitude = degrees * (result[:dir] == 'W' ? -1 : 1)
+      end
+    end
+  end
+
+  results = []
+  if desc.gsub(/(?<navaid>\w+)\*(?<facility>\w+)\*(?<azimuth>\d{3}\.\d{2})\/(?<distance>\d+\.\d{2})/) { |m| results << $~ }
+    # navaid, facility, azimuth, distance
+    results.each do |result|
+      navaids.push({
+        id: result[:navaid],
+        facility: decode_facility(result[:facility]),
+        azimuth: result[:azimuth],
+        distance: result[:distance]
+      })
+    end
+  end
+
+  results = []
+  if desc.gsub(/(?<navaid>\w+)\*(?<facility>\w+)\* \/(?<distance>\d+\.\d{2})/) { |m| results << $~ }
+    # navaid, facility, azimuth, distance
+    results.each do |result|
+      navaids.push({
+        id: result[:navaid],
+        facility: decode_facility(result[:facility]),
+        distance: result[:distance]
+      })
+    end
+  end
+
+  results = []
+  if desc.gsub(/(?<navaid>\w+)\*(?<facility>\w+)\*(?<azimuth>\d{3}\.\d{2})[^\/]/) { |m| results << $~ }
+    # navaid, facility, azimuth
+    results.each do |result|
+      navaids.push({
+        id: result[:navaid],
+        facility: decode_facility(result[:facility]),
+        azimuth: result[:azimuth]
+      })
+    end
+  end
+
+  {
+    latitude: latitude,
+    longitude: longitude,
+    navaids: navaids
+  }
+end
+
+def process_data(data = [])
+  data.map do |item|
+    {
+      id: item['fix_identifier'],
+      state: item['state'] ? item['state'].titleize : nil,
+      description: item['description']
+    }.merge(decode_description(item['description']))
+  end
+end
 
 def retrieve_page(page, count = 1000)
   uri = URI.parse(BASE_URL)
@@ -43,13 +162,12 @@ if res.code == "200"
   total_records = results['totalrows']
   total_pages = total_records / count
   puts "There are #{total_records} total records, so there is #{total_pages} pages of #{count} records at a time."
-  data = results['data']
-  fixes += data
+  fixes += process_data(results['data'])
   # puts data.first
   for i in 1..total_pages do
     res = retrieve_page(i)
     if res.code == "200"
-      fixes += results['data']
+      fixes += process_data(results['data'])
       sleep(0.2)
     else
       puts "There was an error: #{res.code}. Exiting..."
