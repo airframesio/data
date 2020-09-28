@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'net/http'
+require 'metar'
+
+if ARGV.size < 1
+  puts "syntax: noaa_nws_get_metars <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+BASE_URL = 'https://tgftp.nws.noaa.gov/data/observations/metar/cycles'
+
+metars = []
+('00'..'23').each do |cycle|
+  puts cycle
+  url = "#{BASE_URL}/#{cycle}Z.TXT"
+  uri = URI(url)
+  res = Net::HTTP.get(uri)
+  lines = res.split("\n")
+  lines.each_slice(3) do |metar|
+    reading_date = Date.parse(metar[0])
+
+    raw = Metar::Raw::Data.new(metar[1], reading_date)
+    begin
+      parser = Metar::Parser.new(raw)
+      begin
+        metars << parser.raw_attributes
+      rescue NoMethodError => e
+        # puts "Raw Error: #{e.message} (raw: #{raw})"
+      end
+    rescue Metar::ParseError => e
+      puts "Parser Error: #{e.message} (raw: #{raw})"
+    end
+  end
+end
+
+content = {
+  attribution: {
+    name: 'NOAA NWS',
+    url: 'https://tgftp.nws.noaa.gov/data/observations/metar/cycles/'
+  },
+  count: metars.size,
+  metars: metars
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{metars.size} METARs and wrote to #{JSON_FILE}."

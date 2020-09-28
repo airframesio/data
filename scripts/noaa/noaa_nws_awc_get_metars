@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'ox'
+require 'net/http'
+require 'metar'
+
+if ARGV.size < 1
+  puts "syntax: aviation_weather_get_metars <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+# SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.csv'
+SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.xml'
+
+uri = URI(SOURCE_URL)
+res = Net::HTTP.get(uri)
+content = Ox.load(res, mode: :hash)
+# puts content[:response]
+info = content[:response][7][:data][0]
+metars = content[:response][7][:data][1..-1].map do |i|
+  metar = i[:METAR]
+  metar[:sky_condition] = metar[:sky_condition] ? metar[:sky_condition].flatten : []
+  metar
+end
+
+content = {
+  attribution: {
+    name: 'NOAA NWS Aviation Weather Center',
+    url: 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.csv'
+  },
+  count: metars.size,
+  metars: metars
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{metars.size} METARs and wrote to #{JSON_FILE}."
