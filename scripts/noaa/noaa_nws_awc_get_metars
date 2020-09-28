@@ -12,13 +12,11 @@ end
 
 JSON_FILE = ARGV[0]
 
-# SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.csv'
 SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.xml'
 
 uri = URI(SOURCE_URL)
 res = Net::HTTP.get(uri)
 content = Ox.load(res, mode: :hash)
-# puts content[:response]
 info = content[:response][7][:data][0]
 metars = content[:response][7][:data][1..-1].map do |i|
   metar = i[:METAR]
