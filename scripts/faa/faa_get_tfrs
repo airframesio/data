@@ -4,18 +4,46 @@ require 'net/http'
 require 'json'
 require 'active_support/core_ext/string/inflections'
 require 'nokogiri'
+require 'slop'
 
-if ARGV.size < 1
-  puts "syntax: faa_get_tfrs <path-to-json-output-file>"
-  exit 1
+opts = Slop::Options.new
+opts.banner = "usage: faa_get_tfrs [options] <path-to-output-file>"
+opts.string '-f', '--format', 'output format (default: json, available: json/kml/geojson)', default: 'json'
+
+parser = Slop::Parser.new(opts)
+params = parser.parse(ARGV)
+
+if params.arguments.size < 1
+  puts opts
+  exit
 end
 
-JSON_FILE = ARGV[0]
+OUTPUT_FILE = params.arguments[0]
 
 LIST_URL = 'https://tfr.faa.gov/tfr2/list.html'
 BASE_URL = 'https://tfr.faa.gov/save_pages/'
 ORIGIN   = 'https://www.faa.gov'
 REFERER  = 'https://www.faa.gov'
+
+def convert_wgs_string_to_decimal(str)
+  match = str.match(/(.+)(\w{1})/)
+  if match && match.captures.size > 0
+    coord = match.captures[0].to_f
+    dir = match.captures[1]
+    coord = coord * -1 if ['S', 'W'].include?(dir)
+    coord
+  end
+end
+
+def convert_points_to_coordinates(points)
+  coords = []
+  points.each do |p|
+    if p && p[:longitude] && p[:latitude]
+      coords << [p[:longitude], p[:latitude]]
+    end
+  end
+  coords
+end
 
 def retrieve_list
   puts "Retrieving list of TFRs"
@@ -80,10 +108,11 @@ def process_xml(tfr, xml)
     {
       datum: avx.xpath('codeDatum').text,
       type: avx.xpath('codeType').text,
-      latitude: avx.xpath('geoLat').text,
-      longitude: avx.xpath('geoLong').text
+      latitude: convert_wgs_string_to_decimal(avx.xpath('geoLat').text.strip),
+      longitude: convert_wgs_string_to_decimal(avx.xpath('geoLong').text.strip)
     }
   end
+  tfr[:area_group][:merged_area][:points].push(tfr[:area_group][:merged_area][:points][0])
 
   tfr[:description] = notam.xpath('//txtDescrTraditional').text
   tfr[:description_usns] = notam.xpath('//txtDescrUSNS').text
@@ -115,18 +144,52 @@ tfrs = tfrs.map do |tfr|
   tfr
 end
 
-content = {
-  resource_type: 'tfr',
-  attribution: {
-    name: 'FAA',
-    url: 'https://tfr.faa.gov/tfr2/list.html'
-  },
-  count: tfrs.size,
-  tfrs: tfrs
-}
 
-File.open(JSON_FILE, 'w') do |f|
-  f.write(JSON.pretty_generate(content))
+case params[:format]
+when 'json'
+  content = {
+    resource_type: 'tfr',
+    attribution: {
+      name: 'FAA',
+      url: 'https://tfr.faa.gov/tfr2/list.html'
+    },
+    count: tfrs.size,
+    tfrs: tfrs
+  }
+
+  File.open(OUTPUT_FILE, 'w') do |f|
+    f.write(JSON.pretty_generate(content))
+  end
+  puts "Retrieved #{tfrs.size} TFRs and wrote to #{OUTPUT_FILE}."
+when 'geojson'
+  features = []
+  tfrs.each do |tfr|
+    if tfr[:area_group] && tfr[:area_group][:merged_area][:points]
+      coordinates = convert_points_to_coordinates(tfr[:area_group][:merged_area][:points])
+      if coordinates.size > 0
+        features << {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [coordinates],
+          },
+          properties: {
+            name: tfr[:short_description]
+          }
+        }
+      end
+    end
+  end
+
+  content = {
+    'type': 'FeatureCollection',
+    'features': features
+  }
+
+  File.open(OUTPUT_FILE, 'w') do |f|
+    f.write(JSON.pretty_generate(content))
+  end
+  puts "Retrieved #{tfrs.size} TFRs and wrote to #{OUTPUT_FILE}."
+else
+  puts "Unknown output format '#{params[:format]}', not saving."
 end
-
-puts "Retrieved #{tfrs.size} TFRs and wrote to #{JSON_FILE}."
