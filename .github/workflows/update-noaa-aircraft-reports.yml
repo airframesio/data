@@ -27,7 +27,7 @@ jobs:
     - name: Install dependencies
       run: gem install ox
     - name: Retrieve SIGMETs and save output as JSON
-      run: ruby scripts/noaa/noaa_nws_awc_get_aircrat_reports json/noaa/aircraft_reports.json
+      run: ruby scripts/noaa/noaa_nws_awc_get_aircraft_reports json/noaa/aircraft_reports.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v5
       with:
