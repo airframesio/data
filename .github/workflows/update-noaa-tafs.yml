@@ -8,10 +8,6 @@
 name: Update NOAA TAFs
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   schedule:
     - cron:  '0 * * * *'
 
@@ -33,7 +29,7 @@ jobs:
       with:
         author_name: Kevin Elliott
         author_email: kevin@welikeinc.com
-        message: "Update NOAA SIGMETs - json/noaa/tafs.json"
+        message: "Update NOAA TAFs - json/noaa/tafs.json"
         add: "*.*json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
