@@ -43,6 +43,7 @@ end
 def convert_points_to_coordinates(points)
   coords = []
   points.each do |p|
+    puts p[:type]
     if p && p[:longitude] && p[:latitude]
       coords << [p[:longitude], p[:latitude]]
     end
@@ -106,18 +107,22 @@ def process_xml(tfr, xml)
   tfr[:control_facility_type] = tfr_notam.xpath('//codeCtrlFacilityType').text
 
   area_group = tfr_notam.xpath('//TFRAreaGroup')
-  merged_area = area_group.xpath('//abdMergedArea')
+  boundary_area = area_group.xpath('//abdMergedArea')
   tfr[:area_group] = {}
-  tfr[:area_group][:merged_area] = {}
-  tfr[:area_group][:merged_area][:points] = merged_area.xpath('//Avx').map do |avx|
-    {
+  tfr[:area_group][:boundary_area] = {}
+  tfr[:area_group][:boundary_area][:points] = boundary_area.xpath('//Avx').map do |avx|
+    p = {
       datum: avx.xpath('codeDatum').text,
       type: avx.xpath('codeType').text,
       latitude: convert_wgs_string_to_decimal(avx.xpath('geoLat').text.strip),
       longitude: convert_wgs_string_to_decimal(avx.xpath('geoLong').text.strip)
     }
+    puts p.inspect
+    p
+  end.compact
+  if tfr[:area_group][:boundary_area][:points].size >= 3
+    tfr[:area_group][:boundary_area][:points].push(tfr[:area_group][:boundary_area][:points][0])
   end
-  tfr[:area_group][:merged_area][:points].push(tfr[:area_group][:merged_area][:points][0])
 
   tfr[:description] = notam.xpath('//txtDescrTraditional').text
   tfr[:description_usns] = notam.xpath('//txtDescrUSNS').text
@@ -169,8 +174,8 @@ when 'json'
 when 'geojson'
   features = []
   tfrs.each do |tfr|
-    if tfr[:area_group] && tfr[:area_group][:merged_area][:points]
-      coordinates = convert_points_to_coordinates(tfr[:area_group][:merged_area][:points])
+    if tfr[:area_group] && tfr[:area_group][:boundary_area][:points]
+      coordinates = convert_points_to_coordinates(tfr[:area_group][:boundary_area][:points].select { |p| puts p.inspect; p[:type] == 'GRC' })
       if coordinates.size > 0
         features << {
           type: 'Feature',
