@@ -43,7 +43,6 @@ end
 def convert_points_to_coordinates(points)
   coords = []
   points.each do |p|
-    puts p[:type]
     if p && p[:longitude] && p[:latitude]
       coords << [p[:longitude], p[:latitude]]
     end
@@ -117,7 +116,6 @@ def process_xml(tfr, xml)
       latitude: convert_wgs_string_to_decimal(avx.xpath('geoLat').text.strip),
       longitude: convert_wgs_string_to_decimal(avx.xpath('geoLong').text.strip)
     }
-    puts p.inspect
     p
   end.compact
   if tfr[:area_group][:boundary_area][:points].size >= 3
