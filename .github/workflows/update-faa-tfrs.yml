@@ -30,5 +30,6 @@ jobs:
       run: gem install slop
     - name: Retrieve TFRs
       run: ruby scripts/faa/faa-get-tfrs /tmp/tfrs.json
+    - name: Output the results
       run: cat /tmp/tfrs.json
     
