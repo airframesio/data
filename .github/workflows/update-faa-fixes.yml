@@ -5,7 +5,7 @@
 # This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
 # For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
 
-name: Update FAA Fixes/Waypoints
+name: Update FAA NFDC Fixes/Waypoints
 
 on:
   schedule:
@@ -23,13 +23,13 @@ jobs:
     - name: Install dependencies
       run: gem install activesupport
     - name: Retrieve Fixes from FAA and save output as JSON
-      run: ruby scripts/faa/faa_nfdc_get_fixes json/faa/fixes.json
+      run: ruby scripts/faa/faa_nfdc_get_fixes json/faa/nfdc/fixes.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v5
       with:
         author_name: Kevin Elliott
         author_email: kevin@welikeinc.com
-        message: "Update FAA Fixes/Waypoints - json/faa/fixes.json"
+        message: "Update FAA NFDC Fixes/Waypoints - json/faa/nfdc/fixes.json"
         add: "*.*json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
