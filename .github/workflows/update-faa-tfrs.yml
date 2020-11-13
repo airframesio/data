@@ -27,7 +27,13 @@ jobs:
     - name: Install dependencies
       run: gem install activesupport nokogiri slop
     - name: Retrieve TFRs
-      run: ruby scripts/faa/faa_get_tfrs /tmp/tfrs.json
-    - name: Output the results
-      run: cat /tmp/tfrs.json
-    
+      run: ruby scripts/faa/faa_get_tfrs json/faa/tfrs.json
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v5
+      with:
+        author_name: Kevin Elliott
+        author_email: kevin@welikeinc.com
+        message: "Update FAA TFRs - json/faa/tfrs.json"
+        add: "*.json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
