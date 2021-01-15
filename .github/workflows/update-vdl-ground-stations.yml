@@ -20,9 +20,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
-    - name: Install dependencies
-      run: gem install ox
-    - name: Retrieve SIGMETs and save output as JSON
+    - name: Convert the CSV source and save output as JSON
       run: ruby scripts/convert_vdl2gs_to_json csv/vdl/ground-stations.csv json/vdl/ground-stations.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v5
