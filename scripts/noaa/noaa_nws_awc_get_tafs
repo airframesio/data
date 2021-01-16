@@ -36,11 +36,16 @@ tafs = content[:response][7][:data][1..-1].map do |i|
 end
 
 content = {
-  resource_type: 'tafs',
+  source: {
+    name: 'Airframes Project',
+    url: 'https://github.com/airframesio',
+    email: 'kevin@airframes.io'
+  },
   attribution: {
     name: 'NOAA NWS Aviation Weather Center',
     url: SOURCE_URL
   },
+  resource_type: 'tafs',
   count: tafs.size,
   tafs: tafs
 }

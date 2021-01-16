@@ -38,10 +38,16 @@ metars = []
 end
 
 content = {
+  source: {
+    name: 'Airframes Project',
+    url: 'https://github.com/airframesio',
+    email: 'kevin@airframes.io'
+  },
   attribution: {
     name: 'NOAA NWS',
     url: 'https://tgftp.nws.noaa.gov/data/observations/metar/cycles/'
   },
+  resource_type: 'metars',
   count: metars.size,
   metars: metars
 }
