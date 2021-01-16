@@ -22,7 +22,7 @@ jobs:
         ruby-version: 2.7.2
     - name: Install dependencies
       run: gem install aipp ox
-    - name: Retrieve Fixes from FAA and save output as JSON
+    - name: Retrieve d-TPP Metafile from FAA and save output as JSON
       run: ruby scripts/faa/faa_dtpp_get_metadata json/faa/dtpp/current_metafile.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v5
