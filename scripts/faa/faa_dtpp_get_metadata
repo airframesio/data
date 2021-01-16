@@ -1,0 +1,118 @@
+#!/usr/bin/env ruby
+
+require 'aipp'
+require 'json'
+require 'ox'
+require 'net/http'
+
+if ARGV.size < 1
+  puts "syntax: faa_dtpp_get_metadata <path-to-json-output-file>"
+  exit 1
+end
+
+JSON_FILE = ARGV[0]
+
+airac = AIPP::AIRAC.new(Time.now)
+puts "Current Cycle: #{airac.id} (#{airac.date})"
+
+base_url       = 'https://aeronav.faa.gov/d-tpp'
+cycle_base_url = "#{base_url}/#{airac.id}"
+metafile_url   = "#{cycle_base_url}/xml_data/d-TPP_Metafile.xml"
+puts "FAA Aeronav Metafile URL: #{metafile_url}"
+
+uri = URI(metafile_url)
+res = Net::HTTP.get(uri)
+content = Ox.load(res, mode: :hash)
+content[:digital_tpp][0].tap do |attribs|
+  current_cycle = attribs[:cycle]
+  from_edate    = attribs[:from_edate]
+  to_edate      = attribs[:to_edate]
+end
+# puts content[:digital_tpp][2]
+
+airports = []
+charts   = []
+
+states = content[:digital_tpp][1..-1]
+states.each do |state_row|
+  state_metadata = state_row[:state_code][0]
+  # puts state_metadata[:ID]
+  cities_rows = state_row[:state_code][1..-1]
+  cities_rows.each do |city_row|
+    city_metadata = city_row[:city_name][0]
+    # puts "  #{city_metadata[:ID]}"
+    airports_rows = city_row[:city_name][1..-1]
+    airports_rows.each do |airport_row|
+      airport_metadata = airport_row[:airport_name][0]
+      # puts "    #{airport_metadata[:ID]}"
+      airport = {
+        id: airport_metadata[:ID],
+        military: airport_metadata[:military] == 'Y',
+        ident: airport_metadata[:apt_ident],
+        icao: airport_metadata[:icao_ident],
+        dtpp_num: airport_metadata[:alnum],
+        charts: []
+      }
+      # puts "    #{airport}"
+      charts_rows = airport_row[:airport_name][1..-1]
+      charts_rows.each do |chart_row|
+        record = chart_row[:record]
+        # puts "      #{record}"
+        chart = {
+          sequence: record[:chartseq],
+          code: record[:chart_code],
+          name: record[:chart_name],
+          pdf: {
+            name: record[:pdf_name],
+            url: "#{cycle_base_url}/#{record[:pdf_name]}"
+          },
+          cn: {
+            flag: record[:cn_flg] == 'Y',
+            page: record[:cnpage],
+          },
+          bv: {
+            section: record[:bvsection],
+            page: record[:bvpage]
+          },
+          procuuid: record[:procuuid],
+          two_colored: record[:two_colored] == 'Y',
+          faa_fd18: record[:faafd18],
+          copter: record[:copter],
+          amdt: {
+            num: record[:amdtnum].to_i,
+            date: record[:amdtdate]
+          }
+        }
+        # puts "      #{chart}"
+        airport[:charts].push(chart)
+        charts.push(chart)
+      end
+
+      airports.push(airport)
+    end
+  end
+end
+
+content = {
+  source: {
+    name: 'Airframes Project',
+    url: 'https://github.com/airframesio',
+    email: 'kevin@airframes.io'
+  },
+  attribution: {
+    name: 'FAA d-TPP',
+    url: 'https://aeronav.faa.gov/d-tpp'
+  },
+  pdf_base_url: cycle_base_url,
+  airports: airports,
+  counts: {
+    airports: airports.size,
+    charts: charts.size
+  }
+}
+
+File.open(JSON_FILE, 'w') do |f|
+  f.write(JSON.pretty_generate(content))
+end
+
+puts "Retrieved #{airports.size} airports and a total of #{charts.size} charts, and wrote to #{JSON_FILE}."
