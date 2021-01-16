@@ -138,10 +138,10 @@ CREATE TABLE IF NOT EXISTS messages (
 CREATE TABLE IF NOT EXISTS message_decodings (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   message_id INTEGER NOT NULL,
-  decoder_name VARCHAR(20),
+  decoder_name VARCHAR(30),
   decoder_version VARCHAR(10),
-  decoder_type VARCHAR(20),
-  decoder_plugin VARCHAR(20),
+  decoder_type VARCHAR(30),
+  decoder_plugin VARCHAR(50),
   decode_level VARCHAR(10),
   result_raw JSONB NOT NULL DEFAULT '{}',
   result_formatted JSONB NOT NULL DEFAULT '{}',
