@@ -1,0 +1,35 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
+# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
+
+name: Update FAA NFDC Fixes/Waypoints
+
+on:
+  schedule:
+    - cron:  '0 * * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.2
+    - name: Install dependencies
+      run: gem install aipp ox
+    - name: Retrieve Fixes from FAA and save output as JSON
+      run: ruby scripts/faa/faa_dtpp_get_metadata json/faa/dtpp/current_metafile.json
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v5
+      with:
+        author_name: Kevin Elliott
+        author_email: kevin@welikeinc.com
+        message: "Update FAA d-TPP Metafile - json/faa/dtpp/current_metafile.json"
+        add: "*.*json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

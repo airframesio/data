@@ -23,11 +23,10 @@ puts "FAA Aeronav Metafile URL: #{metafile_url}"
 uri = URI(metafile_url)
 res = Net::HTTP.get(uri)
 content = Ox.load(res, mode: :hash)
-content[:digital_tpp][0].tap do |attribs|
-  current_cycle = attribs[:cycle]
-  from_edate    = attribs[:from_edate]
-  to_edate      = attribs[:to_edate]
-end
+
+current_cycle = content[:digital_tpp][0][:cycle]
+from_edate    = content[:digital_tpp][0][:from_edate]
+to_edate      = content[:digital_tpp][0][:to_edate]
 # puts content[:digital_tpp][2]
 
 airports = []
@@ -103,6 +102,9 @@ content = {
     name: 'FAA d-TPP',
     url: 'https://aeronav.faa.gov/d-tpp'
   },
+  current_cycle: current_cycle,
+  from_edate: from_edate,
+  to_edate: to_edate,
   pdf_base_url: cycle_base_url,
   airports: airports,
   counts: {
