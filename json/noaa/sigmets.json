@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 49,
+  "count": 51,
   "airsigmets": [
     {
       "raw_text": "WAUS42 KKCI 122045 MIAS WA 122045 AIRMET SIERRA UPDT 5 FOR IFR AND MTN OBSCN VALID UNTIL 130300 AIRMET IFR...NC GA OH WV MD VA FROM 40E EKN TO 20S PSK TO 40WNW SPA TO 50SW GQO TO GQO TO HMV TO HNN TO 40E EKN CIG BLW 010/VIS BLW 3SM PCPN/BR. CONDS CONTG BYD 03Z THRU 09Z.",
@@ -3006,13 +3006,156 @@
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 122155 SIGC CONVECTIVE SIGMET 34C VALID UNTIL 2355Z TN KY IL MO KS FROM 20NW STL-60WNW BNA-30NW OSW-50ESE MCI-20NW STL AREA EMBD TS MOV FROM 25040KT. TOPS TO FL300. OUTLOOK VALID 122355-130355 FROM MCI-60SSW AXC-BNA-LIT-30SW SPS-INK-40W TCC-MCI REF WW 17 WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-03-12T21:55:00Z",
-      "valid_time_to": "2021-03-12T23:55:00Z",
+      "raw_text": "WAUS45 KKCI 122050 AAA SLCT WA 122050 AMD AIRMET TANGO UPDT 4 FOR TURB AND LLWS VALID UNTIL 130300 AIRMET TURB...WY UT CO AZ NM FROM 40SW DDY TO 20NNW CYS TO 30ESE TBE TO INK TO ELP TO 50S TUS TO BZA TO 40NNE PGS TO 30NNW HVE TO 30WNW OCS TO 40SW DDY MOD TURB BLW FL180. CONDS CONTG BYD 03Z THRU 09Z. LLWS POTENTIAL...WY CO NM BOUNDED BY 20N CYS-40S PUB-20NNE TBE-50W LBL-30ESE TBE-20SW TXO- 60SW TCC-20NE DMN-30ENE SJN-50ESE RSK-30SW DBL-20SSW LAR-20N CYS LLWS EXP. CONDS DVLPG 00-03Z. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ID WY UT CO AZ NM BOUNDED BY 60N JAC-20NW CYS-30ESE TBE-INK-50S TUS-50ESE BZA-30W INW-20ENE MLD-60N JAC MOD TURB BLW FL180. CONDS CONTG THRU 09Z. AREA 2...TURB ID WY NV UT CA AND CSTL WTRS BOUNDED BY 20SE TWF-20ESE MLD-50WSW HVE-60ENE BTY-20WSW BZA-30SE MZB-50ESE LAX-30SW RZS-40NW RZS-50SSE CZQ-30ENE MOD-20WSW FMG- 20SE TWF MOD TURB BLW 120. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2021-03-12T20:50:00Z",
+      "valid_time_to": "2021-03-13T03:00:00Z",
       "altitude": {
-        "max_ft_msl": "30000"
+        "min_ft_msl": "0",
+        "max_ft_msl": "18000"
       },
-      "movement_dir_degrees": "250",
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-106.9188",
+            "latitude": "42.6182"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.9399",
+            "latitude": "41.517"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.0175",
+            "latitude": "37.0761"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.24",
+            "latitude": "31.87"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.28",
+            "latitude": "31.82"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.92",
+            "latitude": "31.2646"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.6",
+            "latitude": "32.77"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.2246",
+            "latitude": "36.2337"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.9473",
+            "latitude": "38.8845"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.6433",
+            "latitude": "41.7808"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.9188",
+            "latitude": "42.6182"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 122255 SIGC OUTLOOK VALID 130055-130455 FROM MCI-60SSW AXC-BNA-LIT-30SW SPS-INK-40W TCC-MCI REF WW 17 WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-03-13T00:55:00Z",
+      "valid_time_to": "2021-03-13T04:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-94.74",
+            "latitude": "39.29"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.3397",
+            "latitude": "38.8077"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-86.68",
+            "latitude": "36.14"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.18",
+            "latitude": "34.68"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.0172",
+            "latitude": "33.6335"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.24",
+            "latitude": "31.87"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.4133",
+            "latitude": "35.1773"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-94.74",
+            "latitude": "39.29"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS32 KKCI 122255 SIGC CONVECTIVE SIGMET 35C VALID UNTIL 0055Z IL MO KS FROM 50ENE BUM-30NNW FAM-50SE FAM-30WNW OSW-50ENE BUM AREA EMBD TS MOV FROM 26040KT. TOPS TO FL320. OUTLOOK VALID 130055-130455 FROM MCI-60SSW AXC-BNA-LIT-30SW SPS-INK-40W TCC-MCI REF WW 17 WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-03-12T22:55:00Z",
+      "valid_time_to": "2021-03-13T00:55:00Z",
+      "altitude": {
+        "max_ft_msl": "32000"
+      },
+      "movement_dir_degrees": "260",
       "movement_speed_kt": "40",
       "hazard": {
         "type": "CONVECTIVE",
@@ -3022,40 +3165,95 @@
       "area": [
         {
           "point": {
-            "longitude": "-90.7828",
-            "latitude": "39.0946"
+            "longitude": "-93.5026",
+            "latitude": "38.5856"
           }
         },
         {
           "point": {
-            "longitude": "-87.8263",
-            "latitude": "36.5161"
+            "longitude": "-90.4747",
+            "latitude": "38.1345"
           }
         },
         {
           "point": {
-            "longitude": "-95.6484",
-            "latitude": "37.5049"
+            "longitude": "-89.4896",
+            "latitude": "37.0769"
           }
         },
         {
           "point": {
-            "longitude": "-93.7473",
-            "latitude": "38.9661"
+            "longitude": "-95.7846",
+            "latitude": "37.3411"
           }
         },
         {
           "point": {
-            "longitude": "-90.7828",
-            "latitude": "39.0946"
+            "longitude": "-93.5026",
+            "latitude": "38.5856"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 122155 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 122355-130355 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2021-03-12T21:55:00Z",
-      "valid_time_to": "2021-03-12T23:55:00Z",
+      "raw_text": "WSUS33 KKCI 122255 SIGW OUTLOOK VALID 130055-130455 FROM DTA-HVE-TUS-BZA-MZB-RZS-DTA WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-03-13T00:55:00Z",
+      "valid_time_to": "2021-03-13T04:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-112.51",
+            "latitude": "39.3"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.7",
+            "latitude": "38.42"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.92",
+            "latitude": "32.1"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.6",
+            "latitude": "32.77"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.23",
+            "latitude": "32.78"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.77",
+            "latitude": "34.51"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.51",
+            "latitude": "39.3"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS31 KKCI 122255 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 130055-130455 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2021-03-12T22:55:00Z",
+      "valid_time_to": "2021-03-13T00:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -3571,432 +3769,149 @@
       }
     },
     {
-      "raw_text": "WAUS45 KKCI 122050 AAA SLCT WA 122050 AMD AIRMET TANGO UPDT 4 FOR TURB AND LLWS VALID UNTIL 130300 AIRMET TURB...WY UT CO AZ NM FROM 40SW DDY TO 20NNW CYS TO 30ESE TBE TO INK TO ELP TO 50S TUS TO BZA TO 40NNE PGS TO 30NNW HVE TO 30WNW OCS TO 40SW DDY MOD TURB BLW FL180. CONDS CONTG BYD 03Z THRU 09Z. LLWS POTENTIAL...WY CO NM BOUNDED BY 20N CYS-40S PUB-20NNE TBE-50W LBL-30ESE TBE-20SW TXO- 60SW TCC-20NE DMN-30ENE SJN-50ESE RSK-30SW DBL-20SSW LAR-20N CYS LLWS EXP. CONDS DVLPG 00-03Z. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ID WY UT CO AZ NM BOUNDED BY 60N JAC-20NW CYS-30ESE TBE-INK-50S TUS-50ESE BZA-30W INW-20ENE MLD-60N JAC MOD TURB BLW FL180. CONDS CONTG THRU 09Z. AREA 2...TURB ID WY NV UT CA AND CSTL WTRS BOUNDED BY 20SE TWF-20ESE MLD-50WSW HVE-60ENE BTY-20WSW BZA-30SE MZB-50ESE LAX-30SW RZS-40NW RZS-50SSE CZQ-30ENE MOD-20WSW FMG- 20SE TWF MOD TURB BLW 120. CONDS CONTG THRU 09Z.",
-      "valid_time_from": "2021-03-12T20:50:00Z",
-      "valid_time_to": "2021-03-13T03:00:00Z",
+      "raw_text": "WSUS32 KKCI 122255 SIGC CONVECTIVE SIGMET 36C VALID UNTIL 0055Z TX NM FROM 50NE TCC-40W AMA-50WSW TXO-40SW TCC-50NE TCC INTSF AREA TS MOV FROM 23025KT. TOPS TO FL360. OUTLOOK VALID 130055-130455 FROM MCI-60SSW AXC-BNA-LIT-30SW SPS-INK-40W TCC-MCI REF WW 17 WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-03-12T22:55:00Z",
+      "valid_time_to": "2021-03-13T00:55:00Z",
       "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "18000"
+        "max_ft_msl": "36000"
       },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-106.9188",
-            "latitude": "42.6182"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.9399",
-            "latitude": "41.517"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.0175",
-            "latitude": "37.0761"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.24",
-            "latitude": "31.87"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.28",
-            "latitude": "31.82"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.92",
-            "latitude": "31.2646"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.6",
-            "latitude": "32.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.2246",
-            "latitude": "36.2337"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.9473",
-            "latitude": "38.8845"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.6433",
-            "latitude": "41.7808"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.9188",
-            "latitude": "42.6182"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 122155 SIGC OUTLOOK VALID 122355-130355 FROM MCI-60SSW AXC-BNA-LIT-30SW SPS-INK-40W TCC-MCI REF WW 17 WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-03-12T23:55:00Z",
-      "valid_time_to": "2021-03-13T03:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-94.74",
-            "latitude": "39.29"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.3397",
-            "latitude": "38.8077"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.68",
-            "latitude": "36.14"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.18",
-            "latitude": "34.68"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.0172",
-            "latitude": "33.6335"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.24",
-            "latitude": "31.87"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.4133",
-            "latitude": "35.1773"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.74",
-            "latitude": "39.29"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS33 KKCI 122155 SIGW OUTLOOK VALID 122355-130355 FROM DTA-HVE-TUS-BZA-MZB-RZS-DTA WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-03-12T23:55:00Z",
-      "valid_time_to": "2021-03-13T03:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-112.51",
-            "latitude": "39.3"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.7",
-            "latitude": "38.42"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.92",
-            "latitude": "32.1"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.6",
-            "latitude": "32.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.23",
-            "latitude": "32.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.77",
-            "latitude": "34.51"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.51",
-            "latitude": "39.3"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS33 KKCI 122155 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 122355-130355 FROM DTA-HVE-TUS-BZA-MZB-RZS-DTA WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-03-12T21:55:00Z",
-      "valid_time_to": "2021-03-12T23:55:00Z",
+      "movement_dir_degrees": "230",
+      "movement_speed_kt": "25",
       "hazard": {
         "type": "CONVECTIVE",
-        "severity": "NONE"
+        "severity": "LT-MOD"
       },
       "airsigmet_type": "SIGMET",
       "area": [
         {
           "point": {
-            "longitude": "-122.77",
-            "latitude": "49.0"
+            "longitude": "-102.8719",
+            "latitude": "35.7686"
           }
         },
         {
           "point": {
-            "longitude": "-123.12",
-            "latitude": "48.96"
+            "longitude": "-102.4544",
+            "latitude": "35.2873"
           }
         },
         {
           "point": {
-            "longitude": "-123.02",
-            "latitude": "48.6"
+            "longitude": "-103.773",
+            "latitude": "34.1767"
           }
         },
         {
           "point": {
-            "longitude": "-123.16",
-            "latitude": "48.3"
+            "longitude": "-104.1718",
+            "latitude": "34.7086"
           }
         },
         {
           "point": {
-            "longitude": "-123.69",
-            "latitude": "48.2"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.35",
-            "latitude": "48.36"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.73",
-            "latitude": "48.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.72",
-            "latitude": "48.38"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.0",
-            "latitude": "48.49"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.96",
-            "latitude": "48.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.03",
-            "latitude": "48.41"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-128.01",
-            "latitude": "48.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.49",
-            "latitude": "47.48"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.01",
-            "latitude": "46.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.52",
-            "latitude": "44.98"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.51",
-            "latitude": "44.01"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.72",
-            "latitude": "42.97"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.0",
-            "latitude": "40.01"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.01",
-            "latitude": "34.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.01",
-            "latitude": "32.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.66",
-            "latitude": "31.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.01",
-            "latitude": "30.98"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.65",
-            "latitude": "30.67"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.0",
-            "latitude": "31.1"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.97",
-            "latitude": "31.62"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1",
-            "latitude": "32.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.09",
-            "latitude": "32.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.12",
-            "latitude": "32.53"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.72",
-            "latitude": "32.72"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.81",
-            "latitude": "32.5"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.08",
-            "latitude": "31.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.2",
-            "latitude": "31.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.2",
-            "latitude": "31.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "31.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "49.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.77",
-            "latitude": "49.0"
+            "longitude": "-102.8719",
+            "latitude": "35.7686"
           }
         }
-      ],
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 122255 SIGC CONVECTIVE SIGMET 37C VALID UNTIL 0055Z TX OK FROM 40SSE MMB-30ENE CDS-30SSW LBB-50WSW LBB-20WSW AMA-40SSE MMB INTSF AREA TS MOV FROM 21035KT. TOPS TO FL420. OUTLOOK VALID 130055-130455 FROM MCI-60SSW AXC-BNA-LIT-30SW SPS-INK-40W TCC-MCI REF WW 17 WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-03-12T22:55:00Z",
+      "valid_time_to": "2021-03-13T00:55:00Z",
       "altitude": {
-      }
+        "max_ft_msl": "42000"
+      },
+      "movement_dir_degrees": "210",
+      "movement_speed_kt": "35",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-99.5666",
+            "latitude": "35.7254"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.7156",
+            "latitude": "34.5612"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.1502",
+            "latitude": "33.235"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.8443",
+            "latitude": "33.3768"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.0156",
+            "latitude": "35.1622"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.5666",
+            "latitude": "35.7254"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS33 KKCI 122255 SIGW CONVECTIVE SIGMET 7W VALID UNTIL 0055Z AZ UT NV CA AND CA CSTL WTRS FROM 70SSE ILC-40NNW DRK-20ESE MZB-20ESE RZS-70SSE ILC INTSF AREA TS MOV LTL. TOPS TO FL340. OUTLOOK VALID 130055-130455 FROM DTA-HVE-TUS-BZA-MZB-RZS-DTA WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-03-12T22:55:00Z",
+      "valid_time_to": "2021-03-13T00:55:00Z",
+      "altitude": {
+        "max_ft_msl": "34000"
+      },
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-113.8292",
+            "latitude": "37.1697"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.7917",
+            "latitude": "35.3138"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.8653",
+            "latitude": "32.6523"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.3979",
+            "latitude": "34.3822"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.8292",
+            "latitude": "37.1697"
+          }
+        }
+      ]
     }
   ]
 }
