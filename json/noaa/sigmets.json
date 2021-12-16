@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 57,
+  "count": 56,
   "airsigmets": [
     {
       "raw_text": "WAUS41 KKCI 152045 BOST WA 152045 AIRMET TANGO UPDT 3 FOR TURB STG WNDS AND LLWS VALID UNTIL 160300 AIRMET TURB...ME NH MA AND CSTL WTRS FROM 70NW PQI TO 30NE PQI TO 70SW YSJ TO 150ESE ACK TO 40ENE ENE TO 40E YSC TO 70NW PQI MOD TURB BTN FL300 AND FL390. CONDS ENDG 21-00Z. OTLK VALID 0300-0900Z AREA 1...TURB ME NH VT MA RI CT NY LO NJ PA LE AND CSTL WTRS BOUNDED BY 70NW PQI-50NNE PQI-50WSW YSJ-110SSW YSJ-70SSE ACK-50S PVD-20SE SAX-20WNW PSB-20NW ERI-30WSW BUF-20E YYZ-40NNW SYR-30NE MSS-20SE YSC-70NW PQI MOD TURB BLW 060. CONDS CONTG THRU 09Z. AREA 2...TURB PA OH LE BOUNDED BY 30ESE ECK-20SSE DXO-20ENE ERI-60E CVG-CVG-FWA-30ESE ECK MOD TURB BLW 120. CONDS DVLPG 03-06Z. CONDS CONTG THRU 09Z. AREA 3...STG SFC WNDS ME NH MA CSTL WTRS BOUNDED BY 70SW YSJ-150ESE ACK-180SE ACK-140SSE ACK-20SE ENE- 70SSE BGR-70SW YSJ SUSTAINED SURFACE WINDS GTR THAN 30KT EXP. CONDS DVLPG 03-06Z. CONDS CONTG THRU 09Z.",
@@ -3782,14 +3782,188 @@
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 152355 SIGC CONVECTIVE SIGMET 10C VALID UNTIL 0155Z MN IA SD FROM 60E ABR-50ESE RWF-50SSE FSD-50N ONL-60E ABR AREA TS MOV FROM 21040KT. TOPS TO FL360. OUTLOOK VALID 160155-160555 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 564 565. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-15T23:55:00Z",
-      "valid_time_to": "2021-12-16T01:55:00Z",
+      "raw_text": "WSUS05 KKCI 152319 SLCR WS 152319 SIGMET ROMEO 5 VALID UNTIL 160319 SIGMET WY CO NM FROM 30W LAR TO 30E CYS TO 30W TCC TO ABQ TO 30W LAR OCNL SEV TURB BTN FL310 AND FL410. DUE TO MTN WV ACT. RPTD BY ACFT. CONDS CONTG BYD 0319Z.",
+      "valid_time_from": "2021-12-15T23:19:00Z",
+      "valid_time_to": "2021-12-16T03:19:00Z",
       "altitude": {
-        "max_ft_msl": "36000"
+        "min_ft_msl": "31000",
+        "max_ft_msl": "41000"
       },
-      "movement_dir_degrees": "210",
-      "movement_speed_kt": "40",
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD-SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-106.3899",
+            "latitude": "41.3281"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1013",
+            "latitude": "41.2081"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.2155",
+            "latitude": "35.1784"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.82",
+            "latitude": "35.04"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.3899",
+            "latitude": "41.3281"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 160055 SIGC OUTLOOK VALID 160255-160655 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 565 566. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T02:55:00Z",
+      "valid_time_to": "2021-12-16T06:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-93.4",
+            "latitude": "48.57"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.0625",
+            "latitude": "48.3631"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-86.5463",
+            "latitude": "47.7429"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-87.07",
+            "latitude": "41.0631"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.85",
+            "latitude": "38.8946"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.5406",
+            "latitude": "35.7785"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-96.9359",
+            "latitude": "34.6745"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.61",
+            "latitude": "35.36"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.3433",
+            "latitude": "38.8184"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.3102",
+            "latitude": "41.941"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.6045",
+            "latitude": "44.2378"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.4",
+            "latitude": "48.57"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS31 KKCI 160055 SIGE OUTLOOK VALID 160255-160655 FROM 190E OMN-170ENE PBI-80ENE PBI-40SE MIA-50S RSW-PIE-OMN-190E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 90NNE SAW-30SE SSM-GRR-30N BVT-90NNE SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T02:55:00Z",
+      "valid_time_to": "2021-12-16T06:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-86.5463",
+            "latitude": "47.7429"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.7974",
+            "latitude": "46.0531"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-85.5",
+            "latitude": "42.79"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-87.07",
+            "latitude": "41.0631"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-86.5463",
+            "latitude": "47.7429"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS31 KKCI 160055 SIGE CONVECTIVE SIGMET 1E VALID UNTIL 0255Z FL AND CSTL WTRS FROM 30SW TRV-10S PBI-30E MIA LINE TS 30 NM WIDE MOV FROM 10015KT. TOPS TO FL410. OUTLOOK VALID 160255-160655 AREA 1...FROM 190E OMN-170ENE PBI-80ENE PBI-40SE MIA-50S RSW-PIE-OMN-190E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 90NNE SAW-30SE SSM-GRR-30N BVT-90NNE SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T00:55:00Z",
+      "valid_time_to": "2021-12-16T02:55:00Z",
+      "altitude": {
+        "max_ft_msl": "41000"
+      },
+      "movement_dir_degrees": "100",
+      "movement_speed_kt": "15",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "LT-MOD"
@@ -3798,45 +3972,57 @@
       "area": [
         {
           "point": {
-            "longitude": "-96.9495",
-            "latitude": "45.4112"
+            "longitude": "-81.1007",
+            "latitude": "27.1585"
           }
         },
         {
           "point": {
-            "longitude": "-94.0544",
-            "latitude": "44.1452"
+            "longitude": "-80.3273",
+            "latitude": "26.373"
           }
         },
         {
           "point": {
-            "longitude": "-96.3437",
-            "latitude": "42.8773"
+            "longitude": "-79.9945",
+            "latitude": "25.6978"
           }
         },
         {
           "point": {
-            "longitude": "-98.69",
-            "latitude": "43.3054"
+            "longitude": "-79.4875",
+            "latitude": "25.8997"
           }
         },
         {
           "point": {
-            "longitude": "-96.9495",
-            "latitude": "45.4112"
+            "longitude": "-79.8521",
+            "latitude": "26.6453"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-80.6794",
+            "latitude": "27.4886"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-81.1007",
+            "latitude": "27.1585"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 152355 SIGC CONVECTIVE SIGMET 11C VALID UNTIL 0155Z NE SD FROM 50ENE ONL-80E ONL-10NE OBH-10SSE ONL-50ENE ONL AREA TS MOV FROM 25035KT. TOPS TO FL260. OUTLOOK VALID 160155-160555 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 564 565. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-15T23:55:00Z",
-      "valid_time_to": "2021-12-16T01:55:00Z",
+      "raw_text": "WSUS32 KKCI 160055 SIGC CONVECTIVE SIGMET 1C VALID UNTIL 0255Z MO MN IA OK KS FROM 60NNW MCW-30SSE MCW-40NW IRK-20SSW BUM-30SE END LINE SEV TS 40 NM WIDE MOV FROM 25060KT. TOPS ABV FL450. TORNADOES...HAIL TO 1 IN...WIND GUSTS TO 80KT POSS. OUTLOOK VALID 160255-160655 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 565 566. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T00:55:00Z",
+      "valid_time_to": "2021-12-16T02:55:00Z",
       "altitude": {
-        "max_ft_msl": "26000"
+        "max_ft_msl": "60000"
       },
       "movement_dir_degrees": "250",
-      "movement_speed_kt": "35",
+      "movement_speed_kt": "60",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "LT-MOD"
@@ -3845,40 +4031,76 @@
       "area": [
         {
           "point": {
-            "longitude": "-97.6383",
-            "latitude": "42.7849"
+            "longitude": "-94.2859",
+            "latitude": "43.8799"
           }
         },
         {
           "point": {
-            "longitude": "-96.8879",
-            "latitude": "42.4559"
+            "longitude": "-93.525",
+            "latitude": "42.5652"
           }
         },
         {
           "point": {
-            "longitude": "-98.1889",
-            "latitude": "41.5006"
+            "longitude": "-93.6432",
+            "latitude": "40.6847"
           }
         },
         {
           "point": {
-            "longitude": "-98.6017",
-            "latitude": "42.3123"
+            "longitude": "-95.0005",
+            "latitude": "38.1659"
           }
         },
         {
           "point": {
-            "longitude": "-97.6383",
-            "latitude": "42.7849"
+            "longitude": "-97.7467",
+            "latitude": "36.2473"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.2157",
+            "latitude": "35.7391"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-94.3041",
+            "latitude": "37.7587"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.7761",
+            "latitude": "40.5305"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.6109",
+            "latitude": "42.6828"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.4333",
+            "latitude": "44.1385"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-94.2859",
+            "latitude": "43.8799"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 152355 SIGE OUTLOOK VALID 160155-160555 FROM 190E OMN-170ENE PBI-80ENE PBI-40SE MIA-50S RSW-PIE-OMN-190E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 90NNE SAW-30SE SSM-GRR-30N BVT-90NNE SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-16T01:55:00Z",
-      "valid_time_to": "2021-12-16T05:55:00Z",
+      "raw_text": "WSUS31 KKCI 160055 SIGE OUTLOOK VALID 160255-160655 FROM 190E OMN-170ENE PBI-80ENE PBI-40SE MIA-50S RSW-PIE-OMN-190E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 90NNE SAW-30SE SSM-GRR-30N BVT-90NNE SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T02:55:00Z",
+      "valid_time_to": "2021-12-16T06:55:00Z",
       "hazard": {
         "type": "CONVECTIVE"
       },
@@ -3937,9 +4159,9 @@
       }
     },
     {
-      "raw_text": "WSUS33 KKCI 152355 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 160155-160555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2021-12-15T23:55:00Z",
-      "valid_time_to": "2021-12-16T01:55:00Z",
+      "raw_text": "WSUS33 KKCI 160055 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 160255-160655 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2021-12-16T00:55:00Z",
+      "valid_time_to": "2021-12-16T02:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -4167,223 +4389,9 @@
       }
     },
     {
-      "raw_text": "WSUS05 KKCI 152319 SLCR WS 152319 SIGMET ROMEO 5 VALID UNTIL 160319 SIGMET WY CO NM FROM 30W LAR TO 30E CYS TO 30W TCC TO ABQ TO 30W LAR OCNL SEV TURB BTN FL310 AND FL410. DUE TO MTN WV ACT. RPTD BY ACFT. CONDS CONTG BYD 0319Z.",
-      "valid_time_from": "2021-12-15T23:19:00Z",
-      "valid_time_to": "2021-12-16T03:19:00Z",
-      "altitude": {
-        "min_ft_msl": "31000",
-        "max_ft_msl": "41000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD-SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-106.3899",
-            "latitude": "41.3281"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1013",
-            "latitude": "41.2081"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.2155",
-            "latitude": "35.1784"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.82",
-            "latitude": "35.04"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.3899",
-            "latitude": "41.3281"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 152355 SIGC OUTLOOK VALID 160155-160555 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 564 565. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-16T01:55:00Z",
-      "valid_time_to": "2021-12-16T05:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-93.4",
-            "latitude": "48.57"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.0625",
-            "latitude": "48.3631"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.5463",
-            "latitude": "47.7429"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.07",
-            "latitude": "41.0631"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.85",
-            "latitude": "38.8946"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.5406",
-            "latitude": "35.7785"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.9359",
-            "latitude": "34.6745"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.61",
-            "latitude": "35.36"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.3433",
-            "latitude": "38.8184"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.3102",
-            "latitude": "41.941"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.6045",
-            "latitude": "44.2378"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.4",
-            "latitude": "48.57"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS32 KKCI 152355 SIGC CONVECTIVE SIGMET 8C VALID UNTIL 0155Z MO MN IA OK KS FROM 60S RWF-20SSE FOD-70SSW DSM-30WNW BUM-30ENE END LINE SEV TS 40 NM WIDE MOV FROM 25060KT. TOPS ABV FL450. TORNADOES...HAIL TO 1 IN...WIND GUSTS TO 80KT POSS. OUTLOOK VALID 160155-160555 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 564 565. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-15T23:55:00Z",
-      "valid_time_to": "2021-12-16T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "60000"
-      },
-      "movement_dir_degrees": "250",
-      "movement_speed_kt": "60",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-95.5147",
-            "latitude": "43.2924"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.5734",
-            "latitude": "42.2114"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.6701",
-            "latitude": "40.4228"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.4552",
-            "latitude": "38.6383"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.6418",
-            "latitude": "36.7707"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.043",
-            "latitude": "36.3108"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.7138",
-            "latitude": "38.2826"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.8036",
-            "latitude": "40.2948"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.6613",
-            "latitude": "42.3924"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.743",
-            "latitude": "43.652"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.5147",
-            "latitude": "43.2924"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 152355 SIGC CONVECTIVE SIGMET 9C VALID UNTIL 0155Z WI LM FROM 40NNW GRB-20ESE GRB-30SSW BAE-30NW DLL-40NNW GRB AREA EMBD TS MOV FROM 25050KT. TOPS TO FL370. OUTLOOK VALID 160155-160555 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 564 565. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-15T23:55:00Z",
-      "valid_time_to": "2021-12-16T01:55:00Z",
+      "raw_text": "WSUS32 KKCI 160055 SIGC CONVECTIVE SIGMET 2C VALID UNTIL 0255Z MI WI LM FROM 50SSE SAW-40NNE MKG-40W MKG-30NNE DLL-50SSE SAW AREA EMBD TS MOV FROM 25050KT. TOPS TO FL370. OUTLOOK VALID 160255-160655 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 565 566. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T00:55:00Z",
+      "valid_time_to": "2021-12-16T02:55:00Z",
       "altitude": {
         "max_ft_msl": "37000"
       },
@@ -4397,88 +4405,45 @@
       "area": [
         {
           "point": {
-            "longitude": "-88.5509",
-            "latitude": "45.1736"
+            "longitude": "-86.9432",
+            "latitude": "45.5872"
           }
         },
         {
           "point": {
-            "longitude": "-87.76",
-            "latitude": "44.432"
+            "longitude": "-85.6876",
+            "latitude": "43.7836"
           }
         },
         {
           "point": {
-            "longitude": "-88.5418",
-            "latitude": "42.6549"
+            "longitude": "-86.9514",
+            "latitude": "43.1664"
           }
         },
         {
           "point": {
-            "longitude": "-90.2537",
-            "latitude": "43.9047"
+            "longitude": "-89.4923",
+            "latitude": "44.0145"
           }
         },
         {
           "point": {
-            "longitude": "-88.5509",
-            "latitude": "45.1736"
+            "longitude": "-86.9432",
+            "latitude": "45.5872"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 152355 SIGE OUTLOOK VALID 160155-160555 FROM 190E OMN-170ENE PBI-80ENE PBI-40SE MIA-50S RSW-PIE-OMN-190E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 90NNE SAW-30SE SSM-GRR-30N BVT-90NNE SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-16T01:55:00Z",
-      "valid_time_to": "2021-12-16T05:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-86.5463",
-            "latitude": "47.7429"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.7974",
-            "latitude": "46.0531"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.5",
-            "latitude": "42.79"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.07",
-            "latitude": "41.0631"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.5463",
-            "latitude": "47.7429"
-          }
-        }
-      ],
+      "raw_text": "WSUS32 KKCI 160055 SIGC CONVECTIVE SIGMET 3C VALID UNTIL 0255Z MN IA NE SD ND FROM 10SSE BRD-30S MSP-60ESE ONL-70N ONL-40SSE FAR-10SSE BRD AREA TS MOV FROM 21040KT. TOPS TO FL350. OUTLOOK VALID 160255-160655 FROM INL-50E YQT-90NNE SAW-30N BVT-50S AXC-40SE RZC-30NNE ADM-OKC-40SW MCI-50NNE OVR-50NW FSD-INL REF WW 563 565 566. WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2021-12-16T00:55:00Z",
+      "valid_time_to": "2021-12-16T02:55:00Z",
       "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS31 KKCI 152355 SIGE CONVECTIVE SIGMET 27E VALID UNTIL 0155Z FL AND CSTL WTRS FROM 40SW TRV-10SE PBI-50E MIA LINE TS 30 NM WIDE MOV FROM 10015KT. TOPS TO FL410. OUTLOOK VALID 160155-160555 AREA 1...FROM 190E OMN-170ENE PBI-80ENE PBI-40SE MIA-50S RSW-PIE-OMN-190E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 90NNE SAW-30SE SSM-GRR-30N BVT-90NNE SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2021-12-15T23:55:00Z",
-      "valid_time_to": "2021-12-16T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "41000"
+        "max_ft_msl": "35000"
       },
-      "movement_dir_degrees": "100",
-      "movement_speed_kt": "15",
+      "movement_dir_degrees": "210",
+      "movement_speed_kt": "40",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "LT-MOD"
@@ -4487,44 +4452,38 @@
       "area": [
         {
           "point": {
-            "longitude": "-81.1758",
-            "latitude": "27.0024"
+            "longitude": "-93.9356",
+            "latitude": "46.1923"
           }
         },
         {
           "point": {
-            "longitude": "-80.1547",
-            "latitude": "26.3789"
+            "longitude": "-93.23",
+            "latitude": "44.3769"
           }
         },
         {
           "point": {
-            "longitude": "-79.6",
-            "latitude": "25.6552"
+            "longitude": "-97.4487",
+            "latitude": "42.0817"
           }
         },
         {
           "point": {
-            "longitude": "-79.1436",
-            "latitude": "25.9386"
+            "longitude": "-98.69",
+            "latitude": "43.6378"
           }
         },
         {
           "point": {
-            "longitude": "-79.7548",
-            "latitude": "26.7393"
+            "longitude": "-96.4829",
+            "latitude": "46.1353"
           }
         },
         {
           "point": {
-            "longitude": "-80.8606",
-            "latitude": "27.4153"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.1758",
-            "latitude": "27.0024"
+            "longitude": "-93.9356",
+            "latitude": "46.1923"
           }
         }
       ]
