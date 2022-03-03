@@ -20,8 +20,10 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
+    - name: Install activesupport (6.1.4.6)
+      run: gem install activesupport -v 6.1.4.6
     - name: Install dependencies
-      run: gem install activesupport nokogiri slop
+      run: gem install nokogiri slop
     - name: Retrieve TFRs and save output as JSON
       run: ruby scripts/faa/faa_get_tfrs json/faa/tfrs.json
     - name: Retrieve TFRs and save output as GeoJSON
@@ -30,7 +32,7 @@ jobs:
       uses: EndBug/add-and-commit@v5
       with:
         author_name: Kevin Elliott
-        author_email: kevin@welikeinc.com
+        author_email: kevin@airframes.io
         message: "Update FAA TFRs - json/faa/tfrs.json and json/faa/tfrs.geojson"
         add: "*.*json"
       env:
