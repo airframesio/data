@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 47,
+  "count": 51,
   "airsigmets": [
     {
       "raw_text": "WAUS41 KKCI 212045 BOSS WA 212045 AIRMET SIERRA UPDT 7 FOR IFR AND MTN OBSCN VALID UNTIL 220300 AIRMET IFR...PA WV MD VA FROM 40WSW SLT TO 20E PSB TO 40NNW LYH TO 20NNW BKW TO 20W EKN TO 40ESE AIR TO 40WSW SLT CIG BLW 010/VIS BLW 3SM PCPN/BR. CONDS DVLPG 15-18Z. CONDS CONTG BYD 21Z ENDG 21-00Z. OTLK VALID 0300-0900Z AREA 1...IFR PA OH WV MD VA BOUNDED BY 40SSE FWA-30ENE APE-60S JST-60SSE EKN-20WSW PSK-30W BKW-HNN-CVG-40SSE FWA CIG BLW 010/VIS BLW 3SM PCPN/BR. CONDS DVLPG AFT 21Z. CONDS CONTG THRU 03Z. AREA 2...IFR ME NH VT BOUNDED BY 60NE YQB-30NNE PQI-50SSE HUL-20WNW ENE-40SE MPV-20SSE YSC-40ENE YSC-60NE YQB CIG BLW 010/VIS BLW 3SM PCPN/BR. CONDS ENDG 00-03Z. AREA 3...MTN OBSCN PA WV MD VA BOUNDED BY 60S JHW-20SSE PSB-30E PSK-50SSW PSK-30NW HMV-HNN-40NW HNN-30SSW AIR-60S JHW MTNS OBSC BY CLDS. CONDS DVLPG 21-00Z. CONDS CONTG THRU 03Z.",
@@ -247,11 +247,1012 @@
       }
     },
     {
-      "raw_text": "WSUS33 KKCI 212255 SIGW CONVECTIVE SIGMET 12W VALID UNTIL 0055Z ID OR FROM 10W DNJ-50W TWF-60ESE REO-30ESE BKE-10W DNJ AREA EMBD TS MOV FROM 24015KT. TOPS TO FL240. OUTLOOK VALID 220055-220455 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-04-21T22:55:00Z",
-      "valid_time_to": "2022-04-22T00:55:00Z",
+      "raw_text": "WSUS05 KKCI 212323 SLCX WS 212323 SIGMET XRAY 2 VALID UNTIL 220322 SIGMET NV UT AZ CA AND CSTL WTRS FROM 50NW FMG TO DTA TO PHX TO TRM TO 40W RZS TO 50NW FMG OCNL SEV TURB BLW 150. RPTD BY ACFT. CONDS ENDG 0322Z.",
+      "valid_time_from": "2022-04-21T23:23:00Z",
+      "valid_time_to": "2022-04-22T03:22:00Z",
       "altitude": {
-        "max_ft_msl": "24000"
+        "min_ft_msl": "0",
+        "max_ft_msl": "15000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD-SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-120.4325",
+            "latitude": "40.1182"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.51",
+            "latitude": "39.3"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.02",
+            "latitude": "33.43"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.16",
+            "latitude": "33.63"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.5767",
+            "latitude": "34.5073"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.4325",
+            "latitude": "40.1182"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS45 KKCI 212337 AAA SLCT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...UT CO AZ NM CA AND CSTL WTRS...UPDT FROM 50WSW ALS TO 50SW ABQ TO 60S SJN TO BZA TO MZB TO 30SE LAX TO 50WSW ALS MOD TURB BLW 150. CONDS CONTG BYD 03Z ENDG 03-06Z. OTLK VALID 0300-0900Z...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "15000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-106.7868",
+            "latitude": "37.0264"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.5363",
+            "latitude": "34.4471"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.14",
+            "latitude": "33.4229"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.6",
+            "latitude": "32.77"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.23",
+            "latitude": "32.78"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.0031",
+            "latitude": "33.5735"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.7868",
+            "latitude": "37.0264"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS45 KKCI 212337 AAA SLCT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...ID MT WY NV UT CO AZ NM OR CA AND CSTL WTRS...UPDT FROM 40SW ISN TO 70SW RAP TO 20SE SNY TO 40E AKO TO 60WSW ALS TO 30SE LAX TO 30WSW RZS TO 160WSW RZS TO 130WSW SNS TO RBL TO 20SSW LKT TO 50E DLN TO 40SW ISN MOD TURB BLW FL180. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "18000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-104.3285",
+            "latitude": "47.7078"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1418",
+            "latitude": "43.1486"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.6692",
+            "latitude": "40.8646"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.3102",
+            "latitude": "40.1567"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.973",
+            "latitude": "36.9628"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.0031",
+            "latitude": "33.5735"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.3327",
+            "latitude": "34.3162"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.7148",
+            "latitude": "33.457"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.0664",
+            "latitude": "35.806"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.24",
+            "latitude": "40.1"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.259",
+            "latitude": "44.7128"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.3634",
+            "latitude": "45.2439"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.3285",
+            "latitude": "47.7078"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS45 KKCI 212337 AAA SLCT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET STG SFC WNDS...NV UT AZ CA FROM 40E ELY TO DTA TO 30SSE BCE TO 50NE LAS TO 50SSW LAS TO 50NE LAX TO 30SE EHF TO 80S FMG TO 70SE FMG TO 50SW ILC TO 40E ELY SUSTAINED SURFACE WINDS GTR THAN 30KT EXP. CONDS ENDG 00-03Z. LLWS POTENTIAL...ID MT WY UT BOUNDED BY 60SSW LWT-BIL-BOY-MTU-SLC-DBS-60SSW LWT LLWS EXP. CONDS DVLPG 21-00Z. CONDS CONTG BYD 03Z THRU 09Z. LLWS POTENTIAL...MT WY BOUNDED BY 40SW ISN-60WNW RAP-50SW MLS-40SW ISN LLWS EXP. CONDS DVLPG 00-03Z. CONDS CONTG BYD 03Z ENDG BY 09Z. OTLK VALID 0300-0900Z...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0"
+      },
+      "hazard": {
+        "type": "TURB"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-113.991",
+            "latitude": "39.2968"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.51",
+            "latitude": "39.3"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.0582",
+            "latitude": "37.225"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.4235",
+            "latitude": "36.6685"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.5518",
+            "latitude": "35.3075"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.713",
+            "latitude": "34.5187"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.6651",
+            "latitude": "35.1235"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.66",
+            "latitude": "38.2005"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.6019",
+            "latitude": "38.6994"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.1362",
+            "latitude": "37.6569"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.991",
+            "latitude": "39.2968"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS46 KKCI 212337 AAA SFOT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...CA UT CO AZ NM AND CSTL WTRS...UPDT FROM 50WSW ALS TO 50SW ABQ TO 60S SJN TO BZA TO MZB TO 30SE LAX TO 50WSW ALS MOD TURB BLW 150. CONDS CONTG BYD 03Z ENDG 03-06Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "15000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-106.7868",
+            "latitude": "37.0264"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.5363",
+            "latitude": "34.4471"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.14",
+            "latitude": "33.4229"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.6",
+            "latitude": "32.77"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.23",
+            "latitude": "32.78"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.0031",
+            "latitude": "33.5735"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.7868",
+            "latitude": "37.0264"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS45 KKCI 212337 AAA SLCT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...ID MT WY NV UT AZ OR CA AND CSTL WTRS FROM 60SSW YXH TO 50NNW ISN TO 60WSW DIK TO 40N BOY TO 20ENE HVE TO 20E LAX TO 200SSW RZS TO 140WSW PYE TO 40NW REO TO 50SW MLP TO 30S YXC TO 60SSW YXH MOD TURB BTN FL180 AND FL400. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "18000",
+        "max_ft_msl": "40000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-111.3028",
+            "latitude": "49.0973"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1168",
+            "latitude": "48.9508"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1076",
+            "latitude": "46.4706"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.3",
+            "latitude": "44.1248"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.3074",
+            "latitude": "38.5465"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.0294",
+            "latitude": "33.9294"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.26",
+            "latitude": "31.4301"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.5674",
+            "latitude": "37.1586"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.5133",
+            "latitude": "43.0583"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.514",
+            "latitude": "46.866"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.78",
+            "latitude": "49.0969"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.3028",
+            "latitude": "49.0973"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS06 KKCI 212323 SFOX WS 212323 SIGMET XRAY 2 VALID UNTIL 220322 SIGMET CA NV UT AZ AND CSTL WTRS FROM 50NW FMG TO DTA TO PHX TO TRM TO 40W RZS TO 50NW FMG OCNL SEV TURB BLW 150. RPTD BY ACFT. CONDS ENDG 0322Z.",
+      "valid_time_from": "2022-04-21T23:23:00Z",
+      "valid_time_to": "2022-04-22T03:22:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "15000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD-SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-120.4325",
+            "latitude": "40.1182"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.51",
+            "latitude": "39.3"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.02",
+            "latitude": "33.43"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.16",
+            "latitude": "33.63"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.5767",
+            "latitude": "34.5073"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.4325",
+            "latitude": "40.1182"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS46 KKCI 212337 AAA SFOT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...OR CA ID MT WY NV UT CO AZ NM AND CSTL WTRS...UPDT FROM 40SW ISN TO 70SW RAP TO 20SE SNY TO 40E AKO TO 60WSW ALS TO 30SE LAX TO 30WSW RZS TO 160WSW RZS TO 130WSW SNS TO RBL TO 20SSW LKT TO 50E DLN TO 40SW ISN MOD TURB BLW FL180. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "18000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-104.3285",
+            "latitude": "47.7078"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1418",
+            "latitude": "43.1486"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.6692",
+            "latitude": "40.8646"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.3102",
+            "latitude": "40.1567"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.973",
+            "latitude": "36.9628"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.0031",
+            "latitude": "33.5735"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.3327",
+            "latitude": "34.3162"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.7148",
+            "latitude": "33.457"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.0664",
+            "latitude": "35.806"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.24",
+            "latitude": "40.1"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.259",
+            "latitude": "44.7128"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.3634",
+            "latitude": "45.2439"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.3285",
+            "latitude": "47.7078"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS46 KKCI 212337 AAA SFOT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...OR CA ID MT WY NV UT AZ AND CSTL WTRS FROM 60SSW YXH TO 50NNW ISN TO 60WSW DIK TO 40N BOY TO 20ENE HVE TO 20E LAX TO 200SSW RZS TO 140WSW PYE TO 40NW REO TO 50SW MLP TO 30S YXC TO 60SSW YXH MOD TURB BTN FL180 AND FL400. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "18000",
+        "max_ft_msl": "40000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-111.3028",
+            "latitude": "49.0973"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1168",
+            "latitude": "48.9508"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1076",
+            "latitude": "46.4706"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.3",
+            "latitude": "44.1248"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.3074",
+            "latitude": "38.5465"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.0294",
+            "latitude": "33.9294"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.26",
+            "latitude": "31.4301"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.5674",
+            "latitude": "37.1586"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.5133",
+            "latitude": "43.0583"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.514",
+            "latitude": "46.866"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.78",
+            "latitude": "49.0969"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.3028",
+            "latitude": "49.0973"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS33 KKCI 212355 SIGW OUTLOOK VALID 220155-220555 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T01:55:00Z",
+      "valid_time_to": "2022-04-22T05:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-112.8",
+            "latitude": "48.9652"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.9059",
+            "latitude": "44.2078"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.77",
+            "latitude": "34.51"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.5378",
+            "latitude": "33.523"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.026",
+            "latitude": "39.7457"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-126.3852",
+            "latitude": "48.2866"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.8",
+            "latitude": "48.9652"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS46 KKCI 212337 AAA SFOT WA 212337 AMD AIRMET TANGO UPDT 6 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET STG SFC WNDS...CA NV UT AZ FROM 40E ELY TO DTA TO 30SSE BCE TO 50NE LAS TO 50SSW LAS TO 50NE LAX TO 30SE EHF TO 80S FMG TO 70SE FMG TO 50SW ILC TO 40E ELY SUSTAINED SURFACE WINDS GTR THAN 30KT EXP. CONDS ENDG 00-03Z. LLWS POTENTIAL...CA BOUNDED BY 40N FMG-50SW BTY-40ENE EHF-50NNE SAC-40N FMG LLWS EXP. CONDS ENDG 00-03Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z.",
+      "valid_time_from": "2022-04-21T23:37:00Z",
+      "valid_time_to": "2022-04-22T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0"
+      },
+      "hazard": {
+        "type": "TURB"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-113.991",
+            "latitude": "39.2968"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.51",
+            "latitude": "39.3"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.0582",
+            "latitude": "37.225"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.4235",
+            "latitude": "36.6685"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.5518",
+            "latitude": "35.3075"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.713",
+            "latitude": "34.5187"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.6651",
+            "latitude": "35.1235"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.66",
+            "latitude": "38.2005"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.6019",
+            "latitude": "38.6994"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.1362",
+            "latitude": "37.6569"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.991",
+            "latitude": "39.2968"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 220009 SIGC CONVECTIVE SIGMET 58C VALID UNTIL 0155Z SD WY FROM 70ENE CZI-30WNW RAP-70SW RAP-60E DDY-60NE DDY-70ENE CZI AREA EMBD TS MOV FROM 21040KT. TOPS TO FL320. ...SPECIAL... OUTLOOK VALID 220155-220555 AREA 1...FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T00:09:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "32000"
+      },
+      "movement_dir_degrees": "210",
+      "movement_speed_kt": "40",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-104.9289",
+            "latitude": "44.437"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.658",
+            "latitude": "44.1707"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.1418",
+            "latitude": "43.1486"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.9147",
+            "latitude": "43.0819"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-105.3033",
+            "latitude": "43.791"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.9289",
+            "latitude": "44.437"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 220009 SIGC OUTLOOK VALID 220155-220555 FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T01:55:00Z",
+      "valid_time_to": "2022-04-22T05:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-103.63",
+            "latitude": "48.18"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.19",
+            "latitude": "47.95"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-100.17",
+            "latitude": "44.4"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.9147",
+            "latitude": "42.661"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-105.3728",
+            "latitude": "43.6753"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.624",
+            "latitude": "45.9907"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.63",
+            "latitude": "48.18"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS32 KKCI 220009 SIGC CONVECTIVE SIGMET 55C VALID UNTIL 0155Z SD MT WY FROM 90WNW DPR-60W DPR-60WNW RAP-70ENE CZI-90WNW DPR AREA EMBD TS MOV FROM 22040KT. TOPS TO FL330. OUTLOOK VALID 220155-220555 AREA 1...FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T00:09:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "33000"
+      },
+      "movement_dir_degrees": "220",
+      "movement_speed_kt": "40",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-103.7024",
+            "latitude": "45.6371"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.132",
+            "latitude": "45.0713"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.2984",
+            "latitude": "44.3544"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.9289",
+            "latitude": "44.437"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.7024",
+            "latitude": "45.6371"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 220009 SIGC CONVECTIVE SIGMET 54C VALID UNTIL 0155Z MO FROM 20SW COU-50WNW FAM-60ESE SGF-20WSW SGF-20SW COU AREA SEV EMBD TS MOV FROM 27025KT. TOPS ABV FL450. TORNADOES...HAIL TO 1.75 IN...WIND GUSTS TO 50KT POSS. OUTLOOK VALID 220155-220555 AREA 1...FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T00:09:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "60000"
+      },
+      "movement_dir_degrees": "270",
+      "movement_speed_kt": "25",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-92.5207",
+            "latitude": "38.5846"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-91.2093",
+            "latitude": "37.9857"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.1769",
+            "latitude": "36.9728"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.7157",
+            "latitude": "37.2322"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.5207",
+            "latitude": "38.5846"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS33 KKCI 212355 SIGW CONVECTIVE SIGMET 15W VALID UNTIL 0155Z OR WA FROM 40W BTG-30ESE BTG-20W DSD-20ENE ONP-40W BTG AREA EMBD TS MOV FROM 24015KT. TOPS TO FL250. OUTLOOK VALID 220155-220555 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-21T23:55:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "25000"
       },
       "movement_dir_degrees": "240",
       "movement_speed_kt": "15",
@@ -263,40 +1264,160 @@
       "area": [
         {
           "point": {
-            "longitude": "-116.4504",
-            "latitude": "44.7697"
+            "longitude": "-123.5426",
+            "latitude": "45.746"
           }
         },
         {
           "point": {
-            "longitude": "-115.6227",
-            "latitude": "42.4744"
+            "longitude": "-121.9263",
+            "latitude": "45.5556"
           }
         },
         {
           "point": {
-            "longitude": "-116.6264",
-            "latitude": "42.2017"
+            "longitude": "-121.764",
+            "latitude": "44.2491"
           }
         },
         {
           "point": {
-            "longitude": "-117.1567",
-            "latitude": "44.6456"
+            "longitude": "-123.6279",
+            "latitude": "44.7064"
           }
         },
         {
           "point": {
-            "longitude": "-116.4504",
-            "latitude": "44.7697"
+            "longitude": "-123.5426",
+            "latitude": "45.746"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 212255 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 220055-220455 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2022-04-21T22:55:00Z",
-      "valid_time_to": "2022-04-22T00:55:00Z",
+      "raw_text": "WSUS33 KKCI 212355 SIGW CONVECTIVE SIGMET 14W VALID UNTIL 0155Z CA FROM 40E RBL-50NNE EHF-40S CZQ-30SSW RBL-40E RBL AREA SEV EMBD TS MOV FROM 23020KT. TOPS TO FL310. TORNADOES...WIND GUSTS TO 50KTS POSS. OUTLOOK VALID 220155-220555 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-21T23:55:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "31000"
+      },
+      "movement_dir_degrees": "230",
+      "movement_speed_kt": "20",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-121.371",
+            "latitude": "40.0968"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.7036",
+            "latitude": "36.2512"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.82",
+            "latitude": "36.2152"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.49",
+            "latitude": "39.635"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.371",
+            "latitude": "40.0968"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 220009 SIGC OUTLOOK VALID 220155-220555 FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T01:55:00Z",
+      "valid_time_to": "2022-04-22T05:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-94.1468",
+            "latitude": "43.6779"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.32",
+            "latitude": "41.55"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.7953",
+            "latitude": "37.0997"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.8846",
+            "latitude": "37.0034"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.92",
+            "latitude": "36.35"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-100.4059",
+            "latitude": "28.5877"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-101.831",
+            "latitude": "29.7374"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.2942",
+            "latitude": "28.9124"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.99",
+            "latitude": "42.57"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-94.1468",
+            "latitude": "43.6779"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS31 KKCI 212355 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 220155-220555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2022-04-21T23:55:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -812,58 +1933,11 @@
       }
     },
     {
-      "raw_text": "WSUS33 KKCI 212255 SIGW CONVECTIVE SIGMET 13W VALID UNTIL 0055Z WA FROM 70N EPH-20WNW GEG-YKM-50NNW YKM-70N EPH AREA EMBD TS MOV FROM 24015KT. TOPS TO FL260. OUTLOOK VALID 220055-220455 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-04-21T22:55:00Z",
-      "valid_time_to": "2022-04-22T00:55:00Z",
+      "raw_text": "WSUS32 KKCI 220009 SIGC CONVECTIVE SIGMET 57C VALID UNTIL 0155Z OK KS FROM 40SSE HLC-70WSW SLN-50NE MMB-40N MMB-40SSE HLC DVLPG AREA TS MOV FROM 25030KT. TOPS TO FL400. OUTLOOK VALID 220155-220555 AREA 1...FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T00:09:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
       "altitude": {
-        "max_ft_msl": "26000"
-      },
-      "movement_dir_degrees": "240",
-      "movement_speed_kt": "15",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-119.42",
-            "latitude": "48.5478"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.0862",
-            "latitude": "47.6863"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.45",
-            "latitude": "46.57"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.9218",
-            "latitude": "47.3409"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.42",
-            "latitude": "48.5478"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 212255 SIGC CONVECTIVE SIGMET 53C VALID UNTIL 0055Z IL MO IA KS NE FROM 40ESE OVR-20SE UIN-50SSE SGF-40SW MCI-70ENE HLC-40ESE OVR AREA SEV EMBD TS MOV FROM 25030KT. TOPS ABV FL450. TORNADOES...HAIL TO 1.75 IN...WIND GUSTS TO 50KT POSS. OUTLOOK VALID 220055-220455 FROM 40ESE FSD-50N BDF-50NW DYR-RZC-END-50SSE DLF-60WNW DLF-70SE MRF-ANW-40ESE FSD WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-04-21T22:55:00Z",
-      "valid_time_to": "2022-04-22T00:55:00Z",
-      "altitude": {
-        "max_ft_msl": "60000"
+        "max_ft_msl": "40000"
       },
       "movement_dir_degrees": "250",
       "movement_speed_kt": "30",
@@ -875,124 +1949,45 @@
       "area": [
         {
           "point": {
-            "longitude": "-94.9273",
-            "latitude": "40.9127"
+            "longitude": "-99.9043",
+            "latitude": "38.6454"
           }
         },
         {
           "point": {
-            "longitude": "-90.9749",
-            "latitude": "39.6146"
+            "longitude": "-98.9982",
+            "latitude": "38.475"
           }
         },
         {
           "point": {
-            "longitude": "-92.9318",
-            "latitude": "36.5875"
+            "longitude": "-99.141",
+            "latitude": "36.9285"
           }
         },
         {
           "point": {
-            "longitude": "-95.3433",
-            "latitude": "38.8184"
+            "longitude": "-99.88",
+            "latitude": "37.0048"
           }
         },
         {
           "point": {
-            "longitude": "-98.8277",
-            "latitude": "39.6985"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.9273",
-            "latitude": "40.9127"
+            "longitude": "-99.9043",
+            "latitude": "38.6454"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 212255 SIGC OUTLOOK VALID 220055-220455 FROM 40ESE FSD-50N BDF-50NW DYR-RZC-END-50SSE DLF-60WNW DLF-70SE MRF-ANW-40ESE FSD WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-04-22T00:55:00Z",
-      "valid_time_to": "2022-04-22T04:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-95.9348",
-            "latitude": "43.3925"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.59",
-            "latitude": "41.9954"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.0559",
-            "latitude": "36.6085"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.12",
-            "latitude": "36.25"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.92",
-            "latitude": "36.35"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.4059",
-            "latitude": "28.5877"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.831",
-            "latitude": "29.7374"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.0015",
-            "latitude": "29.4708"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.99",
-            "latitude": "42.57"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.9348",
-            "latitude": "43.3925"
-          }
-        }
-      ],
+      "raw_text": "WSUS32 KKCI 220009 SIGC CONVECTIVE SIGMET 56C VALID UNTIL 0155Z IL MO IA KS NE FROM 50NW OVR-50W AXC-30SW STL-40E MCI-40ESE MCK-50NW OVR AREA EMBD TS MOV FROM 25035KT. TOPS TO FL380. OUTLOOK VALID 220155-220555 AREA 1...FROM 50NW MCW-JOT-70SW PXV-30SE SGF-END-50SSE DLF-60WNW DLF-90SSE MRF-ANW-50NW MCW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM ISN-GFK-PIR-50NNW BFF-50ESE CZI-60ESE MLS-ISN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-04-22T00:09:00Z",
+      "valid_time_to": "2022-04-22T01:55:00Z",
       "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS33 KKCI 212255 SIGW CONVECTIVE SIGMET 11W VALID UNTIL 0055Z CA FROM 60W FMG-20SE CZQ-40SW CZQ-40NE ENI-60W FMG AREA EMBD TS MOV FROM 23020KT. TOPS TO FL250. OUTLOOK VALID 220055-220455 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-04-21T22:55:00Z",
-      "valid_time_to": "2022-04-22T00:55:00Z",
-      "altitude": {
-        "max_ft_msl": "25000"
+        "max_ft_msl": "38000"
       },
-      "movement_dir_degrees": "230",
-      "movement_speed_kt": "20",
+      "movement_dir_degrees": "250",
+      "movement_speed_kt": "35",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "LT-MOD"
@@ -1001,191 +1996,38 @@
       "area": [
         {
           "point": {
-            "longitude": "-120.9527",
-            "latitude": "39.5228"
+            "longitude": "-96.5319",
+            "latitude": "41.758"
           }
         },
         {
           "point": {
-            "longitude": "-119.5271",
-            "latitude": "36.6446"
+            "longitude": "-89.9362",
+            "latitude": "39.7249"
           }
         },
         {
           "point": {
-            "longitude": "-120.4041",
-            "latitude": "36.4085"
+            "longitude": "-90.9345",
+            "latitude": "38.5034"
           }
         },
         {
           "point": {
-            "longitude": "-122.6607",
-            "latitude": "39.5185"
+            "longitude": "-93.8811",
+            "latitude": "39.2868"
           }
         },
         {
           "point": {
-            "longitude": "-120.9527",
-            "latitude": "39.5228"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS33 KKCI 212255 SIGW OUTLOOK VALID 220055-220455 FROM 40S YQL-50NE JAC-RZS-150WSW RZS-140WSW FOT-70W TOU-40S YQL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-04-22T00:55:00Z",
-      "valid_time_to": "2022-04-22T04:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-112.8",
-            "latitude": "48.9652"
+            "longitude": "-99.7889",
+            "latitude": "39.9428"
           }
         },
         {
           "point": {
-            "longitude": "-109.9059",
-            "latitude": "44.2078"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.77",
-            "latitude": "34.51"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.5378",
-            "latitude": "33.523"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.026",
-            "latitude": "39.7457"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.3852",
-            "latitude": "48.2866"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.8",
-            "latitude": "48.9652"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS06 KKCI 211925 SFOX WS 211925 SIGMET XRAY 1 VALID UNTIL 212325 SIGMET CA NV UT AZ FROM 50NW FMG TO DTA TO 20W TBC TO EED TO 40NE LAX TO 50NW FMG OCNL SEV TURB BLW 120. DUE TO STG LOW LVL WNDS AND STG UDDFS AND LLWS. CONDS CONTG BYD 2325Z.",
-      "valid_time_from": "2022-04-21T19:25:00Z",
-      "valid_time_to": "2022-04-21T23:25:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "12000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD-SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-120.4325",
-            "latitude": "40.1182"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.51",
-            "latitude": "39.3"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.6815",
-            "latitude": "36.1193"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.47",
-            "latitude": "34.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.8603",
-            "latitude": "34.3987"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.4325",
-            "latitude": "40.1182"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS05 KKCI 211925 SLCX WS 211925 SIGMET XRAY 1 VALID UNTIL 212325 SIGMET NV UT AZ CA FROM 50NW FMG TO DTA TO 20W TBC TO EED TO 40NE LAX TO 50NW FMG OCNL SEV TURB BLW 120. DUE TO STG LOW LVL WNDS AND STG UDDFS AND LLWS. CONDS CONTG BYD 2325Z.",
-      "valid_time_from": "2022-04-21T19:25:00Z",
-      "valid_time_to": "2022-04-21T23:25:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "12000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD-SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-120.4325",
-            "latitude": "40.1182"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.51",
-            "latitude": "39.3"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.6815",
-            "latitude": "36.1193"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.47",
-            "latitude": "34.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.8603",
-            "latitude": "34.3987"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.4325",
-            "latitude": "40.1182"
+            "longitude": "-96.5319",
+            "latitude": "41.758"
           }
         }
       ]
@@ -1343,182 +2185,6 @@
       ]
     },
     {
-      "raw_text": "WAUS46 KKCI 212045 SFOT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...OR CA ID MT WY NV UT AZ AND CSTL WTRS FROM 60SSW YXH TO 50NNW ISN TO 60WSW DIK TO 40N BOY TO 20ENE HVE TO 20E LAX TO 200SSW RZS TO 140WSW PYE TO 40NW REO TO 50SW MLP TO 30S YXC TO 60SSW YXH MOD TURB BTN FL180 AND FL400. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 3...TURB OR CA ID MT WY NV UT CO AZ NM AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "18000",
-        "max_ft_msl": "40000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-111.3028",
-            "latitude": "49.0973"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1168",
-            "latitude": "48.9508"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1076",
-            "latitude": "46.4706"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.3",
-            "latitude": "44.1248"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.3074",
-            "latitude": "38.5465"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.0294",
-            "latitude": "33.9294"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.26",
-            "latitude": "31.4301"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.5674",
-            "latitude": "37.1586"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.5133",
-            "latitude": "43.0583"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.514",
-            "latitude": "46.866"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.78",
-            "latitude": "49.0969"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.3028",
-            "latitude": "49.0973"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS45 KKCI 212045 SLCT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...ID MT WY NV UT AZ OR CA AND CSTL WTRS FROM 60SSW YXH TO 50NNW ISN TO 60WSW DIK TO 40N BOY TO 20ENE HVE TO 20E LAX TO 200SSW RZS TO 140WSW PYE TO 40NW REO TO 50SW MLP TO 30S YXC TO 60SSW YXH MOD TURB BTN FL180 AND FL400. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 2...TURB ID MT WY NV UT CO AZ NM OR CA AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z. AREA 3...TURB MT WY BOUNDED BY 50NNW ISN-40SW ISN-50W MLS-40NNW GGW-50NNW ISN MOD TURB BLW 120. CONDS DVLPG AFT 03Z. CONDS ENDG BY 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "18000",
-        "max_ft_msl": "40000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-111.3028",
-            "latitude": "49.0973"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1168",
-            "latitude": "48.9508"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1076",
-            "latitude": "46.4706"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.3",
-            "latitude": "44.1248"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.3074",
-            "latitude": "38.5465"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.0294",
-            "latitude": "33.9294"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.26",
-            "latitude": "31.4301"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.5674",
-            "latitude": "37.1586"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.5133",
-            "latitude": "43.0583"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.514",
-            "latitude": "46.866"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.78",
-            "latitude": "49.0969"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.3028",
-            "latitude": "49.0973"
-          }
-        }
-      ]
-    },
-    {
       "raw_text": "WAUS41 KKCI 212045 BOST WA 212045 AIRMET TANGO UPDT 4 FOR TURB AND LLWS VALID UNTIL 220300 AIRMET TURB...ME NH VT MA RI CT NY LO NJ PA OH LE WV MD DE VA AND CSTL WTRS FROM 80NW PQI TO 30N PQI TO 20SSE HUL TO 60SSW BGR TO 60SSE ACK TO 20N CSN TO 40S HNN TO ROD TO FWA TO DXO TO 20WSW BUF TO 30ENE YYZ TO 40NNW SYR TO 30SE YOW TO 20ENE YSC TO 80NW PQI MOD TURB BTN FL240 AND FL390. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ME NH VT MA RI CT NY LO NJ PA OH LE AND CSTL WTRS BOUNDED BY 70NW PQI-40NE PQI-50SE HUL-110SSW YSJ-70ENE ACK-30SE PVD-30SSE SAX-HAR-30W PSB-20NW EWC-40NNE CLE-40NW JHW-40E YYZ- 40NW SYR-20WSW MSS-40E YSC-70NW PQI MOD TURB BTN FL240 AND FL390. CONDS CONTG THRU 09Z. AREA 2...TURB ME NH VT MA RI CT NY LO NJ PA LE AND CSTL WTRS BOUNDED BY 70NW PQI-40NE PQI-80SSW YSJ-60SE BGR-60SSW ACK-40SSW HTO-20SE HNK-20SSE PSB-30NW EWC-20S YYZ-60SSW YOW-30ESE YOW-40E YSC-70NW PQI MOD TURB BLW 080. CONDS CONTG THRU 09Z.",
       "valid_time_from": "2022-04-21T20:45:00Z",
       "valid_time_to": "2022-04-22T03:00:00Z",
@@ -1631,88 +2297,6 @@
       ]
     },
     {
-      "raw_text": "WAUS45 KKCI 212045 SLCT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...CO AZ NM CA FROM 50SE HBU TO 20NW ABQ TO 50SW ABQ TO 60S SJN TO 70SW DRK TO BZA TO 40ESE MZB TO 40E LAX TO 40NNE DRK TO 30W RSK TO 50SE HBU MOD TURB BLW 100. CONDS CONTG BYD 03Z ENDG 03-06Z. OTLK VALID 0300-0900Z AREA 1...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 2...TURB ID MT WY NV UT CO AZ NM OR CA AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z. AREA 3...TURB MT WY BOUNDED BY 50NNW ISN-40SW ISN-50W MLS-40NNW GGW-50NNW ISN MOD TURB BLW 120. CONDS DVLPG AFT 03Z. CONDS ENDG BY 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "10000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-106.2918",
-            "latitude": "37.8569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.1079",
-            "latitude": "35.2747"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.5363",
-            "latitude": "34.4471"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.14",
-            "latitude": "33.4229"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.4745",
-            "latitude": "33.8702"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.6",
-            "latitude": "32.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.5016",
-            "latitude": "32.5235"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.6288",
-            "latitude": "33.9274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.1683",
-            "latitude": "35.3138"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.7278",
-            "latitude": "36.7484"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.2918",
-            "latitude": "37.8569"
-          }
-        }
-      ]
-    },
-    {
       "raw_text": "WAUS43 KKCI 212045 CHIT WA 212045 AIRMET TANGO UPDT 5 FOR TURB AND LLWS VALID UNTIL 220300 AIRMET TURB...MN WI LM LS MI LH IL IN FROM 80SE YWG TO 50WSW YQT TO 70ESE YQT TO SSM TO 60NW YVV TO 30ENE DXO TO FWA TO ORD TO 30WNW BRD TO 80SE YWG MOD TURB BTN FL240 AND FL390. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ND SD NE MN BOUNDED BY 60SW YWG-50SSE YWG-40NNE ABR-50SSE DIK-90SE MLS-50NNW ISN-60SW YWG MOD TURB BTN FL180 AND FL400. CONDS ENDG BY 09Z. AREA 2...TURB ND SD NE KS MN IA MO IL BOUNDED BY 80SW YWG-60SSW ODI-60SSE IOW-60WSW IRK-50W OBH-20SSW SNY-70SW RAP-50NNW ISN-80SW YWG MOD TURB BLW 120. CONDS CONTG THRU 09Z.",
       "valid_time_from": "2022-04-21T20:45:00Z",
       "valid_time_to": "2022-04-22T03:00:00Z",
@@ -1784,86 +2368,6 @@
           "point": {
             "longitude": "-95.7984",
             "latitude": "48.951"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS46 KKCI 212045 SFOT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET STG SFC WNDS...CA NV UT AZ FROM 40E ELY TO DTA TO 30SSE BCE TO 50NE LAS TO 50SSW LAS TO 50NE LAX TO 30SE EHF TO 80S FMG TO 70SE FMG TO 50SW ILC TO 40E ELY SUSTAINED SURFACE WINDS GTR THAN 30KT EXP. CONDS ENDG 00-03Z. LLWS POTENTIAL...CA BOUNDED BY 40N FMG-50SW BTY-40ENE EHF-50NNE SAC-40N FMG LLWS EXP. CONDS ENDG 00-03Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 3...TURB OR CA ID MT WY NV UT CO AZ NM AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0"
-      },
-      "hazard": {
-        "type": "TURB"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-113.991",
-            "latitude": "39.2968"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.51",
-            "latitude": "39.3"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.0582",
-            "latitude": "37.225"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.4235",
-            "latitude": "36.6685"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.5518",
-            "latitude": "35.3075"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.713",
-            "latitude": "34.5187"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.6651",
-            "latitude": "35.1235"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.66",
-            "latitude": "38.2005"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.6019",
-            "latitude": "38.6994"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.1362",
-            "latitude": "37.6569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.991",
-            "latitude": "39.2968"
           }
         }
       ]
@@ -1952,300 +2456,6 @@
           "point": {
             "longitude": "-87.2573",
             "latitude": "47.7773"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS46 KKCI 212045 SFOT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...OR CA ID MT WY NV UT CO AZ NM AND CSTL WTRS FROM 40SW ISN TO 70SW RAP TO BFF TO 40ESE AKO TO 30W PUB TO 30W RSK TO 40NNE DRK TO 40E LAX TO 20N RZS TO 160WSW RZS TO 70SW PYE TO 60NE RBL TO 20S LKT TO 40SSW BIL TO 40SW ISN MOD TURB BLW FL180. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 3...TURB OR CA ID MT WY NV UT CO AZ NM AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "18000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-104.3285",
-            "latitude": "47.7078"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1418",
-            "latitude": "43.1486"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.48",
-            "latitude": "41.89"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.3794",
-            "latitude": "39.9028"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.0709",
-            "latitude": "38.2883"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.7278",
-            "latitude": "36.7484"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.1683",
-            "latitude": "35.3138"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.6288",
-            "latitude": "33.9274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.77",
-            "latitude": "34.8424"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.7148",
-            "latitude": "33.457"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.9074",
-            "latitude": "37.2497"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.3086",
-            "latitude": "40.8014"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.08",
-            "latitude": "44.6876"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.991",
-            "latitude": "45.1953"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.3285",
-            "latitude": "47.7078"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS45 KKCI 212045 SLCT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...ID MT WY NV UT CO AZ NM OR CA AND CSTL WTRS FROM 40SW ISN TO 70SW RAP TO BFF TO 40ESE AKO TO 30W PUB TO 30W RSK TO 40NNE DRK TO 40E LAX TO 20N RZS TO 160WSW RZS TO 70SW PYE TO 60NE RBL TO 20S LKT TO 40SSW BIL TO 40SW ISN MOD TURB BLW FL180. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 2...TURB ID MT WY NV UT CO AZ NM OR CA AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z. AREA 3...TURB MT WY BOUNDED BY 50NNW ISN-40SW ISN-50W MLS-40NNW GGW-50NNW ISN MOD TURB BLW 120. CONDS DVLPG AFT 03Z. CONDS ENDG BY 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "18000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-104.3285",
-            "latitude": "47.7078"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1418",
-            "latitude": "43.1486"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.48",
-            "latitude": "41.89"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.3794",
-            "latitude": "39.9028"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.0709",
-            "latitude": "38.2883"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.7278",
-            "latitude": "36.7484"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.1683",
-            "latitude": "35.3138"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.6288",
-            "latitude": "33.9274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.77",
-            "latitude": "34.8424"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.7148",
-            "latitude": "33.457"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.9074",
-            "latitude": "37.2497"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.3086",
-            "latitude": "40.8014"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.08",
-            "latitude": "44.6876"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.991",
-            "latitude": "45.1953"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.3285",
-            "latitude": "47.7078"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS46 KKCI 212045 SFOT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET TURB...CA CO AZ NM FROM 50SE HBU TO 20NW ABQ TO 50SW ABQ TO 60S SJN TO 70SW DRK TO BZA TO 40ESE MZB TO 40E LAX TO 40NNE DRK TO 30W RSK TO 50SE HBU MOD TURB BLW 100. CONDS CONTG BYD 03Z ENDG 03-06Z. OTLK VALID 0300-0900Z AREA 1...TURB OR CA CSTL WTRS BOUNDED BY 110WNW ONP-70WSW SNS-130WSW SNS-130W FOT-110WNW ONP MOD TURB BTN FL220 AND FL370. CONDS DVLPG 06-09Z. CONDS CONTG THRU 09Z. AREA 2...TURB OR CA ID MT WY NV UT CO AZ AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 3...TURB OR CA ID MT WY NV UT CO AZ NM AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "10000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-106.2918",
-            "latitude": "37.8569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.1079",
-            "latitude": "35.2747"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.5363",
-            "latitude": "34.4471"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.14",
-            "latitude": "33.4229"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.4745",
-            "latitude": "33.8702"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.6",
-            "latitude": "32.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.5016",
-            "latitude": "32.5235"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.6288",
-            "latitude": "33.9274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.1683",
-            "latitude": "35.3138"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.7278",
-            "latitude": "36.7484"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.2918",
-            "latitude": "37.8569"
           }
         }
       ]
@@ -2654,86 +2864,6 @@
           "point": {
             "longitude": "-103.8219",
             "latitude": "48.4869"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS45 KKCI 212045 SLCT WA 212045 AIRMET TANGO UPDT 5 FOR TURB STG WNDS AND LLWS VALID UNTIL 220300 AIRMET STG SFC WNDS...NV UT AZ CA FROM 40E ELY TO DTA TO 30SSE BCE TO 50NE LAS TO 50SSW LAS TO 50NE LAX TO 30SE EHF TO 80S FMG TO 70SE FMG TO 50SW ILC TO 40E ELY SUSTAINED SURFACE WINDS GTR THAN 30KT EXP. CONDS ENDG 00-03Z. LLWS POTENTIAL...ID MT WY UT BOUNDED BY 60SSW LWT-BIL-BOY-MTU-SLC-DBS-60SSW LWT LLWS EXP. CONDS DVLPG 21-00Z. CONDS CONTG BYD 03Z THRU 09Z. LLWS POTENTIAL...MT WY BOUNDED BY 40SW ISN-60WNW RAP-50SW MLS-40SW ISN LLWS EXP. CONDS DVLPG 00-03Z. CONDS CONTG BYD 03Z ENDG BY 09Z. OTLK VALID 0300-0900Z AREA 1...TURB ID MT WY NV UT CO AZ OR CA AND CSTL WTRS BOUNDED BY 40SSE YXC-50NNW ISN-90SE MLS-30W CHE-20NNE HVE-80SW BCE-30SE BZA-20S MZB-220SW MZB-130WSW SNS-60WSW SNS-40SW FMG- 30SSE LKV-40SW MLP-40SSE YXC MOD TURB BTN FL180 AND FL400. CONDS CONTG THRU 09Z. AREA 2...TURB ID MT WY NV UT CO AZ NM OR CA AND CSTL WTRS BOUNDED BY 40SW ISN-50W DIK-70SW RAP-20SSW SNY-30NNW ABQ-50SSE SSO-50S TUS-30SE BZA-30SE MZB-20ESE LAX-40WSW RZS-20S PYE-90SSW REO-40WSW TWF-30SSW LKT-40SW BIL-40SW ISN MOD TURB BLW FL180. CONDS CONTG THRU 09Z. AREA 3...TURB MT WY BOUNDED BY 50NNW ISN-40SW ISN-50W MLS-40NNW GGW-50NNW ISN MOD TURB BLW 120. CONDS DVLPG AFT 03Z. CONDS ENDG BY 09Z.",
-      "valid_time_from": "2022-04-21T20:45:00Z",
-      "valid_time_to": "2022-04-22T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0"
-      },
-      "hazard": {
-        "type": "TURB"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-113.991",
-            "latitude": "39.2968"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.51",
-            "latitude": "39.3"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.0582",
-            "latitude": "37.225"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.4235",
-            "latitude": "36.6685"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.5518",
-            "latitude": "35.3075"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.713",
-            "latitude": "34.5187"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.6651",
-            "latitude": "35.1235"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.66",
-            "latitude": "38.2005"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.6019",
-            "latitude": "38.6994"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.1362",
-            "latitude": "37.6569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.991",
-            "latitude": "39.2968"
           }
         }
       ]
