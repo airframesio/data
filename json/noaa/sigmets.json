@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 34,
+  "count": 35,
   "airsigmets": [
     {
       "raw_text": "WAUS41 KKCI 130845 BOST WA 130845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 131500 AIRMET TURB...ME NH VT MA RI CT NY NJ PA MD DE VA AND CSTL WTRS FROM 70NW PQI TO 60NE PQI TO 50WSW YSJ TO 200S ACK TO 160SE SIE TO 50ESE ECG TO 30ESE EMI TO 50ESE MSS TO 70NNE MPV TO 70NW PQI MOD TURB BTN FL240 AND FL390. CONDS CONTG BYD 15Z THRU 21Z.",
@@ -1632,9 +1632,167 @@
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 131255 SIGC OUTLOOK VALID 131455-131855 FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T14:55:00Z",
-      "valid_time_to": "2022-08-13T18:55:00Z",
+      "raw_text": "WAUS43 KKCI 131152 AAA CHIZ WA 131152 AMD AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 131500 AIRMET ICE...NE IA MO WI IL...UPDT FROM 20NNE MCW TO 20SSE DLL TO 60SW BDF TO 30NNW AXC TO 40E STL TO 20NNW PWE TO 60NW OVR TO 20NNE MCW MOD ICE BTN 150 AND FL250. CONDS CONTG BYD 15Z ENDG 15-18Z. ...NEW AIRMET... FRZLVL...RANGING FROM 120-180 ACRS AREA 160 ALG 60WSW RAP-20ENE ABR-40W MSP-40SSE RWF-70ESE ONL-40E OBH-70SSE SGF",
+      "valid_time_from": "2022-08-13T11:52:00Z",
+      "valid_time_to": "2022-08-13T15:00:00Z",
+      "altitude": {
+        "min_ft_msl": "15000",
+        "max_ft_msl": "25000"
+      },
+      "hazard": {
+        "type": "ICE",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-93.1549",
+            "latitude": "43.3969"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.5854",
+            "latitude": "43.2428"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-90.5166",
+            "latitude": "40.4512"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.102",
+            "latitude": "40.1945"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.6263",
+            "latitude": "38.8569"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-96.3773",
+            "latitude": "40.507"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-96.6869",
+            "latitude": "41.8712"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.1549",
+            "latitude": "43.3969"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 131355 SIGE CONVECTIVE SIGMET 35E VALID UNTIL 1555Z SC GA CSTL WTRS FROM 120ESE CHS-150SE CHS-50ENE CRG-30S SAV-120ESE CHS AREA TS MOV FROM 29010KT. TOPS TO FL440. OUTLOOK VALID 131555-131955 FROM 170E ECG-180ESE ECG-150SSE ILM-170E PBI-40NE PBI-OMN-SAV-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
+      "altitude": {
+        "max_ft_msl": "44000"
+      },
+      "movement_dir_degrees": "290",
+      "movement_speed_kt": "10",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-77.8648",
+            "latitude": "32.108"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.9778",
+            "latitude": "31.1071"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-80.6128",
+            "latitude": "30.6566"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-81.11",
+            "latitude": "31.6569"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.8648",
+            "latitude": "32.108"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS33 KKCI 131355 SIGW CONVECTIVE SIGMET 70W VALID UNTIL 1555Z MT ID FROM 70N LKT-50NNE LKT-10WNW LKT-40WNW LKT-70N LKT AREA TS MOV FROM 23015KT. TOPS ABV FL450. OUTLOOK VALID 131555-131955 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
+      "altitude": {
+        "max_ft_msl": "60000"
+      },
+      "movement_dir_degrees": "230",
+      "movement_speed_kt": "15",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-114.08",
+            "latitude": "46.1878"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.6215",
+            "latitude": "45.7909"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.3033",
+            "latitude": "45.0851"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.9527",
+            "latitude": "45.2711"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.08",
+            "latitude": "46.1878"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 131355 SIGC OUTLOOK VALID 131555-131955 FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T15:55:00Z",
+      "valid_time_to": "2022-08-13T19:55:00Z",
       "hazard": {
         "type": "CONVECTIVE"
       },
@@ -1705,58 +1863,11 @@
       }
     },
     {
-      "raw_text": "WSUS32 KKCI 131255 SIGC CONVECTIVE SIGMET 30C VALID UNTIL 1455Z MI WI LM FROM 50W RHI-60SSE SAW-20NE GRR-30N BAE-50W RHI AREA TS MOV FROM 29030KT. TOPS ABV FL450. OUTLOOK VALID 131455-131855 AREA 1...FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T12:55:00Z",
-      "valid_time_to": "2022-08-13T14:55:00Z",
+      "raw_text": "WSUS33 KKCI 131355 SIGW CONVECTIVE SIGMET 69W VALID UNTIL 1555Z UT ID FROM 40E MLD-60SW BPI-20NNE SLC-30NW SLC-40E MLD AREA TS MOV FROM 23025KT. TOPS ABV FL450. OUTLOOK VALID 131555-131955 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
       "altitude": {
         "max_ft_msl": "60000"
-      },
-      "movement_dir_degrees": "290",
-      "movement_speed_kt": "30",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-90.6446",
-            "latitude": "45.6238"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.8562",
-            "latitude": "45.4375"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.1785",
-            "latitude": "43.0246"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.28",
-            "latitude": "43.6231"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.6446",
-            "latitude": "45.6238"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS33 KKCI 131255 SIGW CONVECTIVE SIGMET 68W VALID UNTIL 1455Z UT ID FROM 30ESE MLD-60SW BPI-20NNE SLC-30WNW SLC-30ESE MLD AREA TS MOV FROM 23025KT. TOPS TO FL430. OUTLOOK VALID 131455-131855 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2022-08-13T12:55:00Z",
-      "valid_time_to": "2022-08-13T14:55:00Z",
-      "altitude": {
-        "max_ft_msl": "43000"
       },
       "movement_dir_degrees": "230",
       "movement_speed_kt": "25",
@@ -1768,8 +1879,8 @@
       "area": [
         {
           "point": {
-            "longitude": "-111.8245",
-            "latitude": "42.0058"
+            "longitude": "-111.5527",
+            "latitude": "42.1965"
           }
         },
         {
@@ -1786,229 +1897,22 @@
         },
         {
           "point": {
-            "longitude": "-112.5962",
-            "latitude": "41.0409"
+            "longitude": "-112.4528",
+            "latitude": "41.2048"
           }
         },
         {
           "point": {
-            "longitude": "-111.8245",
-            "latitude": "42.0058"
+            "longitude": "-111.5527",
+            "latitude": "42.1965"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 131255 SIGC OUTLOOK VALID 131455-131855 FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T14:55:00Z",
-      "valid_time_to": "2022-08-13T18:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-87.4",
-            "latitude": "46.36"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.39",
-            "latitude": "44.45"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.19",
-            "latitude": "40.98"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.9862",
-            "latitude": "40.8254"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.0812",
-            "latitude": "41.7837"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.4",
-            "latitude": "46.36"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS31 KKCI 131255 SIGE CONVECTIVE SIGMET 33E VALID UNTIL 1455Z SC GA CSTL WTRS FROM 110ESE CHS-140SE CHS-50ENE CRG-30S SAV-110ESE CHS AREA TS MOV FROM 29010KT. TOPS TO FL440. OUTLOOK VALID 131455-131855 FROM 170E ECG-180ESE ECG-150SSE ILM-170E PBI-40NE PBI-OMN-SAV-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T12:55:00Z",
-      "valid_time_to": "2022-08-13T14:55:00Z",
-      "altitude": {
-        "max_ft_msl": "44000"
-      },
-      "movement_dir_degrees": "290",
-      "movement_speed_kt": "10",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-78.0397",
-            "latitude": "32.1728"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.1162",
-            "latitude": "31.23"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.6128",
-            "latitude": "30.6566"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.11",
-            "latitude": "31.6569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.0397",
-            "latitude": "32.1728"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS31 KKCI 131255 SIGE CONVECTIVE SIGMET 34E VALID UNTIL 1455Z NC SC CSTL WTRS FROM 160SE ECG-140SSE ILM-80SSE ILM-100ESE ILM-160SE ECG AREA EMBD TS MOV FROM 29010KT. TOPS ABV FL450. OUTLOOK VALID 131455-131855 FROM 170E ECG-180ESE ECG-150SSE ILM-170E PBI-40NE PBI-OMN-SAV-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T12:55:00Z",
-      "valid_time_to": "2022-08-13T14:55:00Z",
-      "altitude": {
-        "max_ft_msl": "60000"
-      },
-      "movement_dir_degrees": "290",
-      "movement_speed_kt": "10",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-73.9029",
-            "latitude": "34.348"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.8181",
-            "latitude": "32.1959"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.2626",
-            "latitude": "33.1202"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.0244",
-            "latitude": "33.7001"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-73.9029",
-            "latitude": "34.348"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS43 KKCI 131152 AAA CHIZ WA 131152 AMD AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 131500 AIRMET ICE...NE IA MO WI IL...UPDT FROM 20NNE MCW TO 20SSE DLL TO 60SW BDF TO 30NNW AXC TO 40E STL TO 20NNW PWE TO 60NW OVR TO 20NNE MCW MOD ICE BTN 150 AND FL250. CONDS CONTG BYD 15Z ENDG 15-18Z. ...NEW AIRMET... FRZLVL...RANGING FROM 120-180 ACRS AREA 160 ALG 60WSW RAP-20ENE ABR-40W MSP-40SSE RWF-70ESE ONL-40E OBH-70SSE SGF",
-      "valid_time_from": "2022-08-13T11:52:00Z",
-      "valid_time_to": "2022-08-13T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "15000",
-        "max_ft_msl": "25000"
-      },
-      "hazard": {
-        "type": "ICE",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-93.1549",
-            "latitude": "43.3969"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.5854",
-            "latitude": "43.2428"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.5166",
-            "latitude": "40.4512"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.102",
-            "latitude": "40.1945"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.6263",
-            "latitude": "38.8569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.3773",
-            "latitude": "40.507"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.6869",
-            "latitude": "41.8712"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.1549",
-            "latitude": "43.3969"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS31 KKCI 131255 SIGE OUTLOOK VALID 131455-131855 FROM 170E ECG-180ESE ECG-150SSE ILM-170E PBI-40NE PBI-OMN-SAV-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T14:55:00Z",
-      "valid_time_to": "2022-08-13T18:55:00Z",
+      "raw_text": "WSUS31 KKCI 131355 SIGE OUTLOOK VALID 131555-131955 FROM 170E ECG-180ESE ECG-150SSE ILM-170E PBI-40NE PBI-OMN-SAV-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T15:55:00Z",
+      "valid_time_to": "2022-08-13T19:55:00Z",
       "hazard": {
         "type": "CONVECTIVE"
       },
@@ -2067,9 +1971,58 @@
       }
     },
     {
-      "raw_text": "WSUS32 KKCI 131255 SIGC CONVECTIVE SIGMET 31C VALID UNTIL 1455Z WI MN IA FROM 20ENE ODI-20S DLL-20NNW DBQ-30SW ODI-20ENE ODI AREA TS MOV FROM 29030KT. TOPS ABV FL450. OUTLOOK VALID 131455-131855 AREA 1...FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T12:55:00Z",
-      "valid_time_to": "2022-08-13T14:55:00Z",
+      "raw_text": "WSUS32 KKCI 131355 SIGC OUTLOOK VALID 131555-131955 FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T15:55:00Z",
+      "valid_time_to": "2022-08-13T19:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-87.4",
+            "latitude": "46.36"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.39",
+            "latitude": "44.45"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-85.19",
+            "latitude": "40.98"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.9862",
+            "latitude": "40.8254"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-96.0812",
+            "latitude": "41.7837"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-87.4",
+            "latitude": "46.36"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS32 KKCI 131355 SIGC CONVECTIVE SIGMET 34C VALID UNTIL 1555Z WI IL MN IA FROM 40E ODI-30SE DLL-10SSE DBQ-40SSW ODI-40E ODI AREA TS MOV FROM 29030KT. TOPS ABV FL450. OUTLOOK VALID 131555-131955 AREA 1...FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
       "altitude": {
         "max_ft_msl": "60000"
       },
@@ -2083,40 +2036,40 @@
       "area": [
         {
           "point": {
-            "longitude": "-91.0429",
-            "latitude": "44.0364"
+            "longitude": "-90.5473",
+            "latitude": "43.9063"
           }
         },
         {
           "point": {
-            "longitude": "-89.76",
-            "latitude": "43.2176"
+            "longitude": "-89.2721",
+            "latitude": "43.1932"
           }
         },
         {
           "point": {
-            "longitude": "-90.8831",
-            "latitude": "42.7069"
+            "longitude": "-90.6218",
+            "latitude": "42.2423"
           }
         },
         {
           "point": {
-            "longitude": "-91.9608",
-            "latitude": "43.5532"
+            "longitude": "-91.8195",
+            "latitude": "43.2953"
           }
         },
         {
           "point": {
-            "longitude": "-91.0429",
-            "latitude": "44.0364"
+            "longitude": "-90.5473",
+            "latitude": "43.9063"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 131255 SIGC CONVECTIVE SIGMET 32C VALID UNTIL 1455Z TX AND CSTL WTRS FROM 70SE IAH-70SSE PSX-20S CRP-20SW PSX-70SE IAH AREA TS MOV FROM 06010KT. TOPS ABV FL450. OUTLOOK VALID 131455-131855 AREA 1...FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-08-13T12:55:00Z",
-      "valid_time_to": "2022-08-13T14:55:00Z",
+      "raw_text": "WSUS32 KKCI 131355 SIGC CONVECTIVE SIGMET 35C VALID UNTIL 1555Z TX AND CSTL WTRS FROM 70SE IAH-100SSE PSX-40S CRP-20SW PSX-70SE IAH AREA TS MOV FROM 06010KT. TOPS ABV FL450. OUTLOOK VALID 131555-131955 AREA 1...FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
       "altitude": {
         "max_ft_msl": "60000"
       },
@@ -2136,14 +2089,14 @@
         },
         {
           "point": {
-            "longitude": "-95.8054",
-            "latitude": "27.6801"
+            "longitude": "-95.5949",
+            "latitude": "27.2227"
           }
         },
         {
           "point": {
             "longitude": "-97.45",
-            "latitude": "27.5676"
+            "latitude": "27.2352"
           }
         },
         {
@@ -2156,6 +2109,100 @@
           "point": {
             "longitude": "-94.4047",
             "latitude": "29.1309"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 131355 SIGE CONVECTIVE SIGMET 36E VALID UNTIL 1555Z FL GA CSTL WTRS FROM 210SE CHS-200ENE TRV-60ENE TRV-100E OMN-210SE CHS AREA EMBD TS MOV FROM 29010KT. TOPS ABV FL450. OUTLOOK VALID 131555-131955 FROM 170E ECG-180ESE ECG-150SSE ILM-170E PBI-40NE PBI-OMN-SAV-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
+      "altitude": {
+        "max_ft_msl": "60000"
+      },
+      "movement_dir_degrees": "290",
+      "movement_speed_kt": "10",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-77.1762",
+            "latitude": "30.3863"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.9819",
+            "latitude": "28.9077"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-79.4461",
+            "latitude": "28.0577"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-79.2045",
+            "latitude": "29.2865"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.1762",
+            "latitude": "30.3863"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 131355 SIGC CONVECTIVE SIGMET 33C VALID UNTIL 1555Z MI WI LM FROM 60SSE SAW-20NE GRR-30E BAE-40WSW RHI-60SSE SAW AREA TS MOV FROM 29030KT. TOPS ABV FL450. OUTLOOK VALID 131555-131955 AREA 1...FROM SAW-ASP-FWA-40SSW DSM-40NNW OVR-SAW WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM LCH-HRV-60S LEV-120SSW LCH-100SE PSX-80E BRO-BRO-CRP-40NNE PSX-LCH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-08-13T13:55:00Z",
+      "valid_time_to": "2022-08-13T15:55:00Z",
+      "altitude": {
+        "max_ft_msl": "60000"
+      },
+      "movement_dir_degrees": "290",
+      "movement_speed_kt": "30",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-86.8562",
+            "latitude": "45.4375"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-85.1785",
+            "latitude": "43.0246"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-87.5908",
+            "latitude": "43.1179"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-90.3243",
+            "latitude": "45.3723"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-86.8562",
+            "latitude": "45.4375"
           }
         }
       ]
