@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 38,
+  "count": 35,
   "airsigmets": [
     {
       "raw_text": "WAUS43 KKCI 150845 CHIZ WA 150845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 151500 AIRMET ICE...ND SD NE KS MN IA FROM 40N MOT TO 90SW YWG TO 20E BJI TO 30W BRD TO 60SSW FAR TO 20NNW SLN TO 50SSE GLD TO 70SW RAP TO 60SSW ISN TO 40N MOT MOD ICE BTN FRZLVL AND FL240. FRZLVL 120-150. CONDS CONTG BYD 15Z THRU 21Z. FRZLVL...RANGING FROM 120-155 ACRS AREA",
@@ -359,13 +359,109 @@
       }
     },
     {
-      "raw_text": "WSUS31 KKCI 150855 SIGE CONVECTIVE SIGMET 21E VALID UNTIL 1055Z NC SC CSTL WTRS FROM 90SE ECG-190ESE ECG-140SSE ILM-80S ILM-90SE ECG AREA TS MOV FROM 20010KT. TOPS TO FL450. REF INTL SIGMET MIKE SERIES. OUTLOOK VALID 151055-151455 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "45000"
+      "raw_text": "WSUS32 KKCI 150955 SIGC OUTLOOK VALID 151155-151555 FROM ONL-70N SLN-60SE HLC-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T11:55:00Z",
+      "valid_time_to": "2022-09-15T15:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
       },
-      "movement_dir_degrees": "200",
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-98.69",
+            "latitude": "42.47"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.62",
+            "latitude": "40.0978"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.3284",
+            "latitude": "38.5514"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.1526",
+            "latitude": "39.7448"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.1889",
+            "latitude": "41.688"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-98.69",
+            "latitude": "42.47"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS32 KKCI 150955 SIGC CONVECTIVE SIGMET 41C VALID UNTIL 1155Z KS NE CO FROM 50E LBF-70NW SLN-30ENE HLC-40ESE SNY-50E LBF AREA TS MOV FROM 21025KT. TOPS TO FL400. OUTLOOK VALID 151155-151555 AREA 1...FROM ONL-70N SLN-60SE HLC-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T09:55:00Z",
+      "valid_time_to": "2022-09-15T11:55:00Z",
+      "altitude": {
+        "max_ft_msl": "40000"
+      },
+      "movement_dir_degrees": "210",
+      "movement_speed_kt": "25",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-99.6109",
+            "latitude": "41.1247"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-98.694",
+            "latitude": "39.7509"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.6281",
+            "latitude": "39.451"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.1682",
+            "latitude": "40.8428"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.6109",
+            "latitude": "41.1247"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 150955 SIGE CONVECTIVE SIGMET 25E VALID UNTIL 1155Z FL CSTL WTRS 200ENE TRV ISOL EMBD TS D40 MOV FROM 23010KT. TOPS ABV FL450. REF INTL SIGMET MIKE SERIES. OUTLOOK VALID 151155-151555 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T09:55:00Z",
+      "valid_time_to": "2022-09-15T11:55:00Z",
+      "altitude": {
+        "max_ft_msl": "60000"
+      },
+      "movement_dir_degrees": "230",
       "movement_speed_kt": "10",
       "hazard": {
         "type": "CONVECTIVE",
@@ -375,8 +471,173 @@
       "area": [
         {
           "point": {
-            "longitude": "-74.8822",
-            "latitude": "35.1822"
+            "longitude": "-76.9819",
+            "latitude": "29.2404"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.7126",
+            "latitude": "29.1427"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.6018",
+            "latitude": "28.9071"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.7138",
+            "latitude": "28.6721"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.9819",
+            "latitude": "28.5749"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.2501",
+            "latitude": "28.6721"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.362",
+            "latitude": "28.9071"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.2513",
+            "latitude": "29.1427"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.9819",
+            "latitude": "29.2404"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 150955 SIGC CONVECTIVE SIGMET 40C VALID UNTIL 1155Z MN SD ND FROM BJI-20ESE BRD-70N RWF-30WSW ABR-50W FAR-BJI AREA TS MOV FROM 22025KT. TOPS TO FL410. OUTLOOK VALID 151155-151555 AREA 1...FROM ONL-70N SLN-60SE HLC-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T09:55:00Z",
+      "valid_time_to": "2022-09-15T11:55:00Z",
+      "altitude": {
+        "max_ft_msl": "41000"
+      },
+      "movement_dir_degrees": "220",
+      "movement_speed_kt": "25",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-95.02",
+            "latitude": "47.58"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.5862",
+            "latitude": "46.2219"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.13",
+            "latitude": "45.6378"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.0299",
+            "latitude": "45.2256"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-98.0692",
+            "latitude": "46.7435"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.02",
+            "latitude": "47.58"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 150955 SIGE CONVECTIVE SIGMET 24E VALID UNTIL 1155Z NC SC GA CSTL WTRS FROM 190ESE ECG-140SSE ILM-80SE CHS-100E ILM-190ESE ECG AREA TS MOV FROM 21010KT. TOPS TO FL450. REF INTL SIGMET MIKE SERIES. OUTLOOK VALID 151155-151555 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T09:55:00Z",
+      "valid_time_to": "2022-09-15T11:55:00Z",
+      "altitude": {
+        "max_ft_msl": "45000"
+      },
+      "movement_dir_degrees": "210",
+      "movement_speed_kt": "10",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-72.6138",
+            "latitude": "34.9867"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.8181",
+            "latitude": "32.1959"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.9321",
+            "latitude": "31.945"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-75.8573",
+            "latitude": "34.3335"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-72.6138",
+            "latitude": "34.9867"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 150955 SIGE OUTLOOK VALID 151155-151555 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T11:55:00Z",
+      "valid_time_to": "2022-09-15T15:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-72.6727",
+            "latitude": "36.1988"
           }
         },
         {
@@ -393,27 +654,65 @@
         },
         {
           "point": {
-            "longitude": "-77.87",
-            "latitude": "33.0205"
+            "longitude": "-76.4344",
+            "latitude": "27.9703"
           }
         },
         {
           "point": {
-            "longitude": "-74.8822",
-            "latitude": "35.1822"
+            "longitude": "-76.9238",
+            "latitude": "26.6449"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.6021",
+            "latitude": "26.6722"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.2437",
+            "latitude": "23.9054"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.1453",
+            "latitude": "24.0753"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.4217",
+            "latitude": "27.3875"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-86.68",
+            "latitude": "27.3356"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-72.6727",
+            "latitude": "36.1988"
           }
         }
-      ]
+      ],
+      "altitude": {
+      }
     },
     {
-      "raw_text": "WSUS31 KKCI 150855 SIGE CONVECTIVE SIGMET 22E VALID UNTIL 1055Z FL CSTL WTRS FROM 230ENE TRV-120ENE TRV LINE TS 40 NM WIDE MOV FROM 23010KT. TOPS ABV FL450. REF INTL SIGMET MIKE SERIES. OUTLOOK VALID 151055-151455 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
+      "raw_text": "WSUS32 KKCI 150955 SIGC CONVECTIVE SIGMET 39C VALID UNTIL 1155Z MN ND FROM 80WNW INL-30W BJI-30S GFK-60SSW YWG-80WNW INL AREA TS MOV FROM 22025KT. TOPS TO FL450. OUTLOOK VALID 151155-151555 AREA 1...FROM ONL-70N SLN-60SE HLC-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T09:55:00Z",
+      "valid_time_to": "2022-09-15T11:55:00Z",
       "altitude": {
-        "max_ft_msl": "60000"
+        "max_ft_msl": "45000"
       },
-      "movement_dir_degrees": "230",
-      "movement_speed_kt": "10",
+      "movement_dir_degrees": "220",
+      "movement_speed_kt": "25",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "LT-MOD"
@@ -422,40 +721,211 @@
       "area": [
         {
           "point": {
-            "longitude": "-76.5782",
-            "latitude": "29.397"
+            "longitude": "-95.2748",
+            "latitude": "49.0637"
           }
         },
         {
           "point": {
-            "longitude": "-78.5282",
-            "latitude": "28.7388"
+            "longitude": "-95.7657",
+            "latitude": "47.5776"
           }
         },
         {
           "point": {
-            "longitude": "-78.2623",
-            "latitude": "28.1158"
+            "longitude": "-97.19",
+            "latitude": "47.4469"
           }
         },
         {
           "point": {
-            "longitude": "-76.3105",
-            "latitude": "28.774"
+            "longitude": "-97.8113",
+            "latitude": "48.9773"
           }
         },
         {
           "point": {
-            "longitude": "-76.5782",
-            "latitude": "29.397"
+            "longitude": "-95.2748",
+            "latitude": "49.0637"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS33 KKCI 150855 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 151055-151455 FROM 50E BOI-60WNW LAR-50S HBU-60E TBC-OAL-50E BOI WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
+      "raw_text": "WSUS32 KKCI 150955 SIGC OUTLOOK VALID 151155-151555 FROM ONL-70N SLN-60SE HLC-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T11:55:00Z",
+      "valid_time_to": "2022-09-15T15:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-100.0293",
+            "latitude": "49.079"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-94.8027",
+            "latitude": "48.9431"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.3955",
+            "latitude": "48.5656"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-91.5073",
+            "latitude": "47.268"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.1833",
+            "latitude": "45.7561"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-96.78",
+            "latitude": "44.3148"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-98.37",
+            "latitude": "46.2554"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-100.1222",
+            "latitude": "45.8475"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-101.351",
+            "latitude": "46.9605"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-100.0293",
+            "latitude": "49.079"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS32 KKCI 150955 SIGC OUTLOOK VALID 151155-151555 FROM ONL-70N SLN-60SE HLC-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T11:55:00Z",
+      "valid_time_to": "2022-09-15T15:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-95.35",
+            "latitude": "29.1246"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.5641",
+            "latitude": "28.7089"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.8974",
+            "latitude": "28.1138"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.112",
+            "latitude": "27.6939"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.35",
+            "latitude": "29.1246"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS33 KKCI 150955 SIGW OUTLOOK VALID 151155-151555 FROM 50E BOI-60WNW LAR-HBU-50NW DVC-MTU-70NE BAM-50E BOI WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T11:55:00Z",
+      "valid_time_to": "2022-09-15T15:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-115.0374",
+            "latitude": "43.5442"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.954",
+            "latitude": "41.705"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.04",
+            "latitude": "38.45"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.6838",
+            "latitude": "38.3983"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.13",
+            "latitude": "40.15"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.8193",
+            "latitude": "41.3906"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.0374",
+            "latitude": "43.5442"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS33 KKCI 150955 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 151155-151555 FROM 50E BOI-60WNW LAR-HBU-50NW DVC-MTU-70NE BAM-50E BOI WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
+      "valid_time_from": "2022-09-15T09:55:00Z",
+      "valid_time_to": "2022-09-15T11:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -681,643 +1151,6 @@
       ],
       "altitude": {
       }
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC OUTLOOK VALID 151055-151455 FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T10:55:00Z",
-      "valid_time_to": "2022-09-15T14:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-100.0293",
-            "latitude": "49.079"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.8027",
-            "latitude": "48.9431"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.3955",
-            "latitude": "48.5656"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.5073",
-            "latitude": "47.268"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.1833",
-            "latitude": "45.7561"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.78",
-            "latitude": "44.3148"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.37",
-            "latitude": "46.2554"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.1222",
-            "latitude": "45.8475"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.351",
-            "latitude": "46.9605"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.0293",
-            "latitude": "49.079"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC OUTLOOK VALID 151055-151455 FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T10:55:00Z",
-      "valid_time_to": "2022-09-15T14:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-98.69",
-            "latitude": "42.47"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.3284",
-            "latitude": "38.5514"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.73",
-            "latitude": "38.4231"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.1526",
-            "latitude": "39.7448"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.1889",
-            "latitude": "41.688"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.69",
-            "latitude": "42.47"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS31 KKCI 150855 SIGE OUTLOOK VALID 151055-151455 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T10:55:00Z",
-      "valid_time_to": "2022-09-15T14:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-72.6727",
-            "latitude": "36.1988"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-72.6138",
-            "latitude": "34.9867"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.8181",
-            "latitude": "32.1959"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.4344",
-            "latitude": "27.9703"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.9238",
-            "latitude": "26.6449"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.6021",
-            "latitude": "26.6722"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.2437",
-            "latitude": "23.9054"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.1453",
-            "latitude": "24.0753"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-84.4217",
-            "latitude": "27.3875"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.68",
-            "latitude": "27.3356"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-72.6727",
-            "latitude": "36.1988"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS33 KKCI 150855 SIGW OUTLOOK VALID 151055-151455 FROM 50E BOI-60WNW LAR-50S HBU-60E TBC-OAL-50E BOI WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T10:55:00Z",
-      "valid_time_to": "2022-09-15T14:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-115.0374",
-            "latitude": "43.5442"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.954",
-            "latitude": "41.705"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.04",
-            "latitude": "37.6146"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.0357",
-            "latitude": "36.1137"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.77",
-            "latitude": "38.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.0374",
-            "latitude": "43.5442"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC CONVECTIVE SIGMET 38C VALID UNTIL 1055Z MN SD ND FROM 30SSE BJI-30SSW BRD-50ESE ABR-20N FAR-30SSE BJI DVLPG AREA TS MOV FROM 22025KT. TOPS TO FL430. OUTLOOK VALID 151055-151455 AREA 1...FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 4...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "43000"
-      },
-      "movement_dir_degrees": "220",
-      "movement_speed_kt": "25",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-94.7371",
-            "latitude": "47.1149"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.3066",
-            "latitude": "45.8849"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.2766",
-            "latitude": "45.0951"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.85",
-            "latitude": "47.0824"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.7371",
-            "latitude": "47.1149"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC CONVECTIVE SIGMET 36C VALID UNTIL 1055Z SD ND FROM 60N ABR-20SSE ABR LINE TS 30 NM WIDE MOV FROM 22025KT. TOPS TO FL350. OUTLOOK VALID 151055-151455 AREA 1...FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 4...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "35000"
-      },
-      "movement_dir_degrees": "220",
-      "movement_speed_kt": "25",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-98.7301",
-            "latitude": "46.3923"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.5416",
-            "latitude": "45.088"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.8377",
-            "latitude": "45.1365"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.0096",
-            "latitude": "46.4408"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.7301",
-            "latitude": "46.3923"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC CONVECTIVE SIGMET 37C VALID UNTIL 1055Z KS NE FROM 10NNE LBF-50W OBH-50ESE HLC-10NE GLD-60ESE SNY-10NNE LBF AREA TS MOV FROM 21020KT. TOPS TO FL430. OUTLOOK VALID 151055-151455 AREA 1...FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 4...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "43000"
-      },
-      "movement_dir_degrees": "210",
-      "movement_speed_kt": "20",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-100.6331",
-            "latitude": "41.2877"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.4633",
-            "latitude": "41.3746"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.2377",
-            "latitude": "38.9361"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.5336",
-            "latitude": "39.5106"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.7646",
-            "latitude": "40.712"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.6331",
-            "latitude": "41.2877"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC OUTLOOK VALID 151055-151455 FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T10:55:00Z",
-      "valid_time_to": "2022-09-15T14:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-95.35",
-            "latitude": "29.1246"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.5641",
-            "latitude": "28.7089"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.8974",
-            "latitude": "28.1138"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.112",
-            "latitude": "27.6939"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.35",
-            "latitude": "29.1246"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC CONVECTIVE SIGMET 35C VALID UNTIL 1055Z TX NM FROM 70SE ABQ-10ESE CME-30ENE MRF-40WSW MRF-50ESE TCS-70SE ABQ LINE TS 40 NM WIDE MOV FROM 22025KT. TOPS TO FL450. OUTLOOK VALID 151055-151455 AREA 1...FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 3...FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 4...FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "45000"
-      },
-      "movement_dir_degrees": "220",
-      "movement_speed_kt": "25",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-106.0717",
-            "latitude": "33.9498"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.7735",
-            "latitude": "33.0772"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.8872",
-            "latitude": "30.6825"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.4711",
-            "latitude": "30.4694"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.9306",
-            "latitude": "32.9765"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.4428",
-            "latitude": "34.0982"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.2011",
-            "latitude": "34.3209"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.7895",
-            "latitude": "32.9358"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.8463",
-            "latitude": "29.6178"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.936",
-            "latitude": "30.2986"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.0877",
-            "latitude": "33.471"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.5697",
-            "latitude": "34.4699"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.0717",
-            "latitude": "33.9498"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS32 KKCI 150855 SIGC OUTLOOK VALID 151055-151455 FROM ONL-60SE HLC-30N GCK-30NW GLD-50NE SNY-ONL WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 70NE MOT-60WNW INL-40E INL-40NE DLH-50SE BRD-40N FSD-50N ABR-60SSE BIS-30WNW BIS-70NE MOT WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50NE MMB-70NE CDS-60SE LBB-40NW INK-50SW TCC-30E CIM-50NE MMB WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 50S IAH-40SE LEV-90SE LEV-90SE PSX-50S IAH WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T10:55:00Z",
-      "valid_time_to": "2022-09-15T14:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-99.141",
-            "latitude": "36.9285"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.2696",
-            "latitude": "35.1916"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.0794",
-            "latitude": "32.9921"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.7963",
-            "latitude": "32.3388"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.3176",
-            "latitude": "34.5871"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.2443",
-            "latitude": "36.4884"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.141",
-            "latitude": "36.9285"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS31 KKCI 150855 SIGE CONVECTIVE SIGMET 23E VALID UNTIL 1055Z FL AND CSTL WTRS FROM 60SSW SRQ-50NNE EYW LINE TS 40 NM WIDE MOV FROM 18010KT. TOPS TO FL450. OUTLOOK VALID 151055-151455 FROM 170E ECG-190ESE ECG-140SSE ILM-210ENE PBI-170E PBI-80E PBI-160SE MIA-80WSW EYW-100W SRQ-210S CEW-170E ECG WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. BACKUP OF AWC DOMESTIC AIRMETS/SIGMETS BY THE AIR FORCE 15TH OWS /SCOTT AFB/ WILL BE FM 15Z TO 21Z THURSDAY SEPTEMBER 15. AIR FORCE 15TH OWS COORDINATION NUMBER IS 618-256-1394.",
-      "valid_time_from": "2022-09-15T08:55:00Z",
-      "valid_time_to": "2022-09-15T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "45000"
-      },
-      "movement_dir_degrees": "180",
-      "movement_speed_kt": "10",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-83.2083",
-            "latitude": "26.2183"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.676",
-            "latitude": "25.1016"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.2154",
-            "latitude": "25.6208"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.7432",
-            "latitude": "26.7375"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.2083",
-            "latitude": "26.2183"
-          }
-        }
-      ]
     },
     {
       "raw_text": "WSUS01 KKCI 150631 BOSR WS 150631 SIGMET ROMEO 1 VALID UNTIL 151031 SIGMET MA RI NY NJ MD DE VA NC SC AND CSTL WTRS FROM 30ESE PVD TO 160S ACK TO 60ENE CHS TO GSO TO 30ESE PVD OCNL SEV TURB BTN FL250 AND FL380. DUE TO WNDSHR ASSOCD WITH JTST. CONDS CONTG BYD 1031Z.",
