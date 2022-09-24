@@ -6,10 +6,6 @@ This report describes the summation of messages received by Airframes from user 
 clients and is grouped by region, ingest, client, and frequency. It is ordered by the
 region, ingest, client, frequency and then count.
 
-NOTE: Some VDL frequencies (anything 136.x) are misclassified as ACARS because of an ingest
-that previously accepted both ACARS and VDL decoder clients. This functionality is deprecated
-but it will flaw this report for the time being. Simply expect that 136.x is VDL.
-
  country_code | source_type |    source    | frequency  | messages_count
 --------------+-------------+--------------+------------+----------------
  AU           | acars       | acarsdec     |     131.55 |         139026
