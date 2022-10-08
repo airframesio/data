@@ -23,6 +23,8 @@ Here are some projects that are using this data. If you've got a project not lis
 
 # Contributors
 
+Thank you to those that take the time to add, correct, or otherwise improve the data content here.
+
 Name | Description
 ---- | -----------
 [Kevin Elliott](https://github.com/kevinelliott) | Primary Airframes contributor
