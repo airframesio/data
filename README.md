@@ -11,3 +11,12 @@ Shoot us a note to let us know that you're using it at [licensing@airframes.io](
 # Commercial Licensing
 
 Use of the data here for your **commercial** projects **is not allowed without financial compensation**. We have put significant resources into gathering, publishing, updating, curating, and otherwise creating for our own projects that it is expected that commercial projects must pay for licensing. Please contact [licensing@airframes.io](mailto:licensing@airframes.io) if you would like to license this data for your commercial effort.
+
+# Projects
+
+Here are some projects that are using this data. If you've got a project not listed here that is using this data, [drop us a line](mailto:licensing@airframes.io).
+
+| Project | Description |
+| ------- | ----------- |
+| [Airframes](https://airframes.io) | Aggregator and tracking applications using ACARS, VDL, HFDL, and SATCOM |
+| [ACARS Hub](https://github.com/sdr-enthusiasts/docker-acarshub) | Web application for visualization of local ACARS/VDL feeds |
