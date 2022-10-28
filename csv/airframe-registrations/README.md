@@ -15,4 +15,5 @@ We specifically need help from anyone wishing to extract the registers marked wi
 | Belize Civil Aircraft Register | Belize | Official | [belize.csv](belize.csv) | [Website](https://www.civilaviation.gov.bz/index.php/bdca-civil-aircraft-register) | 2022-10-28 |
 | Bosnia Civil Aircraft Register | Bosnia | Official | [bosnia.csv](bosnia.csv) | [Website](http://www.bhdca.gov.ba/index.php/en/regulations-and-areas/airworthiness), [Latest PDF](http://www.bhdca.gov.ba/english/dokumenti/airworthiness/BiH%20Aircraft%20Register_eng.pdf) | Never |
 | Brazilian Aircraft Registry | Brazil | Official | [brazil.csv](brazil.csv) | [Website](https://sistemas.anac.gov.br/aeronaves/cons_rab_en.asp#matricula) | Never |
+| Bulgaria Civil Aircraft Register | Bulgaria | Official | [bulgaria.csv](bulgaria.csv) | [Website](https://www.caa.bg/bg/category/300/17238) | 2022-10-28 |
 | Malta Government Registration of Aircraft | Malta | Official | [malta.csv](malta.csv) | [Website](https://www.transport.gov.mt/Aviation/Aircraft-Flight-Standards/Registration-of-Aircraft-2663), [Current List as of 9/15/2022](https://www.transport.gov.mt/Query-Registration-15-Sep-2022.pdf-f8015) | 2022-10-28 |
