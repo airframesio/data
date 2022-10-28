@@ -2,6 +2,10 @@
 
 This is an effort to collect and organize Airframe Registrations from a variety of countries and their registries.
 
+## Help us keep this up to date! 
+
+We specifically need help from anyone wishing to extract the registers marked with a Last Update of Never. We have included links to their websites or PDF files. To contribute, please submit a Pull Request with the additions to this table and the corresponding file.
+
 | Name | Country | Type | File | Source(s) | Last Update |
 | ---- | ------- | ---- | ---- | --------- | ----------- |
 | Argentina Civil Aviation Register (ANAC) | Argentina | Official | [argentina.csv](argentina.csv) | [Website](https://cad.anac.gob.ar/ConsultaPSA/ConsultasPublicas/AfectacionAeronaves) | Never |
