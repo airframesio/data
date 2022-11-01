@@ -32,4 +32,5 @@ To contribute, please submit a Pull Request with the additions to this table and
 | Icelandic Civil Aircraft Register | TF | Iceland | Official | [iceland.csv](iceland.csv) | [Website](https://www.icetra.is/aviation/aircraft/register/) | 2022-10-31 |
 | Irish Civil Aircraft Register | EI | Ireland | Official | [ireland.csv](ireland.csv) | [Website](https://www.iaa.ie/commercial-aviation/aircraft-registration-2/latest-register-and-monthly-changes-1) | 2022-10-31 |
 | Isle of Man Civil Aircraft Registry | M | Isle of Man | Official | [isle-of-man.csv](isle-of-man.csv) | [Website](https://ardis.iomaircraftregistry.com/register/search) | Never |
+| Israeli Civil Aircraft Register | 4X | Israel | Official | [israel.csv](israel.csv) | [Website](https://data.gov.il/dataset/aircraft_data_il/resource/bc00ed41-75d0-4d0f-9eca-3cd0a2c332cc) | Never |
 | Malta Government Registration of Aircraft | 9H | Malta | Official | [malta.csv](malta.csv) | [Website](https://www.transport.gov.mt/Aviation/Aircraft-Flight-Standards/Registration-of-Aircraft-2663), [Current List as of 9/15/2022](https://www.transport.gov.mt/Query-Registration-15-Sep-2022.pdf-f8015) | 2022-10-31 |
