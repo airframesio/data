@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 46,
+  "count": 47,
   "airsigmets": [
     {
       "raw_text": "WAUS43 KKCI 272045 CHIT WA 272045 AIRMET TANGO UPDT 5 FOR TURB VALID UNTIL 280300 AIRMET TURB...LM MI LH IL IN KY FROM 30SE SSM TO 50WNW YVV TO 30E ECK TO 30ESE DXO TO FWA TO CVG TO HNN TO 40WSW BKW TO 40ESE IIU TO 30N PXV TO 20SE JOT TO 20NE MKG TO 30SE SSM MOD TURB BTN FL180 AND FL410. CONDS ENDG BY 00Z. OTLK VALID 0300-0900Z...TURB MO IL IN KY AR TN BOUNDED BY FWA-CVG-HNN-30W BKW-50W VXV-40N MSL-30W DYR-30SSE FAM- 70ESE STL-20WNW TTH-FWA MOD TURB BTN FL180 AND FL320. CONDS DVLPG 03-06Z. CONDS CONTG THRU 09Z.",
@@ -3383,9 +3383,103 @@
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 272355 SIGE OUTLOOK VALID 280155-280555 FROM 140ENE ACK-200SE ACK-150ESE SBY-190ESE ECG-140SSE ILM-100S ILM-80E ECG-30WSW CYN-140ENE ACK WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "raw_text": "WSUS31 KKCI 280155 SIGE CONVECTIVE SIGMET 5E VALID UNTIL 0355Z MA RI CT AND CSTL WTRS FROM 20SW BOS-30ESE PVD-20N HTO-20ESE BDL-20SW BOS AREA TS MOV FROM 25055KT. TOPS TO FL320. OUTLOOK VALID 280355-280755 FROM 110SSW YSJ-200SE ACK-150SE SIE-BDL-110SSW YSJ WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
       "valid_time_from": "2022-11-28T01:55:00Z",
-      "valid_time_to": "2022-11-28T05:55:00Z",
+      "valid_time_to": "2022-11-28T03:55:00Z",
+      "altitude": {
+        "max_ft_msl": "32000"
+      },
+      "movement_dir_degrees": "250",
+      "movement_speed_kt": "55",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-71.3069",
+            "latitude": "42.1245"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-70.8092",
+            "latitude": "41.5258"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-72.32",
+            "latitude": "41.2524"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-72.278",
+            "latitude": "41.8121"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-71.3069",
+            "latitude": "42.1245"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 280155 SIGE CONVECTIVE SIGMET 4E VALID UNTIL 0355Z MA RI NY CSTL WTRS FROM 40E ACK-80S ACK-70S HTO-40S PVD-40E ACK AREA TS MOV FROM 25060KT. TOPS TO FL400. OUTLOOK VALID 280355-280755 FROM 110SSW YSJ-200SE ACK-150SE SIE-BDL-110SSW YSJ WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-11-28T01:55:00Z",
+      "valid_time_to": "2022-11-28T03:55:00Z",
+      "altitude": {
+        "max_ft_msl": "40000"
+      },
+      "movement_dir_degrees": "250",
+      "movement_speed_kt": "60",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-69.1455",
+            "latitude": "41.2766"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-70.03",
+            "latitude": "39.9505"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-72.32",
+            "latitude": "39.7522"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-71.43",
+            "latitude": "41.0552"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-69.1455",
+            "latitude": "41.2766"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 280155 SIGE OUTLOOK VALID 280355-280755 FROM 110SSW YSJ-200SE ACK-150SE SIE-BDL-110SSW YSJ WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-11-28T03:55:00Z",
+      "valid_time_to": "2022-11-28T07:55:00Z",
       "hazard": {
         "type": "CONVECTIVE"
       },
@@ -3393,8 +3487,8 @@
       "area": [
         {
           "point": {
-            "longitude": "-67.131",
-            "latitude": "42.1343"
+            "longitude": "-66.8487",
+            "latitude": "43.6228"
           }
         },
         {
@@ -3405,44 +3499,20 @@
         },
         {
           "point": {
-            "longitude": "-72.617",
-            "latitude": "37.3583"
+            "longitude": "-72.5799",
+            "latitude": "37.3128"
           }
         },
         {
           "point": {
-            "longitude": "-72.6138",
-            "latitude": "34.9867"
+            "longitude": "-72.69",
+            "latitude": "41.94"
           }
         },
         {
           "point": {
-            "longitude": "-76.8181",
-            "latitude": "32.1959"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.87",
-            "latitude": "32.6881"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-74.5316",
-            "latitude": "36.2387"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.0334",
-            "latitude": "39.6259"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-67.131",
-            "latitude": "42.1343"
+            "longitude": "-66.8487",
+            "latitude": "43.6228"
           }
         }
       ],
@@ -3450,9 +3520,9 @@
       }
     },
     {
-      "raw_text": "WSUS32 KKCI 272355 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 280155-280555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2022-11-27T23:55:00Z",
-      "valid_time_to": "2022-11-28T01:55:00Z",
+      "raw_text": "WSUS32 KKCI 280155 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 280355-280755 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2022-11-28T01:55:00Z",
+      "valid_time_to": "2022-11-28T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -4088,56 +4158,9 @@
       }
     },
     {
-      "raw_text": "WSUS31 KKCI 272355 SIGE CONVECTIVE SIGMET 57E VALID UNTIL 0155Z NJ NY CSTL WTRS FROM 20E CYN-110S HTO-130ESE SIE-30ESE SIE-20E CYN AREA TS MOV FROM 25060KT. TOPS TO FL410. OUTLOOK VALID 280155-280555 FROM 140ENE ACK-200SE ACK-150ESE SBY-190ESE ECG-140SSE ILM-100S ILM-80E ECG-30WSW CYN-140ENE ACK WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-11-27T23:55:00Z",
-      "valid_time_to": "2022-11-28T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "41000"
-      },
-      "movement_dir_degrees": "250",
-      "movement_speed_kt": "60",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-73.9973",
-            "latitude": "39.8192"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-72.32",
-            "latitude": "39.0874"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-72.2531",
-            "latitude": "38.2436"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-74.2028",
-            "latitude": "38.906"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-73.9973",
-            "latitude": "39.8192"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS33 KKCI 272355 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 280155-280555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2022-11-27T23:55:00Z",
-      "valid_time_to": "2022-11-28T01:55:00Z",
+      "raw_text": "WSUS33 KKCI 280155 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 280355-280755 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2022-11-28T01:55:00Z",
+      "valid_time_to": "2022-11-28T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
