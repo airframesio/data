@@ -1,6 +1,4 @@
-# data
-
-Airframes Public Data
+# Airframes Public Data
 
 This data is collected, crafted, curated, processed, pruned, and otherwise prepared for public consumption. You may use this data in your own applications and products. We have done the dirty work to find and provide the data in a central place in standard formats.
 
