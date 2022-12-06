@@ -8,9 +8,13 @@ Use of the data here for your **non-commercial** projects is **allowed & encoura
 
 Shoot us a note to let us know that you're using it at [licensing@airframes.io](mailto:licensing@airframes.io) so that we can tell others about your cool project, or update you if there are going to be significant changes to the structure of data.
 
+If you find these resources useful, you may also consider [contributing to our data project funds](https://buy.stripe.com/aEU5m42QLdWI67mcMP). This is optional for non-commercial uses, but thank you for any contributions.
+
 # Commercial Licensing
 
-Use of the data here for your **commercial** projects **is not allowed without financial compensation**. We have put significant resources into gathering, publishing, updating, curating, and otherwise creating for our own projects that it is expected that commercial projects must pay for licensing. Please contact [licensing@airframes.io](mailto:licensing@airframes.io) if you would like to license this data for your commercial effort.
+Use of the data here for your **commercial** projects **is not allowed without financial compensation**. We have put significant resources into gathering, publishing, updating, curating, and otherwise creating for our own projects that it is expected that commercial projects must pay for licensing.
+
+You may [purchase an annual license](https://buy.stripe.com/9AQ01K1MH8CoanCeUY) for this data for your commercial effort. If you need more information, please contact [licensing@airframes.io](mailto:licensing@airframes.io).
 
 # Projects
 
