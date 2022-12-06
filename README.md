@@ -14,7 +14,7 @@ If you find these resources useful, you may also consider [contributing to our d
 
 Use of the data here for your **commercial** projects **is not allowed without financial compensation**. We have put significant resources into gathering, publishing, updating, curating, and otherwise creating for our own projects that it is expected that commercial projects must pay for licensing.
 
-You may [purchase an annual license](https://buy.stripe.com/9AQ01K1MH8CoanCeUY) for this data for your commercial effort. If you need more information, please contact [licensing@airframes.io](mailto:licensing@airframes.io).
+You may [purchase an annual license](https://buy.stripe.com/9AQ01K1MH8CoanCeUY) for this data for your commercial effort. If you need more information, please contact [licensing@airframes.io](mailto:licensing@airframes.io). Each annual license entitles the entity/project to be listed here, but are not by default. Email us after payment if you wish to be listed.
 
 # Projects
 
