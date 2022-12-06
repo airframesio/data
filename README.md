@@ -15,11 +15,11 @@ Use of the data here for your **non-commercial** projects is **allowed & encoura
 
 Shoot us a note to let us know that you're using it at [licensing@airframes.io](mailto:licensing@airframes.io) so that we can tell others about your cool project, or update you if there are going to be significant changes to the structure of data.
 
-If you find these resources useful, you may also consider [contributing to our data project funds](https://buy.stripe.com/aEU5m42QLdWI67mcMP). This is optional for non-commercial uses, but thank you for any contributions.
+If you find these resources useful, you may also consider a [non-commercial contribution to our data project funds](https://buy.stripe.com/aEU5m42QLdWI67mcMP). This is optional for non-commercial uses, but thank you for any contributions.
 
 # Non-Commercial Significant Contributor License
 
-As a thank you to meaningful contributions, any significant contributor may use the data in their projects without attribution for non-commercial purposes. A significant contributor is classified by meaningful data file submissions or a minimum of $250 annual payment.
+As a thank you to meaningful contributions, any significant contributor may use the data in their projects without attribution for non-commercial purposes. A significant contributor is classified by meaningful data file submissions or a minimum of $250 annual [non-commercial contribution to our data project funds](https://buy.stripe.com/aEU5m42QLdWI67mcMP).
 
 # Commercial License
 
