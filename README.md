@@ -19,7 +19,7 @@ If you find these resources useful, you may also consider [contributing to our d
 
 # Non-Commercial Significant Contributor License
 
-As a thank you to meaningful contributions, any significant contributor may use the data in their projects without attribution for non-commercial purposes. A significant contributor is classified by a minimum of $250 annual payment or considerable data file submissions.
+As a thank you to meaningful contributions, any significant contributor may use the data in their projects without attribution for non-commercial purposes. A significant contributor is classified by meaningful data file submissions or a minimum of $250 annual payment.
 
 # Commercial License
 
