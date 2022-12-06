@@ -1,8 +1,17 @@
 # data
 
-Centralization of source data for Airframes.io projects.
+Airframes Public Data
 
-# Non-Commercial Licensing
+This data is collected, crafted, curated, processed, pruned, and otherwise prepared for public consumption. You may use this data in your own applications and products. We have done the dirty work to find and provide the data in a central place in standard formats.
+
+We encourage additions and corrections to the scripts and data via Pull Requests.
+
+If you do wish to use the data in your project, please be respectful of the licensing terms. There are three options:
+* Non-Commercial License
+* Non-Commercial Significant Contributor License
+* Commercial License
+
+# Non-Commercial License
 
 Use of the data here for your **non-commercial** projects is **allowed & encouraged**. There is no cost to you. We only require that a small attribution is made to help reinforce awareness of our efforts and to encourage others to submit improvements (which in turn benefits you). Republishing the data and representing it as your own is prohibited, as it undercuts the significant amount of effort we continue to put into this.
 
@@ -10,7 +19,11 @@ Shoot us a note to let us know that you're using it at [licensing@airframes.io](
 
 If you find these resources useful, you may also consider [contributing to our data project funds](https://buy.stripe.com/aEU5m42QLdWI67mcMP). This is optional for non-commercial uses, but thank you for any contributions.
 
-# Commercial Licensing
+# Non-Commercial Significant Contributor License
+
+As a thank you to meaningful contributions, any significant contributor may use the data in their projects without attribution for non-commercial purposes. A significant contributor is classified by a minimum of $250 annual payment or considerable data file submissions.
+
+# Commercial License
 
 Use of the data here for your **commercial** projects **is not allowed without financial compensation**. We have put significant resources into gathering, publishing, updating, curating, and otherwise creating for our own projects that it is expected that commercial projects must pay for licensing.
 
