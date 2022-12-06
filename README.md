@@ -4,7 +4,7 @@ Centralization of source data for Airframes.io projects.
 
 # Non-Commercial Licensing
 
-Use of the data here for your **non-commercial** projects is **allowed & encouraged**. We would suggest that an attribution is made to help reinforce awareness of our efforts and to encourage others to submit improvements (which in turn benefits you), but it is optional and not required. Republishing the data and representing it as your own is prohibited, as it undercuts the significant amount of effort we continue to put into this.
+Use of the data here for your **non-commercial** projects is **allowed & encouraged**. There is no cost to you. We only require that a small attribution is made to help reinforce awareness of our efforts and to encourage others to submit improvements (which in turn benefits you). Republishing the data and representing it as your own is prohibited, as it undercuts the significant amount of effort we continue to put into this.
 
 Shoot us a note to let us know that you're using it at [licensing@airframes.io](mailto:licensing@airframes.io) so that we can tell others about your cool project, or update you if there are going to be significant changes to the structure of data.
 
