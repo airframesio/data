@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 47,
+  "count": 48,
   "airsigmets": [
     {
       "raw_text": "WAUS46 KKCI 160845 SFOT WA 160845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 161500 AIRMET TURB...WA OR CA ID MT WY NV UT CO AZ FROM YDC TO 40SE YXC TO 50NNW ISN TO 20SW OCS TO 40WSW JNC TO 70SE FMG TO 30N RBL TO 50S ONP TO YDC MOD TURB BTN FL180 AND FL400. CONDS CONTG BYD 15Z THRU 21Z.",
@@ -2906,56 +2906,353 @@
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 160855 SIGE CONVECTIVE SIGMET 17E VALID UNTIL 1055Z FL CSTL WTRS FROM 220ENE TRV-210ENE PBI-130ENE PBI-120ENE TRV-220ENE TRV AREA TS MOV FROM 25030KT. TOPS TO FL450. OUTLOOK VALID 161055-161455 FROM 220E OMN-200ENE PBI-70ENE PBI-120SSE MIA-80WSW EYW-100WNW EYW-220E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-12-16T08:55:00Z",
-      "valid_time_to": "2022-12-16T10:55:00Z",
-      "altitude": {
-        "max_ft_msl": "45000"
-      },
-      "movement_dir_degrees": "250",
-      "movement_speed_kt": "30",
+      "raw_text": "WAUS46 KKCI 160845 SFOS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET MTN OBSCN...WA OR CA FROM 50SW YXC TO 50SE REO TO 40SE LKV TO 30SSW FMG TO 70ENE RBL TO 70S LKV TO 30W LKV TO 30WNW OED TO 70S HQM TO HQM TO 20W TOU TO HUH TO 40SE YDC TO 50SW YXC MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 15Z THRU 21Z.",
+      "valid_time_from": "2022-12-16T08:45:00Z",
+      "valid_time_to": "2022-12-16T15:00:00Z",
       "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
+        "type": "MTN OBSCN"
       },
-      "airsigmet_type": "SIGMET",
+      "airsigmet_type": "AIRMET",
       "area": [
         {
           "point": {
-            "longitude": "-76.6267",
-            "latitude": "29.0254"
+            "longitude": "-116.6805",
+            "latitude": "49.0057"
           }
         },
         {
           "point": {
-            "longitude": "-76.4344",
-            "latitude": "27.9703"
+            "longitude": "-117.0751",
+            "latitude": "41.9965"
           }
         },
         {
           "point": {
-            "longitude": "-77.8352",
-            "latitude": "27.4906"
+            "longitude": "-119.8773",
+            "latitude": "42.0182"
           }
         },
         {
           "point": {
-            "longitude": "-78.3949",
-            "latitude": "28.4274"
+            "longitude": "-119.9079",
+            "latitude": "39.065"
           }
         },
         {
           "point": {
-            "longitude": "-76.6267",
-            "latitude": "29.0254"
+            "longitude": "-120.8203",
+            "latitude": "40.5383"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.51",
+            "latitude": "41.3222"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.1922",
+            "latitude": "42.488"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.5421",
+            "latitude": "42.6708"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.15",
+            "latitude": "45.7822"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.15",
+            "latitude": "46.95"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.1296",
+            "latitude": "48.2989"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.58",
+            "latitude": "48.95"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.8036",
+            "latitude": "48.9977"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.6805",
+            "latitude": "49.0057"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS46 KKCI 160845 SFOS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET IFR...CA AND CSTL WTRS FROM 40NNW FOT TO 30WNW ENI TO 70WSW ENI TO 130WSW ENI TO 140WSW FOT TO 130W FOT TO 70WNW FOT TO 40NNW FOT CIG BLW 010. CONDS DVLPG 09-12Z. CONDS CONTG BYD 15Z THRU 21Z.",
+      "valid_time_from": "2022-12-16T08:45:00Z",
+      "valid_time_to": "2022-12-16T15:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "1000"
+      },
+      "hazard": {
+        "type": "IFR"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-124.5685",
+            "latitude": "41.2837"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.8701",
+            "latitude": "39.241"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.6505",
+            "latitude": "38.5949"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.8152",
+            "latitude": "38.1937"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.026",
+            "latitude": "39.7457"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.0833",
+            "latitude": "40.6349"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.662",
+            "latitude": "41.1081"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.5685",
+            "latitude": "41.2837"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS31 KKCI 160855 SIGE OUTLOOK VALID 161055-161455 FROM 220E OMN-200ENE PBI-70ENE PBI-120SSE MIA-80WSW EYW-100WNW EYW-220E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2022-12-16T10:55:00Z",
-      "valid_time_to": "2022-12-16T14:55:00Z",
+      "raw_text": "WAUS46 KKCI 160845 SFOS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET IFR...OR ID MT WY NV UT CO FROM 70SW BIL TO 50ENE JAC TO 30SE JAC TO 60E MTU TO 50SE SLC TO 30SW SLC TO 80SW TWF TO 70SE REO TO 50WSW REO TO 50NNW REO TO 70SW BIL CIG BLW 010/VIS BLW 3SM BR/FG. CONDS CONTG BYD 15Z THRU 21Z.",
+      "valid_time_from": "2022-12-16T08:45:00Z",
+      "valid_time_to": "2022-12-16T15:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "1000"
+      },
+      "hazard": {
+        "type": "IFR"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-109.7974",
+            "latitude": "44.9782"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.6582",
+            "latitude": "43.9347"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.2415",
+            "latitude": "43.2632"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.8256",
+            "latitude": "40.1427"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.2059",
+            "latitude": "40.2567"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-112.4477",
+            "latitude": "40.4933"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.7458",
+            "latitude": "41.533"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.763",
+            "latitude": "41.7589"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.913",
+            "latitude": "42.2655"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.3097",
+            "latitude": "43.361"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.7974",
+            "latitude": "44.9782"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS45 KKCI 160845 SLCS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET MTN OBSCN...ID MT WY NV UT CO NM FROM 30SW YQL TO 20NNW GTF TO 20NE HVR TO 20NE CYS TO 20NE DEN TO 30NNE ALS TO 20NE RSK TO 50WSW JNC TO 50SW HVE TO 40SSE ILC TO 30SSW FMG TO 40SE LKV TO 50SE REO TO 50SW YXC TO 30SW YQL MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...IFR MT WY BOUNDED BY 20W ISN-60WNW RAP-50SE MLS-20W ISN CIG BLW 010/VIS BLW 3SM PCPN/BR/BLSN. CONDS DVLPG AFT 21Z. CONDS ENDG BY 21Z.",
+      "valid_time_from": "2022-12-16T08:45:00Z",
+      "valid_time_to": "2022-12-16T15:00:00Z",
+      "hazard": {
+        "type": "MTN OBSCN"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-113.3452",
+            "latitude": "49.273"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.5992",
+            "latitude": "47.7569"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.4134",
+            "latitude": "48.7745"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.4565",
+            "latitude": "41.4446"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.353",
+            "latitude": "40.0446"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-105.5763",
+            "latitude": "37.8145"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.8058",
+            "latitude": "36.9847"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-109.7795",
+            "latitude": "38.7361"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.4479",
+            "latitude": "37.8269"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.0688",
+            "latitude": "37.6354"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.9079",
+            "latitude": "39.065"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.8773",
+            "latitude": "42.0182"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.0751",
+            "latitude": "41.9965"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.6805",
+            "latitude": "49.0057"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.3452",
+            "latitude": "49.273"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS31 KKCI 160955 SIGE OUTLOOK VALID 161155-161555 FROM 220E OMN-200ENE PBI-70ENE PBI-120SSE MIA-80WSW EYW-100WNW EYW-220E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-12-16T11:55:00Z",
+      "valid_time_to": "2022-12-16T15:55:00Z",
       "hazard": {
         "type": "CONVECTIVE"
       },
@@ -3008,9 +3305,239 @@
       }
     },
     {
-      "raw_text": "WSUS32 KKCI 160855 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 161055-161455 TS ARE NOT EXPD.",
-      "valid_time_from": "2022-12-16T08:55:00Z",
-      "valid_time_to": "2022-12-16T10:55:00Z",
+      "raw_text": "WSUS33 KKCI 160955 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 161155-161555 TS ARE NOT EXPD.",
+      "valid_time_from": "2022-12-16T09:55:00Z",
+      "valid_time_to": "2022-12-16T11:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "NONE"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-122.77",
+            "latitude": "49.0"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.12",
+            "latitude": "48.96"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.02",
+            "latitude": "48.6"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.16",
+            "latitude": "48.3"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.69",
+            "latitude": "48.2"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.35",
+            "latitude": "48.36"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.73",
+            "latitude": "48.39"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-124.72",
+            "latitude": "48.38"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.0",
+            "latitude": "48.49"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-125.96",
+            "latitude": "48.4"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.03",
+            "latitude": "48.41"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-128.01",
+            "latitude": "48.33"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.49",
+            "latitude": "47.48"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.01",
+            "latitude": "46.0"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-126.52",
+            "latitude": "44.98"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-126.51",
+            "latitude": "44.01"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-126.72",
+            "latitude": "42.97"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-127.0",
+            "latitude": "40.01"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.01",
+            "latitude": "34.0"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.01",
+            "latitude": "32.99"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.66",
+            "latitude": "31.99"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.01",
+            "latitude": "30.98"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.65",
+            "latitude": "30.67"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.0",
+            "latitude": "31.1"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.97",
+            "latitude": "31.62"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.1",
+            "latitude": "32.4"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.09",
+            "latitude": "32.4"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.12",
+            "latitude": "32.53"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.72",
+            "latitude": "32.72"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.81",
+            "latitude": "32.5"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.08",
+            "latitude": "31.33"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.2",
+            "latitude": "31.33"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.2",
+            "latitude": "31.78"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.0",
+            "latitude": "31.78"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.0",
+            "latitude": "49.0"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.77",
+            "latitude": "49.0"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS32 KKCI 160955 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 161155-161555 TS ARE NOT EXPD.",
+      "valid_time_from": "2022-12-16T09:55:00Z",
+      "valid_time_to": "2022-12-16T11:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -3646,578 +4173,86 @@
       }
     },
     {
-      "raw_text": "WSUS33 KKCI 160855 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 161055-161455 TS ARE NOT EXPD.",
-      "valid_time_from": "2022-12-16T08:55:00Z",
-      "valid_time_to": "2022-12-16T10:55:00Z",
+      "raw_text": "WSUS31 KKCI 160955 SIGE CONVECTIVE SIGMET 19E VALID UNTIL 1155Z FL AND CSTL WTRS FROM 40ESE RSW-60E MIA-10ESE EYW-40ESE RSW AREA TS MOV FROM 25030KT. TOPS TO FL450. OUTLOOK VALID 161155-161555 FROM 220E OMN-200ENE PBI-70ENE PBI-120SSE MIA-80WSW EYW-100WNW EYW-220E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-12-16T09:55:00Z",
+      "valid_time_to": "2022-12-16T11:55:00Z",
+      "altitude": {
+        "max_ft_msl": "45000"
+      },
+      "movement_dir_degrees": "250",
+      "movement_speed_kt": "30",
       "hazard": {
         "type": "CONVECTIVE",
-        "severity": "NONE"
+        "severity": "LT-MOD"
       },
       "airsigmet_type": "SIGMET",
       "area": [
         {
           "point": {
-            "longitude": "-122.77",
-            "latitude": "49.0"
+            "longitude": "-81.0951",
+            "latitude": "26.274"
           }
         },
         {
           "point": {
-            "longitude": "-123.12",
-            "latitude": "48.96"
+            "longitude": "-79.1925",
+            "latitude": "25.7958"
           }
         },
         {
           "point": {
-            "longitude": "-123.02",
-            "latitude": "48.6"
+            "longitude": "-81.6267",
+            "latitude": "24.5246"
           }
         },
         {
           "point": {
-            "longitude": "-123.16",
-            "latitude": "48.3"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.69",
-            "latitude": "48.2"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.35",
-            "latitude": "48.36"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.73",
-            "latitude": "48.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.72",
-            "latitude": "48.38"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.0",
-            "latitude": "48.49"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.96",
-            "latitude": "48.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.03",
-            "latitude": "48.41"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-128.01",
-            "latitude": "48.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.49",
-            "latitude": "47.48"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.01",
-            "latitude": "46.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.52",
-            "latitude": "44.98"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.51",
-            "latitude": "44.01"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.72",
-            "latitude": "42.97"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.0",
-            "latitude": "40.01"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.01",
-            "latitude": "34.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.01",
-            "latitude": "32.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.66",
-            "latitude": "31.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.01",
-            "latitude": "30.98"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.65",
-            "latitude": "30.67"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.0",
-            "latitude": "31.1"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.97",
-            "latitude": "31.62"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1",
-            "latitude": "32.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.09",
-            "latitude": "32.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.12",
-            "latitude": "32.53"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.72",
-            "latitude": "32.72"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.81",
-            "latitude": "32.5"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.08",
-            "latitude": "31.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.2",
-            "latitude": "31.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.2",
-            "latitude": "31.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "31.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "49.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.77",
-            "latitude": "49.0"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS46 KKCI 160845 SFOS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET MTN OBSCN...WA OR CA FROM 50SW YXC TO 50SE REO TO 40SE LKV TO 30SSW FMG TO 70ENE RBL TO 70S LKV TO 30W LKV TO 30WNW OED TO 70S HQM TO HQM TO 20W TOU TO HUH TO 40SE YDC TO 50SW YXC MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 15Z THRU 21Z.",
-      "valid_time_from": "2022-12-16T08:45:00Z",
-      "valid_time_to": "2022-12-16T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-116.6805",
-            "latitude": "49.0057"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.0751",
-            "latitude": "41.9965"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.8773",
-            "latitude": "42.0182"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.9079",
-            "latitude": "39.065"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.8203",
-            "latitude": "40.5383"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.51",
-            "latitude": "41.3222"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.1922",
-            "latitude": "42.488"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.5421",
-            "latitude": "42.6708"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.15",
-            "latitude": "45.7822"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.15",
-            "latitude": "46.95"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.1296",
-            "latitude": "48.2989"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.58",
-            "latitude": "48.95"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.8036",
-            "latitude": "48.9977"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.6805",
-            "latitude": "49.0057"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS46 KKCI 160845 SFOS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET IFR...CA AND CSTL WTRS FROM 40NNW FOT TO 30WNW ENI TO 70WSW ENI TO 130WSW ENI TO 140WSW FOT TO 130W FOT TO 70WNW FOT TO 40NNW FOT CIG BLW 010. CONDS DVLPG 09-12Z. CONDS CONTG BYD 15Z THRU 21Z.",
-      "valid_time_from": "2022-12-16T08:45:00Z",
-      "valid_time_to": "2022-12-16T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "1000"
-      },
-      "hazard": {
-        "type": "IFR"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-124.5685",
-            "latitude": "41.2837"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.8701",
-            "latitude": "39.241"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.6505",
-            "latitude": "38.5949"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.8152",
-            "latitude": "38.1937"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.026",
-            "latitude": "39.7457"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.0833",
-            "latitude": "40.6349"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-125.662",
-            "latitude": "41.1081"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.5685",
-            "latitude": "41.2837"
+            "longitude": "-81.0951",
+            "latitude": "26.274"
           }
         }
       ]
     },
     {
-      "raw_text": "WAUS46 KKCI 160845 SFOS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET IFR...OR ID MT WY NV UT CO FROM 70SW BIL TO 50ENE JAC TO 30SE JAC TO 60E MTU TO 50SE SLC TO 30SW SLC TO 80SW TWF TO 70SE REO TO 50WSW REO TO 50NNW REO TO 70SW BIL CIG BLW 010/VIS BLW 3SM BR/FG. CONDS CONTG BYD 15Z THRU 21Z.",
-      "valid_time_from": "2022-12-16T08:45:00Z",
-      "valid_time_to": "2022-12-16T15:00:00Z",
+      "raw_text": "WSUS31 KKCI 160955 SIGE CONVECTIVE SIGMET 18E VALID UNTIL 1155Z FL CSTL WTRS FROM 220ENE TRV-210ENE PBI-20NE PBI-220ENE TRV AREA TS MOV FROM 25030KT. TOPS TO FL450. OUTLOOK VALID 161155-161555 FROM 220E OMN-200ENE PBI-70ENE PBI-120SSE MIA-80WSW EYW-100WNW EYW-220E OMN WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2022-12-16T09:55:00Z",
+      "valid_time_to": "2022-12-16T11:55:00Z",
       "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "1000"
+        "max_ft_msl": "45000"
       },
+      "movement_dir_degrees": "250",
+      "movement_speed_kt": "30",
       "hazard": {
-        "type": "IFR"
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
       },
-      "airsigmet_type": "AIRMET",
+      "airsigmet_type": "SIGMET",
       "area": [
         {
           "point": {
-            "longitude": "-109.7974",
-            "latitude": "44.9782"
+            "longitude": "-76.6267",
+            "latitude": "29.0254"
           }
         },
         {
           "point": {
-            "longitude": "-109.6582",
-            "latitude": "43.9347"
+            "longitude": "-76.4344",
+            "latitude": "27.9703"
           }
         },
         {
           "point": {
-            "longitude": "-110.2415",
-            "latitude": "43.2632"
+            "longitude": "-79.8264",
+            "latitude": "26.9148"
           }
         },
         {
           "point": {
-            "longitude": "-108.8256",
-            "latitude": "40.1427"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.2059",
-            "latitude": "40.2567"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.4477",
-            "latitude": "40.4933"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.7458",
-            "latitude": "41.533"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.763",
-            "latitude": "41.7589"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.913",
-            "latitude": "42.2655"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.3097",
-            "latitude": "43.361"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.7974",
-            "latitude": "44.9782"
+            "longitude": "-76.6267",
+            "latitude": "29.0254"
           }
         }
       ]
-    },
-    {
-      "raw_text": "WAUS45 KKCI 160845 SLCS WA 160845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 161500 AIRMET MTN OBSCN...ID MT WY NV UT CO NM FROM 30SW YQL TO 20NNW GTF TO 20NE HVR TO 20NE CYS TO 20NE DEN TO 30NNE ALS TO 20NE RSK TO 50WSW JNC TO 50SW HVE TO 40SSE ILC TO 30SSW FMG TO 40SE LKV TO 50SE REO TO 50SW YXC TO 30SW YQL MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...IFR MT WY BOUNDED BY 20W ISN-60WNW RAP-50SE MLS-20W ISN CIG BLW 010/VIS BLW 3SM PCPN/BR/BLSN. CONDS DVLPG AFT 21Z. CONDS ENDG BY 21Z.",
-      "valid_time_from": "2022-12-16T08:45:00Z",
-      "valid_time_to": "2022-12-16T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-113.3452",
-            "latitude": "49.273"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.5992",
-            "latitude": "47.7569"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.4134",
-            "latitude": "48.7745"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.4565",
-            "latitude": "41.4446"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.353",
-            "latitude": "40.0446"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.5763",
-            "latitude": "37.8145"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.8058",
-            "latitude": "36.9847"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.7795",
-            "latitude": "38.7361"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.4479",
-            "latitude": "37.8269"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.0688",
-            "latitude": "37.6354"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.9079",
-            "latitude": "39.065"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.8773",
-            "latitude": "42.0182"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.0751",
-            "latitude": "41.9965"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.6805",
-            "latitude": "49.0057"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.3452",
-            "latitude": "49.273"
-          }
-        }
-      ],
-      "altitude": {
-      }
     },
     {
       "raw_text": "WAUS44 KKCI 160845 DFWT WA 160845 AIRMET TANGO UPDT 1 FOR TURB AND LLWS VALID UNTIL 161500 AIRMET TURB...OK TX AR TN MS SD NE KS MN IA MO WI LM MI LH IL IN KY FROM 20S FWA TO CVG TO HNN TO HMV TO GQO TO 30E ADM TO 30SSW TXO TO 30ESE TBE TO 50W LBL TO 20N GLD TO 40WSW IRK TO 20S FWA MOD TURB BTN FL180 AND FL400. CONDS CONTG BYD 15Z THRU 21Z. LLWS POTENTIAL...OK TX ND SD NE KS BOUNDED BY 50N MOT-20NNE ANW-30N SLN-40SE ICT-40ENE MMB-50W LBL- GLD-BFF-70SW RAP-50NNW ISN-50N MOT LLWS EXP. CONDS CONTG BYD 15Z ENDG 18-21Z.",
