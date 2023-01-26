@@ -11,7 +11,7 @@ If you do wish to use the data in your project, please be respectful of the lice
 
 # Non-Commercial License
 
-Use of the data here for your **non-commercial** projects is **allowed & encouraged**. There is no cost to you. We only require that a small attribution is made to help reinforce awareness of our efforts and to encourage others to submit improvements (which in turn benefits you). Republishing the data and representing it as your own is prohibited, as it undercuts the significant amount of effort we continue to put into this.
+Use of the data here for your **non-commercial** projects is **allowed & encouraged**. There is no cost to you. We only ask for a small attribution is made to help reinforce awareness of our efforts and to encourage others to submit improvements (which in turn benefits you). This is optional! Republishing the data and representing it as your own is prohibited, as it undercuts the significant amount of effort we continue to put into this.
 
 Shoot us a note to let us know that you're using it at [licensing@airframes.io](mailto:licensing@airframes.io) so that we can tell others about your cool project, or update you if there are going to be significant changes to the structure of data.
 
