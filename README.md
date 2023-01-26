@@ -9,6 +9,8 @@ If you do wish to use the data in your project, please be respectful of the lice
 * Non-Commercial Significant Contributor License
 * Commercial License
 
+This data repository offers some common aeronautical elements, and is separate from the feed messages historical database (of which we do plan to offer access to via API -- free for feeders and significant contributors).
+
 # Non-Commercial License
 
 Use of the data here for your **non-commercial** projects is **allowed & encouraged**. There is no cost to you. We only ask for a small attribution is made to help reinforce awareness of our efforts and to encourage others to submit improvements (which in turn benefits you). This is optional! Republishing the data and representing it as your own is prohibited, as it undercuts the significant amount of effort we continue to put into this.
