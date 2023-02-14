@@ -9,7 +9,7 @@
     "url": "https://www.aviationweather.gov/adds/dataserver_current/current/airsigmets.cache.xml"
   },
   "resource_type": "airsigmets",
-  "count": 61,
+  "count": 60,
   "airsigmets": [
     {
       "raw_text": "WAUS45 KKCI 132045 SLCS WA 132045 AIRMET SIERRA UPDT 4 FOR IFR AND MTN OBSCN VALID UNTIL 140300 AIRMET MTN OBSCN...UT CO AZ NM FROM 20SE LAR TO 30S TBE TO 40NNE CME TO 30E TBC TO 30SW HVE TO 20SE MTU TO 20SE LAR MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z AREA 1...IFR ID MT WY NV UT WA OR BOUNDED BY 30SSE YQL-30WSW GTF-40WSW ISN-50ENE SHR-60ENE JAC- 30SSW BPI-30N MTU-70WSW BVL-50NE BAM-20SSW BOI-30SSE BKE-40ENE LKV-30E DSD-50NW MLP-30SSE YQL CIG BLW 010/VIS BLW 3SM PCPN/BR. CONDS CONTG THRU 09Z. AREA 2...MTN OBSCN ID MT WY NV UT WA OR BOUNDED BY 40SSW YQL-GTF-HVR-SHR-50S BPI-30NE MTU-30ENE DTA- 60SSW MLD-50NW ELY-60SSW BKE-70ESE DSD-90WSW YXC-40SSW YQL MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG THRU 09Z.",
@@ -769,9 +769,263 @@
       }
     },
     {
-      "raw_text": "WSUS31 KKCI 132255 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 140055-140455 TS ARE NOT EXPD.",
-      "valid_time_from": "2023-02-13T22:55:00Z",
-      "valid_time_to": "2023-02-14T00:55:00Z",
+      "raw_text": "WSUS33 KKCI 132355 SIGW CONVECTIVE SIGMET 22W VALID UNTIL 0155Z TX NM FROM 40WSW CIM-60SE ELP-10WSW ELP-50NNE ABQ-40WSW CIM AREA EMBD TS MOV FROM 19030KT. TOPS TO FL240. OUTLOOK VALID 140155-140555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2023-02-13T23:55:00Z",
+      "valid_time_to": "2023-02-14T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "24000"
+      },
+      "movement_dir_degrees": "190",
+      "movement_speed_kt": "30",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-105.6314",
+            "latitude": "36.2332"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-105.4565",
+            "latitude": "31.1123"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.4654",
+            "latitude": "31.7545"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.4258",
+            "latitude": "35.8112"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-105.6314",
+            "latitude": "36.2332"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS05 KKCI 132331 SLCV WS 132331 SIGMET VICTOR 6 VALID UNTIL 140331 SIGMET MT WY FROM BIL TO CYS TO 30ESE OCS TO 80E DLN TO BIL OCNL SEV TURB BLW FL180. DUE TO STG LOW LVL WNDS AND MTN WV ACT. CONDS CONTG BYD 0331Z.",
+      "valid_time_from": "2023-02-13T23:31:00Z",
+      "valid_time_to": "2023-02-14T03:31:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "18000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD-SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-108.63",
+            "latitude": "45.81"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.77",
+            "latitude": "41.21"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.4004",
+            "latitude": "41.3958"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-110.6619",
+            "latitude": "45.2344"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.63",
+            "latitude": "45.81"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 132355 SIGC CONVECTIVE SIGMET 2C VALID UNTIL 0155Z NM FROM 40WSW TXO-40ESE CME-20S CME-50N CME-40WSW TXO AREA EMBD TS MOV FROM 19030KT. TOPS TO FL250. OUTLOOK VALID 140155-140555 FROM 50W ALS-40W MMB-40ENE CDS-30S ABI-50SW SJT-30ESE DMN-60NW DMN-30W RSK-50W ALS WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2023-02-13T23:55:00Z",
+      "valid_time_to": "2023-02-14T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "25000"
+      },
+      "movement_dir_degrees": "190",
+      "movement_speed_kt": "30",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-103.5829",
+            "latitude": "34.2434"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.887",
+            "latitude": "33.0835"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.62",
+            "latitude": "33.0076"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-104.62",
+            "latitude": "34.1754"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-103.5829",
+            "latitude": "34.2434"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 132355 SIGC CONVECTIVE SIGMET 1C VALID UNTIL 0155Z TX FROM 20ESE LBB-30NE MAF-30NE INK-50WSW LBB-20ESE LBB AREA EMBD TS MOV FROM 20040KT. TOPS TO FL310. OUTLOOK VALID 140155-140555 FROM 50W ALS-40W MMB-40ENE CDS-30S ABI-50SW SJT-30ESE DMN-60NW DMN-30W RSK-50W ALS WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2023-02-13T23:55:00Z",
+      "valid_time_to": "2023-02-14T01:55:00Z",
+      "altitude": {
+        "max_ft_msl": "31000"
+      },
+      "movement_dir_degrees": "200",
+      "movement_speed_kt": "40",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-101.5514",
+            "latitude": "33.5723"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-101.7588",
+            "latitude": "32.375"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.8195",
+            "latitude": "32.225"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.8443",
+            "latitude": "33.3768"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-101.5514",
+            "latitude": "33.5723"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS32 KKCI 132355 SIGC OUTLOOK VALID 140155-140555 FROM 50W ALS-40W MMB-40ENE CDS-30S ABI-50SW SJT-30ESE DMN-60NW DMN-30W RSK-50W ALS WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2023-02-14T01:55:00Z",
+      "valid_time_to": "2023-02-14T05:55:00Z",
+      "hazard": {
+        "type": "CONVECTIVE"
+      },
+      "airsigmet_type": "OUTLOOK",
+      "area": [
+        {
+          "point": {
+            "longitude": "-106.8709",
+            "latitude": "37.3454"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-100.7052",
+            "latitude": "36.3372"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.5337",
+            "latitude": "34.6221"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-99.86",
+            "latitude": "31.9769"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-101.1476",
+            "latitude": "30.7874"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.0514",
+            "latitude": "32.0863"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.4405",
+            "latitude": "32.9823"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-108.7278",
+            "latitude": "36.7484"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.8709",
+            "latitude": "37.3454"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WSUS31 KKCI 132355 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 140155-140555 TS ARE NOT EXPD.",
+      "valid_time_from": "2023-02-13T23:55:00Z",
+      "valid_time_to": "2023-02-14T01:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -1287,14 +1541,14 @@
       }
     },
     {
-      "raw_text": "WSUS33 KKCI 132255 SIGW CONVECTIVE SIGMET 21W VALID UNTIL 0055Z CO NM FROM 50NNE RSK-40ENE RSK-10E RSK-30NNW RSK-50NNE RSK AREA EMBD TS MOV FROM 19020KT. TOPS TO FL350. OUTLOOK VALID 140055-140455 AREA 1...FROM 30ESE JNC-40SSW TBE-LBL-50WNW ABI-40SSE DMN-40SSW TUS-BZA-30N PGS-30ESE JNC WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 30S YDC-40W EPH-80ENE PDT-BKE-60SW EUG-130WSW HQM-80W TOU-30S YDC WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2023-02-13T22:55:00Z",
-      "valid_time_to": "2023-02-14T00:55:00Z",
+      "raw_text": "WSUS33 KKCI 132355 SIGW CONVECTIVE SIGMET 23W VALID UNTIL 0155Z CO NM AZ UT FROM 30SW HBU-60ENE RSK-50W ABQ-30SE TBC-40NNE TBC-30SW HBU AREA EMBD TS MOV FROM 19030KT. TOPS TO FL320. OUTLOOK VALID 140155-140555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2023-02-13T23:55:00Z",
+      "valid_time_to": "2023-02-14T01:55:00Z",
       "altitude": {
-        "max_ft_msl": "35000"
+        "max_ft_msl": "32000"
       },
       "movement_dir_degrees": "190",
-      "movement_speed_kt": "20",
+      "movement_speed_kt": "30",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "LT-MOD"
@@ -1303,938 +1557,38 @@
       "area": [
         {
           "point": {
-            "longitude": "-107.6969",
-            "latitude": "37.5212"
+            "longitude": "-107.492",
+            "latitude": "38.0934"
           }
         },
         {
           "point": {
-            "longitude": "-107.331",
-            "latitude": "37.0019"
+            "longitude": "-106.9446",
+            "latitude": "37.126"
           }
         },
         {
           "point": {
-            "longitude": "-107.887",
-            "latitude": "36.7498"
+            "longitude": "-107.8403",
+            "latitude": "35.0357"
           }
         },
         {
           "point": {
-            "longitude": "-108.3417",
-            "latitude": "37.2145"
+            "longitude": "-110.8316",
+            "latitude": "35.7635"
           }
         },
         {
           "point": {
-            "longitude": "-107.6969",
-            "latitude": "37.5212"
+            "longitude": "-110.9526",
+            "latitude": "36.7337"
           }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS33 KKCI 132255 SIGW CONVECTIVE SIGMET 20W VALID UNTIL 0055Z NM AZ FROM 20NW TBC-40SW RSK-60NE SJN-20SSW TBC-20NW TBC AREA EMBD TS MOV FROM 16010KT. TOPS TO FL270. OUTLOOK VALID 140055-140455 AREA 1...FROM 30ESE JNC-40SSW TBE-LBL-50WNW ABI-40SSE DMN-40SSW TUS-BZA-30N PGS-30ESE JNC WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 30S YDC-40W EPH-80ENE PDT-BKE-60SW EUG-130WSW HQM-80W TOU-30S YDC WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2023-02-13T22:55:00Z",
-      "valid_time_to": "2023-02-14T00:55:00Z",
-      "altitude": {
-        "max_ft_msl": "27000"
-      },
-      "movement_dir_degrees": "160",
-      "movement_speed_kt": "10",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-111.5618",
-            "latitude": "36.3547"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.6831",
-            "latitude": "36.2785"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.278",
-            "latitude": "35.1221"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.4268",
-            "latitude": "35.8128"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.5618",
-            "latitude": "36.3547"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS33 KKCI 132255 SIGW CONVECTIVE SIGMET 19W VALID UNTIL 0055Z TX NM FROM 50NNE ABQ-60SE ELP-10WSW ELP-50NNW ABQ-50NNE ABQ AREA TS MOV FROM 19020KT. TOPS TO FL240. OUTLOOK VALID 140055-140455 AREA 1...FROM 30ESE JNC-40SSW TBE-LBL-50WNW ABI-40SSE DMN-40SSW TUS-BZA-30N PGS-30ESE JNC WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 30S YDC-40W EPH-80ENE PDT-BKE-60SW EUG-130WSW HQM-80W TOU-30S YDC WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2023-02-13T22:55:00Z",
-      "valid_time_to": "2023-02-14T00:55:00Z",
-      "altitude": {
-        "max_ft_msl": "24000"
-      },
-      "movement_dir_degrees": "190",
-      "movement_speed_kt": "20",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-106.4258",
-            "latitude": "35.8112"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.4565",
-            "latitude": "31.1123"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.4654",
-            "latitude": "31.7545"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.2142",
-            "latitude": "35.8112"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.4258",
-            "latitude": "35.8112"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS33 KKCI 132255 SIGW OUTLOOK VALID 140055-140455 FROM 30ESE JNC-40SSW TBE-LBL-50WNW ABI-40SSE DMN-40SSW TUS-BZA-30N PGS-30ESE JNC WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 30S YDC-40W EPH-80ENE PDT-BKE-60SW EUG-130WSW HQM-80W TOU-30S YDC WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2023-02-14T00:55:00Z",
-      "valid_time_to": "2023-02-14T04:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-120.52",
-            "latitude": "48.9669"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.4017",
-            "latitude": "47.3758"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1654",
-            "latitude": "46.1951"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.81",
-            "latitude": "44.84"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-124.1906",
-            "latitude": "43.4108"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-127.0343",
-            "latitude": "46.0849"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-126.6281",
-            "latitude": "48.2827"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.52",
-            "latitude": "48.9669"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS33 KKCI 132255 SIGW OUTLOOK VALID 140055-140455 FROM 30ESE JNC-40SSW TBE-LBL-50WNW ABI-40SSE DMN-40SSW TUS-BZA-30N PGS-30ESE JNC WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. FROM 30S YDC-40W EPH-80ENE PDT-BKE-60SW EUG-130WSW HQM-80W TOU-30S YDC WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2023-02-14T00:55:00Z",
-      "valid_time_to": "2023-02-14T04:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE"
-      },
-      "airsigmet_type": "OUTLOOK",
-      "area": [
-        {
-          "point": {
-            "longitude": "-108.1931",
-            "latitude": "38.866"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.9171",
-            "latitude": "36.6554"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.97",
-            "latitude": "37.04"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.7782",
-            "latitude": "32.7964"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.3011",
-            "latitude": "31.6655"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.2183",
-            "latitude": "31.4855"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.6",
-            "latitude": "32.77"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.54",
-            "latitude": "36.1231"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.1931",
-            "latitude": "38.866"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS32 KKCI 132255 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 140055-140455 TS ARE NOT EXPD.",
-      "valid_time_from": "2023-02-13T22:55:00Z",
-      "valid_time_to": "2023-02-14T00:55:00Z",
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "NONE"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "49.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "31.79"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.52",
-            "latitude": "31.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.48",
-            "latitude": "31.75"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.38",
-            "latitude": "31.75"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.22",
-            "latitude": "31.48"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.0",
-            "latitude": "31.4"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.73",
-            "latitude": "31.16"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.45",
-            "latitude": "30.92"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.11",
-            "latitude": "30.75"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.95",
-            "latitude": "30.67"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.85",
-            "latitude": "30.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.69",
-            "latitude": "30.19"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.69",
-            "latitude": "30.01"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.59",
-            "latitude": "29.79"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.51",
-            "latitude": "29.63"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.37",
-            "latitude": "29.53"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.2",
-            "latitude": "29.49"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.14",
-            "latitude": "29.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.99",
-            "latitude": "29.33"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.75",
-            "latitude": "29.26"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.67",
-            "latitude": "29.17"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.55",
-            "latitude": "29.16"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.45",
-            "latitude": "29.07"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.12",
-            "latitude": "28.97"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.97",
-            "latitude": "29.19"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.88",
-            "latitude": "29.21"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.91",
-            "latitude": "29.35"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.82",
-            "latitude": "29.42"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.67",
-            "latitude": "29.74"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.4",
-            "latitude": "29.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.31",
-            "latitude": "29.87"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.17",
-            "latitude": "29.84"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.09",
-            "latitude": "29.79"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.81",
-            "latitude": "29.79"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.52",
-            "latitude": "29.79"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.27",
-            "latitude": "29.6"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.02",
-            "latitude": "29.41"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.74",
-            "latitude": "29.15"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.6",
-            "latitude": "28.87"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.19",
-            "latitude": "28.18"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.05",
-            "latitude": "28.13"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.93",
-            "latitude": "27.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.83",
-            "latitude": "27.76"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.7",
-            "latitude": "27.66"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.54",
-            "latitude": "27.6"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.48",
-            "latitude": "27.47"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.49",
-            "latitude": "27.32"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.43",
-            "latitude": "27.19"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.44",
-            "latitude": "27.1"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.28",
-            "latitude": "26.85"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.09",
-            "latitude": "26.41"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.8",
-            "latitude": "26.35"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.65",
-            "latitude": "26.23"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.46",
-            "latitude": "26.22"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.18",
-            "latitude": "26.06"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.65",
-            "latitude": "26.03"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.37",
-            "latitude": "25.83"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.33",
-            "latitude": "25.92"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.24",
-            "latitude": "25.95"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.13",
-            "latitude": "25.97"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.0",
-            "latitude": "25.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.91",
-            "latitude": "25.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.15",
-            "latitude": "27.55"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.98",
-            "latitude": "28.24"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.02",
-            "latitude": "28.24"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.97",
-            "latitude": "28.24"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.0",
-            "latitude": "28.13"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.64",
-            "latitude": "27.48"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.0",
-            "latitude": "27.48"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.0",
-            "latitude": "47.62"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.1",
-            "latitude": "47.87"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.78",
-            "latitude": "48.03"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.88",
-            "latitude": "47.98"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.17",
-            "latitude": "48.13"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.7",
-            "latitude": "48.09"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.92",
-            "latitude": "48.23"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.43",
-            "latitude": "48.02"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.74",
-            "latitude": "48.2"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.98",
-            "latitude": "48.25"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.06",
-            "latitude": "48.35"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.27",
-            "latitude": "48.34"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.35",
-            "latitude": "48.23"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.5",
-            "latitude": "48.44"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.65",
-            "latitude": "48.45"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.65",
-            "latitude": "48.54"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.96",
-            "latitude": "48.62"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.43",
-            "latitude": "48.61"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.5",
-            "latitude": "48.53"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.81",
-            "latitude": "48.52"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.85",
-            "latitude": "48.63"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.94",
-            "latitude": "48.65"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.22",
-            "latitude": "48.65"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.34",
-            "latitude": "48.72"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.49",
-            "latitude": "48.71"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.69",
-            "latitude": "48.78"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.73",
-            "latitude": "48.99"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.8",
-            "latitude": "49.18"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.82",
-            "latitude": "49.32"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.94",
-            "latitude": "49.37"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.08",
-            "latitude": "49.37"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.15",
-            "latitude": "49.38"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.15",
-            "latitude": "49.0"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.0",
-            "latitude": "49.0"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WSUS05 KKCI 131932 SLCV WS 131932 SIGMET VICTOR 5 VALID UNTIL 132332 SIGMET ID MT WY FROM 40WNW HVR TO 30SW CZI TO 20N BPI TO 40NNW FCA TO 40WNW HVR OCNL SEV TURB BLW FL180. DUE TO STG LOW LVL WNDS. CONDS CONTG BYD 2332Z.",
-      "valid_time_from": "2023-02-13T19:32:00Z",
-      "valid_time_to": "2023-02-13T23:32:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "18000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD-SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-110.7022",
-            "latitude": "48.7906"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.9316",
-            "latitude": "43.6432"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-110.11",
-            "latitude": "42.9124"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-114.5664",
-            "latitude": "48.8235"
-          }
         },
         {
           "point": {
-            "longitude": "-110.7022",
-            "latitude": "48.7906"
+            "longitude": "-107.492",
+            "latitude": "38.0934"
           }
         }
       ]
