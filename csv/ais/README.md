@@ -2,6 +2,6 @@
 
 The following is a selection of data that we keep up to date for AIS / Marine.
 
-|Type|
-|----|
-|[Vessels](vessels.csv)|
+|Type|Count|
+|----|-----|
+|[Vessels](vessels.csv)|66,282 vessels|
