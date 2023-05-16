@@ -1,4 +1,0 @@
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-
-ALTER TABLE stations
-ADD COLUMN uuid UUID NOT NULL DEFAULT uuid_generate_v4();

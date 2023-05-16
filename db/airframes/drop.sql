@@ -1,9 +1,0 @@
-DROP TABLE IF EXISTS message_decodings;
-DROP TABLE IF EXISTS message_reports;
-DROP TABLE IF EXISTS messages;
-DROP TABLE IF EXISTS flight_coordinates;
-DROP TABLE IF EXISTS flights;
-DROP TABLE IF EXISTS airframes;
-DROP TABLE IF EXISTS stations;
-DROP TABLE IF EXISTS station_message_counts;
-DROP TABLE IF EXISTS vdl_ground_stations;
