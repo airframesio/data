@@ -10,6 +10,7 @@ name: Update FAA TFRs
 on:
   schedule:
     - cron:  '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   test:
@@ -19,7 +20,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7
+        ruby-version: 2.7.8
     - name: Install activesupport (6.1.4.6)
       run: gem install activesupport -v 6.1.4.6
     - name: Install dependencies
