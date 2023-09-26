@@ -39,6 +39,7 @@ Here are some projects that are using this data. If you've got a project not lis
 | ------- | ----------- |
 | [Airframes](https://airframes.io) | Aggregator and tracking applications using ACARS, VDL, HFDL, and SATCOM |
 | [ACARS Hub](https://github.com/sdr-enthusiasts/docker-acarshub) | Web application for visualization of local ACARS/VDL feeds |
+| [Airplanes.Live](https://github.com/airplanes-live/) | Aggregator and tracking applications using ADS-B |
 
 # Contributors
 
@@ -48,3 +49,5 @@ Name | Description
 ---- | -----------
 [Kevin Elliott](https://github.com/kevinelliott) | Primary Airframes contributor
 [Fred Clausen](https://github.com/fredclausen) | VDL ground station data
+[Husky](https://github.com/Huusky) | General contributions, partner data (adsb.one/airplanes.live)
+
