@@ -61,10 +61,11 @@ end
 def process_list(html)
   document = Nokogiri::HTML(html)
   table = document.search('table table')[2]
-  rows = table.search('tr')[5..-4]
+  rows = table.search('tr')[7..-4]
   rows.map do |row|
     columns = row.search('a')
-    {
+    next unless columns.size > 0
+    data = {
       date: columns[0] ? columns[0].text.strip : nil,
       notam: columns[1] ? columns[1].text.strip : nil,
       facility: columns[2] ? columns[2].text.strip : nil,
@@ -78,7 +79,8 @@ def process_list(html)
         aixm5: columns[1].attr('href').sub('..', 'https://tfr.faa.gov').sub('html', 'aixm5')
       }
     }
-  end
+    data
+  end.compact
 end
 
 def retrieve_detail(notam)
@@ -143,6 +145,7 @@ else
 end
 
 tfrs = tfrs.map do |tfr|
+  puts tfr.inspect
   res = retrieve_xml(tfr[:notam], tfr[:links][:xml])
   if res.code == '200'
     tfr = process_xml(tfr, res.body)
