@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
 
 require 'json'
-require 'ox'
 require 'net/http'
+require 'ox'
+require 'stringio'
+require 'zlib'
 
 if ARGV.size < 1
   puts "syntax: noaa_nws_awc_get_metars <path-to-json-output-file>"
@@ -11,11 +13,13 @@ end
 
 JSON_FILE = ARGV[0]
 
-SOURCE_URL = 'https://www.aviationweather.gov/adds/dataserver_current/current/metars.cache.xml'
+SOURCE_URL = 'https://aviationweather.gov/data/cache/metars.cache.xml.gz'
 
 uri = URI(SOURCE_URL)
 res = Net::HTTP.get(uri)
-content = Ox.load(res, mode: :hash)
+gz = Zlib::GzipReader.new(StringIO.new(res))    
+xml_data = gz.read
+content = Ox.load(xml_data, mode: :hash)
 info = content[:response][7][:data][0]
 metars = content[:response][7][:data][1..-1].map do |i|
   metar = i[:METAR]
