@@ -15,21 +15,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7
+      uses: ruby/setup-ruby@v2
     - name: Install dependencies
       run: gem install activesupport
     - name: Retrieve Fixes from FAA and save output as JSON
       run: ruby scripts/faa/faa_nfdc_get_fixes json/faa/nfdc/fixes.json
     - name: Commit changes
-      uses: EndBug/add-and-commit@v5
+      uses: EndBug/add-and-commit@v9
       with:
         author_name: Airframes.io
         author_email: code@airframes.io
         message: "Update FAA NFDC Fixes/Waypoints - json/faa/nfdc/fixes.json"
         add: "*.*json"
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}

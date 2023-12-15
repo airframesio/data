@@ -16,11 +16,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7.8
+      uses: ruby/setup-ruby@v2
     - name: Install activesupport (6.1.4.6)
       run: gem install activesupport -v 6.1.4.6
     - name: Install dependencies
@@ -30,11 +28,11 @@ jobs:
     - name: Retrieve TFRs and save output as GeoJSON
       run: ruby scripts/faa/faa_get_tfrs --format=geojson json/faa/tfrs.geojson
     - name: Commit changes
-      uses: EndBug/add-and-commit@v5
+      uses: EndBug/add-and-commit@v9
       with:
-        author_name: Kevin Elliott
-        author_email: kevin@airframes.io
+        author_name: Airframes.io
+        author_email: code@airframes.io
         message: "Update FAA TFRs - json/faa/tfrs.json and json/faa/tfrs.geojson"
         add: "*.*json"
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
