@@ -50,4 +50,5 @@ Name | Description
 [Kevin Elliott](https://github.com/kevinelliott) | Primary Airframes contributor
 [Fred Clausen](https://github.com/fredclausen) | VDL ground station data
 [Husky](https://github.com/Huusky) | General contributions, partner data (adsb.one/airplanes.live)
+[Mark Bumiller](https://github.com/makrsmark) | Fixes and improvements to data scripts and GitHub Actions
 
