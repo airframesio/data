@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'aipp'
+require 'airac'
 require 'json'
 require 'ox'
 require 'net/http'
@@ -12,7 +12,7 @@ end
 
 JSON_FILE = ARGV[0]
 
-airac = AIPP::AIRAC.new(Time.now)
+airac = AIRAC::Cycle.new(Time.now)
 puts "Current Cycle: #{airac.id} (#{airac.date})"
 
 base_url       = 'https://aeronav.faa.gov/d-tpp'
