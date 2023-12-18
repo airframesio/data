@@ -16,21 +16,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7.8
+      uses: ruby/setup-ruby@v2
     - name: Install dependencies
       run: gem install ox
     - name: Retrieve METARs and save output as JSON
       run: ruby scripts/noaa/noaa_nws_awc_get_metars json/noaa/metars.json
     - name: Commit changes
-      uses: EndBug/add-and-commit@v5
+      uses: EndBug/add-and-commit@v9
       with:
         author_name: Airframes.io
         author_email: code@airframes.io
         message: "Update NOAA METARs - json/noaa/metars.json"
         add: "*.*json"
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}

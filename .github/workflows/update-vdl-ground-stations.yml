@@ -15,19 +15,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
+      uses: ruby/setup-ruby@v2
     - name: Convert the CSV source and save output as JSON
       run: ruby scripts/convert_vdl2gs_to_json csv/vdl/ground-stations.csv json/vdl/ground-stations.json
     - name: Commit changes
-      uses: EndBug/add-and-commit@v5
+      uses: EndBug/add-and-commit@v9
       with:
         author_name: Airframes.io
         author_email: code@airframes.io
         message: "Update VDL Ground Stations - json/vdl/ground-stations.json"
         add: "*.*json"
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
