@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v2
+      uses: ruby/setup-ruby@v1
     - name: Convert the CSV source and save output as JSON
       run: ruby scripts/convert_vdl2gs_to_json csv/vdl/ground-stations.csv json/vdl/ground-stations.json
     - name: Commit changes
