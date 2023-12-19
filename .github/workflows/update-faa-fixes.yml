@@ -10,7 +10,7 @@ name: Update FAA NFDC Fixes/Waypoints
 on:
   pull-request:
     paths:
-      - .github\workflows\update-faa-fixes.yml
+      - .github/workflows/update-faa-fixes.yml
       - scripts/faa/faa_nfdc_get_fixes
   schedule:
     - cron:  '0 * * * *'

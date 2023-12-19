@@ -10,7 +10,7 @@ name: Update NOAA METARs
 on:
   pull-request:
     paths:
-      - .github\workflows\update-noaa-metars.yml
+      - .github/workflows/update-noaa-metars.yml
       - scripts/noaa/noaa_nws_awc_get_metars
   schedule:
     - cron:  '0 * * * *'

@@ -10,7 +10,7 @@ name: Update FAA TFRs
 on:
   pull-request:
     paths:
-      - .github\workflows\update-faa-tfrs.yml
+      - .github/workflows/update-faa-tfrs.yml
       - scripts/faa/faa_get_tfrs
   schedule:
     - cron:  '0 * * * *'
