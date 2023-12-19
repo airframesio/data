@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v2
+      uses: ruby/setup-ruby@v1
     - name: Install dependencies
       run: gem install ox
     - name: Retrieve SIGMETs and save output as JSON

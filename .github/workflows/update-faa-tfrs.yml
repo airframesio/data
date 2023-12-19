@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v2
+      uses: ruby/setup-ruby@v1
     - name: Install activesupport (6.1.4.6)
       run: gem install activesupport -v 6.1.4.6
     - name: Install dependencies
