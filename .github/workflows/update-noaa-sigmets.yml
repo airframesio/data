@@ -8,6 +8,10 @@
 name: Update NOAA SIGMETs
 
 on:
+  pull-request:
+    paths:
+      - .github\workflows\update-noaa-sigmets.yml
+      - scripts/noaa/noaa_nws_awc_get_airsigmets
   schedule:
     - cron:  '0 * * * *'
 
