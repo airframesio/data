@@ -28,6 +28,7 @@ jobs:
       run: ruby scripts/faa/faa_dtpp_get_metafile json/faa/dtpp/current_metafile.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
+      if: github.event_name != 'pull_request'
       with:
         author_name: airframesio
         author_email: code@airframes.io
