@@ -8,6 +8,10 @@
 name: Update NOAA Aircraft Reports
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/update-noaa-aircraft-reports.yml
+      - scripts/noaa/noaa_nws_awc_get_aircraft_reports
   schedule:
     - cron:  '0 * * * *'
   workflow_dispatch:
@@ -25,6 +29,7 @@ jobs:
       run: ruby scripts/noaa/noaa_nws_awc_get_aircraft_reports json/noaa/aircraft_reports.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
+      if: github.event_name != 'pull_request'
       with:
         author_name: Airframes.io
         author_email: code@airframes.io

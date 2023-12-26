@@ -8,6 +8,10 @@
 name: Update NOAA SIGMETs
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/update-noaa-sigmets.yml
+      - scripts/noaa/noaa_nws_awc_get_airsigmets
   schedule:
     - cron:  '0 * * * *'
 
@@ -24,6 +28,7 @@ jobs:
       run: ruby scripts/noaa/noaa_nws_awc_get_airsigmets json/noaa/sigmets.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
+      if: github.event_name != 'pull_request'
       with:
         author_name: Airframes.io
         author_email: code@airframes.io

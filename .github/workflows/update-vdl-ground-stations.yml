@@ -8,6 +8,10 @@
 name: Update VDL Ground Stations
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/update-vdl-ground-stations.yml
+      - scripts/convert_vdl2gs_to_json
   schedule:
     - cron:  '0 * * * *'
 
@@ -22,6 +26,7 @@ jobs:
       run: ruby scripts/convert_vdl2gs_to_json csv/vdl/ground-stations.csv json/vdl/ground-stations.json
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
+      if: github.event_name != 'pull_request'
       with:
         author_name: Airframes.io
         author_email: code@airframes.io

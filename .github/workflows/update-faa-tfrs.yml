@@ -8,6 +8,10 @@
 name: Update FAA TFRs
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/update-faa-tfrs.yml
+      - scripts/faa/faa_get_tfrs
   schedule:
     - cron:  '0 * * * *'
   workflow_dispatch:
@@ -29,6 +33,7 @@ jobs:
       run: ruby scripts/faa/faa_get_tfrs --format=geojson json/faa/tfrs.geojson
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
+      if: github.event_name != 'pull_request'
       with:
         author_name: Airframes.io
         author_email: code@airframes.io
