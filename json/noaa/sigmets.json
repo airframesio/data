@@ -9,7 +9,7 @@
     "url": "https://aviationweather.gov/data/cache/airsigmets.cache.xml.gz"
   },
   "resource_type": "airsigmets",
-  "count": 47,
+  "count": 48,
   "airsigmets": [
     {
       "raw_text": "WSUS02 KKCI 310002 MIAX WS 310002 SIGMET XRAY 3 VALID UNTIL 310356 SIGMET FL AND CSTL WTRS FROM 210ENE TRV TO 200E PBI TO 130SE MIA TO 60SW EYW TO 210ENE TRV OCNL SEV TURB BTN 100 AND FL280. RPTD BY ACFT. SEE INTL SIGMET SERIES MIKE FOR ADJC WTRS. CONDS ENDG 0356Z.",
@@ -58,9 +58,9 @@
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 310055 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 310255-310655 TS ARE NOT EXPD.",
-      "valid_time_from": "2023-12-31T00:55:00Z",
-      "valid_time_to": "2023-12-31T02:55:00Z",
+      "raw_text": "WSUS32 KKCI 310155 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 310355-310755 TS ARE NOT EXPD.",
+      "valid_time_from": "2023-12-31T01:55:00Z",
+      "valid_time_to": "2023-12-31T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "1"
@@ -696,9 +696,9 @@
       }
     },
     {
-      "raw_text": "WSUS33 KKCI 310055 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 310255-310655 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2023-12-31T00:55:00Z",
-      "valid_time_to": "2023-12-31T02:55:00Z",
+      "raw_text": "WSUS33 KKCI 310155 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 310355-310755 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2023-12-31T01:55:00Z",
+      "valid_time_to": "2023-12-31T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "1"
@@ -926,9 +926,9 @@
       }
     },
     {
-      "raw_text": "WSUS31 KKCI 310055 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 310255-310655 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2023-12-31T00:55:00Z",
-      "valid_time_to": "2023-12-31T02:55:00Z",
+      "raw_text": "WSUS31 KKCI 310155 SIGE CONVECTIVE SIGMET...NONE OUTLOOK VALID 310355-310755 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2023-12-31T01:55:00Z",
+      "valid_time_to": "2023-12-31T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "1"
@@ -1444,6 +1444,52 @@
       }
     },
     {
+      "raw_text": "WSUS03 KKCI 310157 CHIY WS 310157 SIGMET YANKEE 1 VALID UNTIL 310557 SIGMET SD MN IA WI FROM 50SSE DLH TO 40SE ODI TO 60S FSD TO 50WNW FSD TO 50SSE DLH OCNL SEV MXD ICGICIP BTN 020 AND 060. RPTD BY MULTIPLE AIRCRAFT. CONDS CONTG BYD 0557Z.",
+      "valid_time_from": "2023-12-31T01:57:00Z",
+      "valid_time_to": "2023-12-31T05:57:00Z",
+      "altitude": {
+        "min_ft_msl": "2000",
+        "max_ft_msl": "6000"
+      },
+      "hazard": {
+        "type": "ICE",
+        "severity": "MOD-SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-91.7395",
+            "latitude": "46.0272"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-90.8227",
+            "latitude": "43.4381"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-96.78",
+            "latitude": "42.6529"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.8524",
+            "latitude": "43.9647"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-91.7395",
+            "latitude": "46.0272"
+          }
+        }
+      ]
+    },
+    {
       "raw_text": "WAUS44 KKCI 302045 DFWZ WA 302045 AIRMET ZULU UPDT 3 FOR ICE AND FRZLVL VALID UNTIL 310300 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. FRZLVL...RANGING FROM SFC-120 ACRS AREA MULT FRZLVL BLW 090 BOUNDED BY 60S RHI-60SW TVC-40S DXO-FWA- CVG-HNN-HMV-GQO-50SW PZD-20ENE SJI-20SSW STL-50ESE SNY- 40NNW BFF-20NE RAP-40NNW ANW-20E FOD-60S RHI 040 ALG 60WNW BNA-30SSW MSL-30NW MGM-20E MGM-40NW PZD 080 ALG 40SSE ICT-50E FSM-20SSE LIT-30ESE SQS-40N SJI-40E SJI",
       "valid_time_from": "2023-12-30T20:45:00Z",
       "valid_time_to": "2023-12-31T02:45:00Z",
@@ -1457,94 +1503,6 @@
       ],
       "altitude": {
       }
-    },
-    {
-      "raw_text": "WAUS43 KKCI 302045 CHIZ WA 302045 AIRMET ZULU UPDT 4 FOR ICE AND FRZLVL VALID UNTIL 310300 AIRMET ICE...ND SD NE MN IA WI LM LS MI LH IL FROM 30NNE INL TO YVV TO 40ESE ECK TO DXO TO 20SSW ASP TO 40N TVC TO 40SSE BAE TO 40S IOW TO 60ESE ONL TO 50ENE DPR TO 60NW MOT TO 30NNE INL MOD ICE BLW 140. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z...ICE ND SD NE MN IA MO WI LM LS MI LH IL IN BOUNDED BY 80WSW YWG-20WNW YQT-YVV-30ESE ECK-20NNE MBS-50SW GIJ-20SE UIN-50E PWE-50NNE ONL-80WSW YWG MOD ICE BLW 140. CONDS CONTG THRU 09Z. FRZLVL...RANGING FROM SFC-095 ACRS AREA MULT FRZLVL BLW 090 BOUNDED BY 60S RHI-60SW TVC-40S DXO-FWA- CVG-HNN-HMV-GQO-50SW PZD-20ENE SJI-20SSW STL-50ESE SNY- 40NNW BFF-20NE RAP-40NNW ANW-20E FOD-60S RHI SFC ALG 40S GLD-60SSW BDF-30WSW JOT-50WNW TVC-30N TVC-40SSW YVV 040 ALG 40E AKO-20NE GLD-40SSW MCI-40E STL-40NW PXV-30S PXV- 60WNW BNA 080 ALG 40E LAA-50W ICT-40SSE ICT",
-      "valid_time_from": "2023-12-30T20:45:00Z",
-      "valid_time_to": "2023-12-31T03:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "14000"
-      },
-      "hazard": {
-        "type": "ICE",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-93.1064",
-            "latitude": "49.0344"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.1",
-            "latitude": "44.75"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.8802",
-            "latitude": "43.0025"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.37",
-            "latitude": "42.21"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.5672",
-            "latitude": "44.1428"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.55",
-            "latitude": "45.3348"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.9349",
-            "latitude": "42.5053"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.61",
-            "latitude": "40.8552"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.4487",
-            "latitude": "42.0817"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.6208",
-            "latitude": "45.3945"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.3639",
-            "latitude": "48.9601"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-93.1064",
-            "latitude": "49.0344"
-          }
-        }
-      ]
     },
     {
       "raw_text": "WAUS42 KKCI 302045 MIAS WA 302045 AIRMET SIERRA UPDT 4 FOR IFR AND MTN OBSCN VALID UNTIL 310300 AIRMET NO SGFNT IFR EXP OUTSIDE OF CNVTV ACT. ",
@@ -4576,6 +4534,94 @@
       ],
       "altitude": {
       }
+    },
+    {
+      "raw_text": "WAUS43 KKCI 310157 AAA CHIZ WA 310157 AMD AIRMET ZULU UPDT 5 FOR ICE AND FRZLVL VALID UNTIL 310300 AIRMET ICE...ND SD NE MN IA WI LM LS MI LH IL FROM 30NNE INL TO YVV TO 40ESE ECK TO DXO TO 20SSW ASP TO 40N TVC TO 40SSE BAE TO 40S IOW TO 60ESE ONL TO 50ENE DPR TO 60NW MOT TO 30NNE INL MOD ICE BLW 140. CONDS CONTG BYD 03Z THRU 09Z. OTLK VALID 0300-0900Z...ICE ND SD NE MN IA MO WI LM LS MI LH IL IN BOUNDED BY 80WSW YWG-20WNW YQT-YVV-30ESE ECK-20NNE MBS-50SW GIJ-20SE UIN-50E PWE-50NNE ONL-80WSW YWG MOD ICE BLW 140. CONDS CONTG THRU 09Z. FRZLVL...RANGING FROM SFC-095 ACRS AREA MULT FRZLVL BLW 090 BOUNDED BY 60S RHI-60SW TVC-40S DXO-FWA- CVG-HNN-HMV-GQO-50SW PZD-20ENE SJI-20SSW STL-50ESE SNY- 40NNW BFF-20NE RAP-40NNW ANW-20E FOD-60S RHI SFC ALG 40S GLD-60SSW BDF-30WSW JOT-50WNW TVC-30N TVC-40SSW YVV 040 ALG 40E AKO-20NE GLD-40SSW MCI-40E STL-40NW PXV-30S PXV- 60WNW BNA 080 ALG 40E LAA-50W ICT-40SSE ICT",
+      "valid_time_from": "2023-12-31T01:57:00Z",
+      "valid_time_to": "2023-12-31T03:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "14000"
+      },
+      "hazard": {
+        "type": "ICE",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-93.1064",
+            "latitude": "49.0344"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-81.1",
+            "latitude": "44.75"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-81.8802",
+            "latitude": "43.0025"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.37",
+            "latitude": "42.21"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.5672",
+            "latitude": "44.1428"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-85.55",
+            "latitude": "45.3348"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-87.9349",
+            "latitude": "42.5053"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-91.61",
+            "latitude": "40.8552"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.4487",
+            "latitude": "42.0817"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-100.6208",
+            "latitude": "45.3945"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-102.3639",
+            "latitude": "48.9601"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.1064",
+            "latitude": "49.0344"
+          }
+        }
+      ]
     }
   ]
 }
