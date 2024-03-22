@@ -170,8 +170,9 @@ if res.code == "200"
   for i in 1..(total_pages-1) do
     res = retrieve_page(i)
     if res.code == "200"
-      fixes += process_data(res['data'])
-      puts "Retrieved #{fixes.count} records"
+      results = JSON.parse(res.body)
+      puts "Retrieved #{results['data'].count} records"
+      fixes += process_data(results['data'])
       sleep(0.2)
     else
       puts "There was an error: #{res.code}. Exiting..."
