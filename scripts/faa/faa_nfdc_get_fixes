@@ -141,7 +141,7 @@ def retrieve_page(page, count = 1000)
     'Origin': ORIGIN,
     'Referer': REFERER,
     'Accept-Encoding': 'gzip, deflat, br',
-    'User-Agent': Mozilla/5.0'
+    'User-Agent': 'Mozilla/5.0',
   }
   start = page * count
   payload = {
