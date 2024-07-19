@@ -9,7 +9,7 @@
     "url": "https://aviationweather.gov/data/cache/airsigmets.cache.xml.gz"
   },
   "resource_type": "airsigmets",
-  "count": 47,
+  "count": 42,
   "airsigmets": [
     {
       "raw_text": "WSUS31 KKCI 191355 SIGE CONVECTIVE SIGMET 42E VALID UNTIL 1555Z NC AND NC SC GA CSTL WTRS FROM 30E ILM-130SE ILM-140SE CHS-20SE SAV-30E ILM AREA TS MOV FROM 25025KT. TOPS ABV FL450. REF INTL SIGMET MIKE SERIES. OUTLOOK VALID 191555-191955 FROM BKW-ECG-150SE SIE-190ESE ECG-140SSE ILM-40SE CRG-40E MIA-50NNE EYW-SRQ-160S CEW-50NNE MSL-BKW WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
@@ -717,9 +717,55 @@
       ]
     },
     {
-      "raw_text": "WAUS42 KKCI 190845 MIAT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET NO SGFNT TURB EXP OUTSIDE OF CNVTV ACT. ",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
+      "raw_text": "WAUS41 KKCI 191445 BOST WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET TURB...OH FROM 40SSE FWA TO 30SE ROD TO 60E CVG TO CVG TO 40SSE FWA MOD TURB BTN FL300 AND FL420. CONDS DVLPG AFT 15Z. CONDS ENDG BY 21Z. OTLK VALID 2100-0300Z...TURB NY PA OH LE WV BOUNDED BY 50NE SLT-20SE HNK-20W HAR-40ESE AIR-HNN-CVG-FWA-50NNE FWA-40S DXO-30S ERI-50NE SLT MOD TURB BTN FL260 AND FL420. CONDS DVLPG AFT 21Z. CONDS CONTG THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "altitude": {
+        "min_ft_msl": "30000",
+        "max_ft_msl": "42000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-84.8561",
+            "latitude": "40.3654"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.5761",
+            "latitude": "39.9334"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.4167",
+            "latitude": "39.013"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.7",
+            "latitude": "39.02"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.8561",
+            "latitude": "40.3654"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS45 KKCI 191445 SLCT WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET NO SGFNT TURB EXP OUTSIDE OF CNVTV ACT. ",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
       "hazard": {
         "type": "TURB"
       },
@@ -731,12 +777,12 @@
       }
     },
     {
-      "raw_text": "WAUS41 KKCI 190845 BOST WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET TURB...ME NH VT MA RI CT NY NJ PA OH WV MD DC DE VA AND CSTL WTRS FROM 70NW PQI TO 30NNE PQI TO 40W YSJ TO 150ENE ACK TO 90ENE ACK TO 50S HTO TO 20N SBY TO 40NE LYH TO 50W HNN TO HNK TO 60NNW MPV TO 80S YQB TO 60E YQB TO 70NW PQI MOD TURB BTN FL210 AND FL430. CONDS CONTG BYD 15Z ENDG 18-21Z. OTLK VALID 1500-2100Z...TURB PA OH WV MD VA BOUNDED BY 30NE EWC-30N HAR-20N HMV-HNN-CVG-40SE FWA-30NE EWC MOD TURB BTN FL260 AND FL450. CONDS DVLPG AFT 18Z. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
+      "raw_text": "WAUS44 KKCI 191445 DFWT WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET TURB...TN MS AL MO IL IN KY FROM 40SSE FWA TO CVG TO 60E CVG TO 50WSW VXV TO 40W MSL TO 20ENE MEM TO 40SE FAM TO 20SW IND TO 40SSE FWA MOD TURB BTN FL300 AND FL420. CONDS CONTG BYD 21Z THRU 03Z. OTLK VALID 2100-0300Z AREA 1...TURB OK AR KS MN IA MO WI IL BOUNDED BY 40ESE BRD-70SSW RHI-40SE DLL-30SSE STL-20SE LIT-20N FSM-20ESE OSW-30SSW MCI-20SSW DSM-40ESE BRD MOD TURB BTN FL310 AND FL410. CONDS CONTG THRU 03Z. AREA 2...TURB TN MO MI IL IN KY BOUNDED BY 50NNE FWA-FWA-CVG-HNN-30NE LOZ-40SSE DYR-20NW DYR- 40SE FAM-50S AXC-30NE BVT-50NNE FWA MOD TURB BTN FL260 AND FL420. CONDS CONTG THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
       "altitude": {
-        "min_ft_msl": "21000",
-        "max_ft_msl": "43000"
+        "min_ft_msl": "30000",
+        "max_ft_msl": "42000"
       },
       "hazard": {
         "type": "TURB",
@@ -746,522 +792,64 @@
       "area": [
         {
           "point": {
-            "longitude": "-69.3144",
-            "latitude": "47.5893"
+            "longitude": "-84.8561",
+            "latitude": "40.3654"
           }
         },
         {
           "point": {
-            "longitude": "-67.8065",
-            "latitude": "47.2344"
+            "longitude": "-84.7",
+            "latitude": "39.02"
           }
         },
         {
           "point": {
-            "longitude": "-66.8254",
-            "latitude": "45.3161"
+            "longitude": "-83.4167",
+            "latitude": "39.013"
           }
         },
         {
           "point": {
-            "longitude": "-66.9153",
-            "latitude": "42.194"
+            "longitude": "-84.839",
+            "latitude": "35.5766"
           }
         },
         {
           "point": {
-            "longitude": "-68.1695",
-            "latitude": "41.8392"
+            "longitude": "-88.2885",
+            "latitude": "34.6973"
           }
         },
         {
           "point": {
-            "longitude": "-72.32",
-            "latitude": "40.0846"
+            "longitude": "-89.6043",
+            "latitude": "35.1866"
           }
         },
         {
           "point": {
-            "longitude": "-75.52",
-            "latitude": "38.6824"
+            "longitude": "-89.6399",
+            "latitude": "37.1985"
           }
         },
         {
           "point": {
-            "longitude": "-78.6358",
-            "latitude": "37.7186"
+            "longitude": "-86.6749",
+            "latitude": "39.5746"
           }
         },
         {
           "point": {
-            "longitude": "-83.1012",
-            "latitude": "38.7451"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.32",
-            "latitude": "42.06"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-73.1109",
-            "latitude": "45.14"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-71.38",
-            "latitude": "45.4705"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-69.9235",
-            "latitude": "46.7908"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-69.3144",
-            "latitude": "47.5893"
+            "longitude": "-84.8561",
+            "latitude": "40.3654"
           }
         }
       ]
     },
     {
-      "raw_text": "WAUS45 KKCI 190845 SLCT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET TURB...CO NM FROM 40ENE AKO TO GLD TO 50W LBL TO 30ESE TBE TO 60SSE TBE TO 50SE DEN TO 40ENE AKO MOD TURB BTN FL260 AND FL450. CONDS ENDG BY 12Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "26000",
-        "max_ft_msl": "45000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-102.3734",
-            "latitude": "40.4116"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.69",
-            "latitude": "39.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.0166",
-            "latitude": "37.0354"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.0175",
-            "latitude": "37.0761"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.1263",
-            "latitude": "36.3478"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.8975",
-            "latitude": "39.2168"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.3734",
-            "latitude": "40.4116"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS43 KKCI 190845 CHIT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET TURB...ND SD NE MN IA FROM 30NW ISN TO 50NE BIS TO 70SSE FAR TO 50WSW FOD TO 50WNW OVR TO 30NE ANW TO 20SE BFF TO 70SW RAP TO 30NW ISN MOD TURB BTN FL280 AND FL450. CONDS CONTG BYD 15Z ENDG 15-18Z. OTLK VALID 1500-2100Z...TURB MO IL IN KY OK TX AR TN LA MS AL BOUNDED BY 40SE FWA-CVG-HNN-20N HMV-40WSW HMV-40S GQO-20SW LSU- 20N IAH-20NW GGG-40NNW TXK-50SSE LIT-20SW FAM-60S AXC-40SE FWA MOD TURB BTN FL260 AND FL450. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "28000",
-        "max_ft_msl": "45000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-104.1672",
-            "latitude": "48.5345"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.798",
-            "latitude": "47.3575"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.2105",
-            "latitude": "45.6693"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.3333",
-            "latitude": "42.2855"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-96.7703",
-            "latitude": "41.4851"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-99.5042",
-            "latitude": "42.9247"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.1654",
-            "latitude": "41.6545"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1418",
-            "latitude": "43.1486"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1672",
-            "latitude": "48.5345"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS44 KKCI 190845 DFWT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET TURB...OK TX AR TN LA MS AL NE KS MO IL KY FROM 20W LBF TO 50S LIT TO 60SW PXV TO 20ESE BNA TO 50ENE VUZ TO 20SW LSU TO IAH TO 60ESE LBB TO 20ENE LBB TO 30NNE TXO TO 60SSE TBE TO 30ESE TBE TO 50W LBL TO GLD TO 40ENE AKO TO 20W LBF MOD TURB BTN FL260 AND FL450. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...TURB OK TX AR TN LA MS AL MO IL IN KY BOUNDED BY 40SE FWA-CVG-HNN-20N HMV-40WSW HMV-40S GQO-20SW LSU- 20N IAH-20NW GGG-40NNW TXK-50SSE LIT-20SW FAM-60S AXC-40SE FWA MOD TURB BTN FL260 AND FL450. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "26000",
-        "max_ft_msl": "45000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-101.1613",
-            "latitude": "41.1292"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.18",
-            "latitude": "33.8446"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.6454",
-            "latitude": "37.2216"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.3004",
-            "latitude": "36.0122"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.9691",
-            "latitude": "33.9862"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.5721",
-            "latitude": "30.2447"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.35",
-            "latitude": "29.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.8176",
-            "latitude": "33.3135"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.5504",
-            "latitude": "33.8266"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.6051",
-            "latitude": "34.9645"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.1263",
-            "latitude": "36.3478"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.0175",
-            "latitude": "37.0761"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.0166",
-            "latitude": "37.0354"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.69",
-            "latitude": "39.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.3734",
-            "latitude": "40.4116"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.1613",
-            "latitude": "41.1292"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS45 KKCI 190845 SLCT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET TURB...MT WY CO FROM 50NE GGW TO 30NW ISN TO 70SW RAP TO 20SE BFF TO 50NE DBL TO 40ESE OCS TO 20SSE BOY TO 30W BIL TO 40ESE HVR TO 50NE GGW MOD TURB BTN FL280 AND FL450. CONDS CONTG BYD 15Z ENDG 15-18Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "28000",
-        "max_ft_msl": "45000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-105.733",
-            "latitude": "48.8073"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1672",
-            "latitude": "48.5345"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-104.1418",
-            "latitude": "43.1486"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.1654",
-            "latitude": "41.6545"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-106.1285",
-            "latitude": "40.0282"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.2021",
-            "latitude": "41.3327"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.1256",
-            "latitude": "43.1528"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.3517",
-            "latitude": "45.8077"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.8471",
-            "latitude": "48.2819"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-105.733",
-            "latitude": "48.8073"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS43 KKCI 190845 CHIT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET TURB...NE KS MO IL KY OK TX AR TN LA MS AL FROM 20W LBF TO 50S LIT TO 60SW PXV TO 20ESE BNA TO 50ENE VUZ TO 20SW LSU TO IAH TO 60ESE LBB TO 20ENE LBB TO 30NNE TXO TO 60SSE TBE TO 30ESE TBE TO 50W LBL TO GLD TO 40ENE AKO TO 20W LBF MOD TURB BTN FL260 AND FL450. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...TURB MO IL IN KY OK TX AR TN LA MS AL BOUNDED BY 40SE FWA-CVG-HNN-20N HMV-40WSW HMV-40S GQO-20SW LSU- 20N IAH-20NW GGG-40NNW TXK-50SSE LIT-20SW FAM-60S AXC-40SE FWA MOD TURB BTN FL260 AND FL450. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "26000",
-        "max_ft_msl": "45000"
-      },
-      "hazard": {
-        "type": "TURB",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-101.1613",
-            "latitude": "41.1292"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.18",
-            "latitude": "33.8446"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.6454",
-            "latitude": "37.2216"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.3004",
-            "latitude": "36.0122"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.9691",
-            "latitude": "33.9862"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.5721",
-            "latitude": "30.2447"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.35",
-            "latitude": "29.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-100.8176",
-            "latitude": "33.3135"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.5504",
-            "latitude": "33.8266"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.6051",
-            "latitude": "34.9645"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.1263",
-            "latitude": "36.3478"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-103.0175",
-            "latitude": "37.0761"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.0166",
-            "latitude": "37.0354"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.69",
-            "latitude": "39.39"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-102.3734",
-            "latitude": "40.4116"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-101.1613",
-            "latitude": "41.1292"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOT WA 190845 AIRMET TANGO UPDT 1 FOR TURB VALID UNTIL 191500 AIRMET NO SGFNT TURB EXP OUTSIDE OF CNVTV ACT. ",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
+      "raw_text": "WAUS42 KKCI 191445 MIAT WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET NO SGFNT TURB EXP OUTSIDE OF CNVTV ACT. ",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
       "hazard": {
         "type": "TURB"
       },
@@ -1273,11 +861,175 @@
       }
     },
     {
-      "raw_text": "WAUS45 KKCI 190845 SLCZ WA 190845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 191500 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. FRZLVL...RANGING FROM 135-165 ACRS AREA 160 ALG 40WSW LAS-20WNW BAM-TWF-20ESE MTU-40ENE OCS-20WSW AKO- 50N INK",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
+      "raw_text": "WAUS43 KKCI 191445 CHIT WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET TURB...ND SD NE KS MN IA MO WI IL FROM 20NW FAR TO 60SSW DLH TO 70SSW RHI TO 40SE DLL TO BDF TO 40W STL TO 30NNW SGF TO RZC TO 20NW OSW TO 30SSW OVR TO 30NW FSD TO 20W ABR TO 20NW FAR MOD TURB BTN FL310 AND FL410. CONDS CONTG BYD 21Z THRU 03Z. OTLK VALID 2100-0300Z AREA 1...TURB KS MN IA MO WI IL OK AR BOUNDED BY 40ESE BRD-70SSW RHI-40SE DLL-30SSE STL-20SE LIT-20N FSM-20ESE OSW-30SSW MCI-20SSW DSM-40ESE BRD MOD TURB BTN FL310 AND FL410. CONDS CONTG THRU 03Z. AREA 2...TURB MO MI IL IN KY TN BOUNDED BY 50NNE FWA-FWA-CVG-HNN-30NE LOZ-40SSE DYR-20NW DYR- 40SE FAM-50S AXC-30NE BVT-50NNE FWA MOD TURB BTN FL260 AND FL420. CONDS CONTG THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "altitude": {
+        "min_ft_msl": "31000",
+        "max_ft_msl": "41000"
+      },
       "hazard": {
-        "type": "ICE"
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-97.1945",
+            "latitude": "46.9845"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.7481",
+            "latitude": "45.8774"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-90.0771",
+            "latitude": "44.5493"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.1165",
+            "latitude": "43.0781"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.59",
+            "latitude": "41.16"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-91.3337",
+            "latitude": "38.8569"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.5737",
+            "latitude": "37.8245"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-94.12",
+            "latitude": "36.25"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.4958",
+            "latitude": "37.3847"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-95.9939",
+            "latitude": "40.705"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.2745",
+            "latitude": "44.0047"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-98.8435",
+            "latitude": "45.419"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-97.1945",
+            "latitude": "46.9845"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS43 KKCI 191445 CHIT WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET TURB...MO IL IN KY TN MS AL FROM 40SSE FWA TO CVG TO 60E CVG TO 50WSW VXV TO 40W MSL TO 20ENE MEM TO 40SE FAM TO 20SW IND TO 40SSE FWA MOD TURB BTN FL300 AND FL420. CONDS CONTG BYD 21Z THRU 03Z. OTLK VALID 2100-0300Z AREA 1...TURB KS MN IA MO WI IL OK AR BOUNDED BY 40ESE BRD-70SSW RHI-40SE DLL-30SSE STL-20SE LIT-20N FSM-20ESE OSW-30SSW MCI-20SSW DSM-40ESE BRD MOD TURB BTN FL310 AND FL410. CONDS CONTG THRU 03Z. AREA 2...TURB MO MI IL IN KY TN BOUNDED BY 50NNE FWA-FWA-CVG-HNN-30NE LOZ-40SSE DYR-20NW DYR- 40SE FAM-50S AXC-30NE BVT-50NNE FWA MOD TURB BTN FL260 AND FL420. CONDS CONTG THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "altitude": {
+        "min_ft_msl": "30000",
+        "max_ft_msl": "42000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-84.8561",
+            "latitude": "40.3654"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.7",
+            "latitude": "39.02"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.4167",
+            "latitude": "39.013"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.839",
+            "latitude": "35.5766"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.2885",
+            "latitude": "34.6973"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.6043",
+            "latitude": "35.1866"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.6399",
+            "latitude": "37.1985"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-86.6749",
+            "latitude": "39.5746"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.8561",
+            "latitude": "40.3654"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS46 KKCI 191445 SFOT WA 191445 AIRMET TANGO UPDT 2 FOR TURB VALID UNTIL 192100 AIRMET NO SGFNT TURB EXP OUTSIDE OF CNVTV ACT. ",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "TURB"
       },
       "airsigmet_type": "AIRMET",
       "area": [
@@ -1287,241 +1039,9 @@
       }
     },
     {
-      "raw_text": "WAUS43 KKCI 190845 CHIZ WA 190845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 191500 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. FRZLVL...RANGING FROM 120-160 ACRS AREA",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
-      "hazard": {
-        "type": "ICE"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS42 KKCI 190845 MIAZ WA 190845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 191500 AIRMET ICE...GA FROM 20NNW ATL TO 40E ATL TO 30ENE MCN TO 20ENE PZD TO 50SE MGM TO 20NNW ATL MOD ICE BTN 150 AND FL280. CONDS DVLPG AFT 12Z. CONDS CONTG BYD 15Z ENDG 15-18Z. FRZLVL...RANGING FROM 145-165 ACRS AREA",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "15000",
-        "max_ft_msl": "28000"
-      },
-      "hazard": {
-        "type": "ICE",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-84.5933",
-            "latitude": "33.937"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.6416",
-            "latitude": "33.6274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.0966",
-            "latitude": "32.8813"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.9287",
-            "latitude": "31.7867"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.6262",
-            "latitude": "31.6274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-84.5933",
-            "latitude": "33.937"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS44 KKCI 190845 DFWZ WA 190845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 191500 AIRMET ICE...AR LA MS AL FROM 40WNW MSL TO 50WSW GQO TO 20NNW ATL TO 50SE MGM TO 30W MGM TO 30SE MEI TO 40ESE MCB TO 30NNW LSU TO 30NNE AEX TO 50NW SQS TO 20SE MEM TO 40WNW MSL MOD ICE BTN 150 AND FL280. CONDS CONTG BYD 15Z ENDG 15-18Z. FRZLVL...RANGING FROM 145-165 ACRS AREA 160 ALG 50N INK-30SW SJT-30WSW JCT-60SSE DLF 160 BOUNDED BY 50W GGG-20SW GGG-30SSW GGG-20NNW LFK-30SW LFK- 40NNW IAH-40WNW IAH-50W IAH-50SSE ACT-20ESE ACT-20E ACT- 60SE TTT-50W GGG",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "15000",
-        "max_ft_msl": "28000"
-      },
-      "hazard": {
-        "type": "ICE",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-88.2293",
-            "latitude": "34.9521"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.0881",
-            "latitude": "34.6367"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-84.5933",
-            "latitude": "33.937"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.6262",
-            "latitude": "31.6274"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.9146",
-            "latitude": "32.2186"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.3804",
-            "latitude": "32.0236"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.5432",
-            "latitude": "31.0436"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-91.5245",
-            "latitude": "30.9446"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-92.2737",
-            "latitude": "31.7246"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-90.993",
-            "latitude": "34.0487"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-89.6937",
-            "latitude": "34.8246"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-88.2293",
-            "latitude": "34.9521"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS41 KKCI 190845 BOSZ WA 190845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 191500 AIRMET ICE...ME NH MA RI NY NJ CSTL WTRS FROM 110SE BGR TO 200SE ACK TO 190SSE ACK TO 150SSE HTO TO 100SSE HTO TO 40S ACK TO 80E BOS TO 110SE BGR MOD ICE BTN 140 AND FL260. CONDS ENDG 12-15Z. FRZLVL...RANGING FROM 105-155 ACRS AREA 120 ALG 30NE YYZ-60NE BUF-30ESE MPV-30ESE HUL",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "14000",
-        "max_ft_msl": "26000"
-      },
-      "hazard": {
-        "type": "ICE",
-        "severity": "MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-67.0827",
-            "latitude": "43.53"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-67.0108",
-            "latitude": "38.8895"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-68.4876",
-            "latitude": "38.3481"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-71.0973",
-            "latitude": "38.6062"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-71.4973",
-            "latitude": "39.3817"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-70.03",
-            "latitude": "40.6152"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-69.191",
-            "latitude": "42.3459"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-67.0827",
-            "latitude": "43.53"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOZ WA 190845 AIRMET ZULU UPDT 1 FOR ICE AND FRZLVL VALID UNTIL 191500 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. FRZLVL...RANGING FROM 120-175 ACRS AREA 160 ALG 40ESE MZB-30ENE MZB-160SSW RZS-170SW RZS 160 ALG 150SW FOT-90W ENI-30E CZQ-50SE EHF-40SSW HEC-40WSW LAS",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
-      "hazard": {
-        "type": "ICE"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS41 KKCI 190845 BOSS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET IFR...WV VA NC SC GA AND CSTL WTRS FROM 20ENE EKN TO 50SE EKN TO PSK TO 20NW GSO TO 30SE RIC TO 30ESE ORF TO 60SSE ECG TO 50S ILM TO 40WNW SAV TO 60S LGC TO GQO TO HMV TO 40W BKW TO 40E HNN TO 20ENE EKN CIG BLW 010/VIS BLW 3SM BR/FG. CONDS ENDG 12-15Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
+      "raw_text": "WAUS44 KKCI 191445 DFWS WA 191445 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET IFR...MS AL FROM 40NNW IGB TO 50SSW MSL TO 40NNW MGM TO 50NNE SJI TO 50SSW MEI TO 20SSW MHZ TO 30S SQS TO 40NNW IGB CIG BLW 010/VIS BLW 3SM BR/FG. CONDS ENDG 15-18Z. OTLK VALID 2100-0300Z...MTN OBSCN TN BOUNDED BY 40N HMV-HMV-GQO-60SW LOZ-40N HMV MTNS OBSC BY CLDS/PCPN. CONDS DVLPG AFT 00Z. CONDS CONTG THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
       "altitude": {
         "min_ft_msl": "0",
         "max_ft_msl": "1000"
@@ -1534,170 +1054,86 @@
       "area": [
         {
           "point": {
-            "longitude": "-79.7046",
-            "latitude": "39.0465"
+            "longitude": "-88.8272",
+            "latitude": "34.0938"
           }
         },
         {
           "point": {
-            "longitude": "-79.347",
-            "latitude": "38.3268"
+            "longitude": "-87.8653",
+            "latitude": "33.9276"
           }
         },
         {
           "point": {
-            "longitude": "-80.71",
-            "latitude": "37.09"
+            "longitude": "-86.6228",
+            "latitude": "32.8338"
           }
         },
         {
           "point": {
-            "longitude": "-80.2716",
-            "latitude": "36.2847"
+            "longitude": "-87.985",
+            "latitude": "31.5013"
           }
         },
         {
           "point": {
-            "longitude": "-76.8738",
-            "latitude": "37.1434"
+            "longitude": "-89.1754",
+            "latitude": "31.6076"
           }
         },
         {
           "point": {
-            "longitude": "-75.6204",
-            "latitude": "36.6961"
+            "longitude": "-90.2502",
+            "latitude": "32.1228"
           }
         },
         {
           "point": {
-            "longitude": "-75.7123",
-            "latitude": "35.3279"
+            "longitude": "-90.28",
+            "latitude": "32.9569"
           }
         },
         {
           "point": {
-            "longitude": "-77.87",
-            "latitude": "33.5146"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.8375",
-            "latitude": "32.4123"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.21",
-            "latitude": "32.0529"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.15",
-            "latitude": "34.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.961",
-            "latitude": "37.777"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.1777",
-            "latitude": "38.7469"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-79.7046",
-            "latitude": "39.0465"
+            "longitude": "-88.8272",
+            "latitude": "34.0938"
           }
         }
       ]
     },
     {
-      "raw_text": "WAUS41 KKCI 190845 BOSS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET IFR...NY PA FROM 40ENE SYR TO 40S ALB TO 20SSE HNK TO 30W HNK TO 20SW SLT TO 20NNW EWC TO ERI TO 30W SYR TO 40ENE SYR VIS BLW 3SM BR/FG. CONDS ENDG 09-12Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "1000"
-      },
+      "raw_text": "WAUS43 KKCI 191445 CHIS WA 191445 AIRMET SIERRA UPDT 2 FOR IFR VALID UNTIL 192100 AIRMET NO SGFNT IFR EXP OUTSIDE OF CNVTV ACT. ",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
       "hazard": {
-        "type": "IFR",
-        "severity": "LT-MOD"
+        "type": "IFR"
       },
       "airsigmet_type": "AIRMET",
       "area": [
-        {
-          "point": {
-            "longitude": "-75.3546",
-            "latitude": "43.4113"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-73.8",
-            "latitude": "42.0852"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.1495",
-            "latitude": "41.7528"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.9976",
-            "latitude": "42.058"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.2827",
-            "latitude": "41.2745"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.3789",
-            "latitude": "41.137"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.3",
-            "latitude": "42.02"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.8896",
-            "latitude": "43.1579"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.3546",
-            "latitude": "43.4113"
-          }
-        }
-      ]
+
+      ],
+      "altitude": {
+      }
     },
     {
-      "raw_text": "WAUS41 KKCI 190845 BOSS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...WV VA NC SC GA FROM 30WNW EKN TO 30E EKN TO 20NNE LYH TO CLT TO ATL TO GQO TO HMV TO 40S HNN TO 30WNW EKN MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 15Z THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
+      "raw_text": "WAUS45 KKCI 191445 SLCS WA 191445 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET NO SGFNT IFR EXP OUTSIDE OF CNVTV ACT. ",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "IFR"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS45 KKCI 191445 SLCS WA 191445 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...MT FROM 30SSW YQL TO HVR TO 20N SHR TO 30E FCA TO 30SSW YQL MTNS OBSC BY FU/HZ. CONDS CONTG BYD 21Z ENDG 00-03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
       "hazard": {
         "type": "MTN OBSCN",
         "severity": "LT-MOD"
@@ -1706,20 +1142,314 @@
       "area": [
         {
           "point": {
-            "longitude": "-80.699",
-            "latitude": "39.111"
+            "longitude": "-113.0944",
+            "latitude": "49.1649"
           }
         },
         {
           "point": {
-            "longitude": "-79.4534",
-            "latitude": "38.9182"
+            "longitude": "-109.77",
+            "latitude": "48.54"
           }
         },
         {
           "point": {
-            "longitude": "-79.0696",
-            "latitude": "37.557"
+            "longitude": "-107.06",
+            "latitude": "45.1724"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.4251",
+            "latitude": "48.2075"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-113.0944",
+            "latitude": "49.1649"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS41 KKCI 191445 BOSS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR VALID UNTIL 192100 AIRMET NO SGFNT IFR EXP OUTSIDE OF CNVTV ACT. ",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "IFR"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS45 KKCI 191445 SLCS WA 191445 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...NV FROM 80N FMG TO 60WSW BAM TO 60E BAM TO 20SW BVL TO 20SSW ELY TO 40NNE OAL TO 40SSE OAL TO 40SSW FMG TO 80N FMG MTNS OBSC BY FU/HZ. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "MTN OBSCN",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-119.66",
+            "latitude": "40.8595"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.1258",
+            "latitude": "40.1821"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.6074",
+            "latitude": "40.5626"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-114.0691",
+            "latitude": "40.4946"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.0137",
+            "latitude": "38.9928"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.4444",
+            "latitude": "38.6137"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.4498",
+            "latitude": "37.3854"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.9869",
+            "latitude": "38.9154"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.66",
+            "latitude": "40.8595"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS45 KKCI 191445 SLCS WA 191445 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...ID MT WY WA OR FROM 70WSW YXC TO 30NNW MLP TO 40SSW SHR TO 20NNE DDY TO 30WSW DDY TO 30W JAC TO 40NNW DNJ TO 40SW BKE TO 50NNW REO TO 60WSW REO TO 20N OED TO 20S EUG TO 50SSW YKM TO 30SSW YDC TO 70WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "MTN OBSCN",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-117.4293",
+            "latitude": "49.1413"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.9373",
+            "latitude": "47.9244"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.415",
+            "latitude": "44.2253"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.1049",
+            "latitude": "43.3969"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.9144",
+            "latitude": "42.8957"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.4249",
+            "latitude": "43.6179"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.5722",
+            "latitude": "45.3836"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.4675",
+            "latitude": "44.3681"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.3097",
+            "latitude": "43.361"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.1136",
+            "latitude": "42.2017"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.91",
+            "latitude": "42.8124"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.22",
+            "latitude": "43.7876"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.9085",
+            "latitude": "45.7972"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.8135",
+            "latitude": "49.0049"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.4293",
+            "latitude": "49.1413"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS42 KKCI 191445 MIAS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET IFR...NC SC GA FROM 30WSW RDU TO 30SSE RDU TO 30N ILM TO 30ESE FLO TO CAE TO 40WSW IRQ TO 40S ODF TO 20NE ODF TO 20NE CLT TO 30WSW RDU CIG BLW 010/VIS BLW 3SM BR/FG. CONDS ENDG 15-18Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "altitude": {
+        "min_ft_msl": "0",
+        "max_ft_msl": "1000"
+      },
+      "hazard": {
+        "type": "IFR",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-79.3521",
+            "latitude": "35.6761"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.5438",
+            "latitude": "35.405"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.87",
+            "latitude": "34.8531"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-79.0992",
+            "latitude": "34.0362"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-81.05",
+            "latitude": "33.86"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-82.8961",
+            "latitude": "33.4534"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.3",
+            "latitude": "34.0352"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.0133",
+            "latitude": "34.9347"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-80.6415",
+            "latitude": "35.4547"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-79.3521",
+            "latitude": "35.6761"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS42 KKCI 191445 MIAS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...NC SC GA FROM 30NNE LYH TO CLT TO ATL TO GQO TO 50N GQO TO 30E VXV TO 30SSW BKW TO 40ESE BKW TO 30NNE LYH MTNS OBSC BY CLDS/PCPN. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "hazard": {
+        "type": "MTN OBSCN",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-78.9866",
+            "latitude": "37.7145"
           }
         },
         {
@@ -1742,236 +1472,32 @@
         },
         {
           "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.03",
-            "latitude": "38.0852"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.699",
-            "latitude": "39.111"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS45 KKCI 190845 SLCS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET NO SGFNT IFR EXP OUTSIDE OF CNVTV ACT. OTLK VALID 1500-2100Z...MTN OBSCN ID MT WY WA OR BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
-      "hazard": {
-        "type": "IFR"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS43 KKCI 190845 CHIS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR VALID UNTIL 191500 AIRMET IFR...KY TN AL FROM 40W BKW TO HMV TO GQO TO 60S LGC TO 60SE MEI TO 20N VUZ TO 50SE BNA TO 40NE LOZ TO 40W BKW CIG BLW 010/VIS BLW 3SM BR/FG. CONDS ENDG 12-15Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "1000"
-      },
-      "hazard": {
-        "type": "IFR",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-81.961",
-            "latitude": "37.777"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
-          }
-        },
-        {
-          "point": {
             "longitude": "-85.15",
-            "latitude": "34.96"
+            "latitude": "35.7954"
           }
         },
         {
           "point": {
-            "longitude": "-85.21",
-            "latitude": "32.0529"
+            "longitude": "-83.269",
+            "latitude": "35.8984"
           }
         },
         {
           "point": {
-            "longitude": "-87.9715",
-            "latitude": "31.6722"
+            "longitude": "-81.3621",
+            "latitude": "37.315"
           }
         },
         {
           "point": {
-            "longitude": "-86.9",
-            "latitude": "34.0024"
+            "longitude": "-80.3456",
+            "latitude": "37.5231"
           }
         },
         {
           "point": {
-            "longitude": "-85.954",
-            "latitude": "35.5471"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-83.5275",
-            "latitude": "37.4986"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.961",
-            "latitude": "37.777"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS44 KKCI 190845 DFWS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET IFR...TX AR LA MS AL FROM 20N VUZ TO 60SE MEI TO 30SSW IAH TO 20ESE SAT TO 50E JCT TO 40NW ACT TO 60NW GGG TO 20SW EIC TO 20N VUZ CIG BLW 010/VIS BLW 3SM PCPN/BR. CONDS CONTG BYD 15Z ENDG 15-18Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "1000"
-      },
-      "hazard": {
-        "type": "IFR",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-86.9",
-            "latitude": "34.0024"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-87.9715",
-            "latitude": "31.6722"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.5712",
-            "latitude": "29.4951"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.1071",
-            "latitude": "29.5123"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-98.8494",
-            "latitude": "30.5964"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-97.8251",
-            "latitude": "32.1289"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-95.5919",
-            "latitude": "33.1223"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-94.0888",
-            "latitude": "32.5347"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-86.9",
-            "latitude": "34.0024"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS45 KKCI 190845 SLCS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...ID MT WA FROM 60WSW YXC TO 40SSW YQL TO HVR TO 50ESE BIL TO GTF TO 20ESE MLP TO 20ESE GEG TO 60WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN ID MT WY WA OR BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-117.1902",
-            "latitude": "49.2098"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.1879",
-            "latitude": "49.0152"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.77",
-            "latitude": "48.54"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.5291",
-            "latitude": "45.485"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.41",
-            "latitude": "47.45"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.1969",
-            "latitude": "47.3319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1761",
-            "latitude": "47.4319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1902",
-            "latitude": "49.2098"
+            "longitude": "-78.9866",
+            "latitude": "37.7145"
           }
         }
       ],
@@ -1979,115 +1505,9 @@
       }
     },
     {
-      "raw_text": "WAUS42 KKCI 190845 MIAS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET IFR...NC SC GA WV VA AND CSTL WTRS FROM 20ENE EKN TO 50SE EKN TO PSK TO 20NW GSO TO 30SE RIC TO 30ESE ORF TO 60SSE ECG TO 50S ILM TO 40WNW SAV TO 60S LGC TO GQO TO HMV TO 40W BKW TO 40E HNN TO 20ENE EKN CIG BLW 010/VIS BLW 3SM BR/FG. CONDS ENDG 12-15Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "altitude": {
-        "min_ft_msl": "0",
-        "max_ft_msl": "1000"
-      },
-      "hazard": {
-        "type": "IFR",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-79.7046",
-            "latitude": "39.0465"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-79.347",
-            "latitude": "38.3268"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.71",
-            "latitude": "37.09"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.2716",
-            "latitude": "36.2847"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.8738",
-            "latitude": "37.1434"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.6204",
-            "latitude": "36.6961"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.7123",
-            "latitude": "35.3279"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.87",
-            "latitude": "33.5146"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.8375",
-            "latitude": "32.4123"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.21",
-            "latitude": "32.0529"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.15",
-            "latitude": "34.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.961",
-            "latitude": "37.777"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-81.1777",
-            "latitude": "38.7469"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-79.7046",
-            "latitude": "39.0465"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET IFR...WA OR CA AND CSTL WTRS FROM 30NNW TOU TO 50SW HUH TO 40ESE HQM TO 60WNW OED TO 20SSE FOT TO 20SW OAK TO 20WNW RZS TO 40ESE LAX TO 30ESE MZB TO 220SW MZB TO 140WSW FOT TO 120WNW ONP TO 140W TOU TO 30NNW TOU CIG BLW 010/VIS BLW 3SM BR/FG. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN WA OR ID MT WY BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
+      "raw_text": "WAUS46 KKCI 191445 SFOS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET IFR...WA OR CA AND CSTL WTRS FROM 30NNW TOU TO 50SW HUH TO 50S SEA TO 20SSE ONP TO 50WNW OED TO 40E FOT TO 40S FOT TO 40WSW ENI TO 110SSW PYE TO 150SW SNS TO 140WSW FOT TO 120WNW ONP TO 140W TOU TO 30NNW TOU CIG BLW 010/VIS BLW 3SM BR/FG. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
       "altitude": {
         "min_ft_msl": "0",
         "max_ft_msl": "1000"
@@ -2112,50 +1532,50 @@
         },
         {
           "point": {
-            "longitude": "-123.2546",
-            "latitude": "46.6921"
+            "longitude": "-122.31",
+            "latitude": "46.6046"
           }
         },
         {
           "point": {
-            "longitude": "-124.1667",
-            "latitude": "42.8547"
+            "longitude": "-123.8824",
+            "latitude": "44.2728"
           }
         },
         {
           "point": {
-            "longitude": "-124.0631",
-            "latitude": "40.3628"
+            "longitude": "-123.9619",
+            "latitude": "42.7949"
           }
         },
         {
           "point": {
-            "longitude": "-122.5162",
-            "latitude": "37.4946"
+            "longitude": "-123.3536",
+            "latitude": "40.6667"
           }
         },
         {
           "point": {
-            "longitude": "-120.1432",
-            "latitude": "34.6366"
+            "longitude": "-124.23",
+            "latitude": "40.0052"
           }
         },
         {
           "point": {
-            "longitude": "-117.692",
-            "latitude": "33.6734"
+            "longitude": "-124.058",
+            "latitude": "38.793"
           }
         },
         {
           "point": {
-            "longitude": "-116.6784",
-            "latitude": "32.5863"
+            "longitude": "-123.741",
+            "latitude": "36.3837"
           }
         },
         {
           "point": {
-            "longitude": "-120.2194",
-            "latitude": "30.1591"
+            "longitude": "-123.7523",
+            "latitude": "34.8746"
           }
         },
         {
@@ -2185,207 +1605,9 @@
       ]
     },
     {
-      "raw_text": "WAUS42 KKCI 190845 MIAS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...NC SC GA WV VA FROM 30WNW EKN TO 30E EKN TO 20NNE LYH TO CLT TO ATL TO GQO TO HMV TO 40S HNN TO 30WNW EKN MTNS OBSC BY CLDS/PCPN/BR. CONDS CONTG BYD 15Z THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-80.699",
-            "latitude": "39.111"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-79.4534",
-            "latitude": "38.9182"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-79.0696",
-            "latitude": "37.557"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.93",
-            "latitude": "35.22"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-84.44",
-            "latitude": "33.63"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.15",
-            "latitude": "34.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.03",
-            "latitude": "38.0852"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.699",
-            "latitude": "39.111"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...WA ID MT FROM 60WSW YXC TO 40SSW YQL TO HVR TO 50ESE BIL TO GTF TO 20ESE MLP TO 20ESE GEG TO 60WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN WA OR ID MT WY BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-117.1902",
-            "latitude": "49.2098"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-113.1879",
-            "latitude": "49.0152"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.77",
-            "latitude": "48.54"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-107.5291",
-            "latitude": "45.485"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.41",
-            "latitude": "47.45"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.1969",
-            "latitude": "47.3319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1761",
-            "latitude": "47.4319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1902",
-            "latitude": "49.2098"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS45 KKCI 190845 SLCS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...ID MT WY FROM 20ESE GEG TO 20ESE MLP TO 50S HLN TO 50WSW SHR TO 60ENE JAC TO 30S DLN TO 20ESE DNJ TO 40SE BKE TO 20ESE GEG MTNS OBSC BY FU/HZ. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN ID MT WY WA OR BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-117.1761",
-            "latitude": "47.4319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.1969",
-            "latitude": "47.3319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-111.95",
-            "latitude": "45.7746"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-108.1425",
-            "latitude": "44.5152"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-109.4494",
-            "latitude": "43.9945"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-112.55",
-            "latitude": "44.7469"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.7784",
-            "latitude": "44.642"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1525",
-            "latitude": "44.3681"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1761",
-            "latitude": "47.4319"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS44 KKCI 190845 DFWS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET IFR...TN AL KY FROM 40W BKW TO HMV TO GQO TO 60S LGC TO 60SE MEI TO 20N VUZ TO 50SE BNA TO 40NE LOZ TO 40W BKW CIG BLW 010/VIS BLW 3SM BR/FG. CONDS ENDG 12-15Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
+      "raw_text": "WAUS46 KKCI 191445 SFOS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET IFR...CA AND CSTL WTRS FROM 20SSE ENI TO 30SE OAK TO 20E SNS TO 50SSE SNS TO 60W EHF TO 20SE RZS TO 30ENE LAX TO 50W TRM TO 30ESE MZB TO 220SW MZB TO 150SW RZS TO 120WSW RZS TO 70SW SNS TO 60W SNS TO 20SSE ENI CIG BLW 010/VIS BLW 3SM BR. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
       "altitude": {
         "min_ft_msl": "0",
         "max_ft_msl": "1000"
@@ -2398,64 +1620,100 @@
       "area": [
         {
           "point": {
-            "longitude": "-81.961",
-            "latitude": "37.777"
+            "longitude": "-123.1069",
+            "latitude": "38.7428"
           }
         },
         {
           "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
+            "longitude": "-121.7724",
+            "latitude": "37.3734"
           }
         },
         {
           "point": {
-            "longitude": "-85.15",
-            "latitude": "34.96"
+            "longitude": "-121.1857",
+            "latitude": "36.6593"
           }
         },
         {
           "point": {
-            "longitude": "-85.21",
-            "latitude": "32.0529"
+            "longitude": "-121.2054",
+            "latitude": "35.8875"
           }
         },
         {
           "point": {
-            "longitude": "-87.9715",
-            "latitude": "31.6722"
+            "longitude": "-120.3244",
+            "latitude": "35.4738"
           }
         },
         {
           "point": {
-            "longitude": "-86.9",
-            "latitude": "34.0024"
+            "longitude": "-119.4856",
+            "latitude": "34.2746"
           }
         },
         {
           "point": {
-            "longitude": "-85.954",
-            "latitude": "35.5471"
+            "longitude": "-117.8686",
+            "latitude": "34.1212"
           }
         },
         {
           "point": {
-            "longitude": "-83.5275",
-            "latitude": "37.4986"
+            "longitude": "-117.1633",
+            "latitude": "33.6259"
           }
         },
         {
           "point": {
-            "longitude": "-81.961",
-            "latitude": "37.777"
+            "longitude": "-116.6784",
+            "latitude": "32.5863"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.2194",
+            "latitude": "30.1591"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.8689",
+            "latitude": "32.7261"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-121.9854",
+            "latitude": "33.7268"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.6185",
+            "latitude": "35.8299"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.8429",
+            "latitude": "36.6535"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.1069",
+            "latitude": "38.7428"
           }
         }
       ]
     },
     {
-      "raw_text": "WAUS44 KKCI 190845 DFWS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...TN FROM 40S HNN TO HMV TO GQO TO 60SW LOZ TO 40S HNN MTNS OBSC BY CLDS/BR. CONDS ENDG BY 12Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
+      "raw_text": "WAUS46 KKCI 191445 SFOS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...CA FROM 100SSE LKV TO 40SSW FMG TO 20SE BTY TO 30NNW HEC TO 40ESE EHF TO 20WNW CZQ TO 30S SAC TO 30NNE SAC TO 20S RBL TO 50NNE RBL TO 100SSE LKV MTNS OBSC BY FU/HZ. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
       "hazard": {
         "type": "MTN OBSCN",
         "severity": "LT-MOD"
@@ -2464,70 +1722,14 @@
       "area": [
         {
           "point": {
-            "longitude": "-82.03",
-            "latitude": "38.0852"
+            "longitude": "-119.668",
+            "latitude": "40.9515"
           }
         },
         {
           "point": {
-            "longitude": "-82.13",
-            "latitude": "36.44"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-85.15",
-            "latitude": "34.96"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-84.9951",
-            "latitude": "36.3217"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-82.03",
-            "latitude": "38.0852"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...CA NV FROM 30E BAM TO 40NNW ELY TO 30W ELY TO 20E OAL TO 20SE BTY TO 60S BTY TO 30E EHF TO 20NNE SAC TO 50SE RBL TO 60NW FMG TO 70SW BAM TO 30E BAM MTNS OBSC BY FU/HZ. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN WA OR ID MT WY BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-116.2578",
-            "latitude": "40.5681"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.1817",
-            "latitude": "39.9137"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-115.5001",
-            "latitude": "39.2982"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.3482",
-            "latitude": "37.9992"
+            "longitude": "-119.9869",
+            "latitude": "38.9154"
           }
         },
         {
@@ -2538,44 +1740,50 @@
         },
         {
           "point": {
-            "longitude": "-116.75",
-            "latitude": "35.8029"
+            "longitude": "-116.6958",
+            "latitude": "35.2645"
           }
         },
         {
           "point": {
-            "longitude": "-118.4822",
-            "latitude": "35.4784"
+            "longitude": "-118.3482",
+            "latitude": "35.2233"
           }
         },
         {
           "point": {
-            "longitude": "-121.3869",
-            "latitude": "38.747"
+            "longitude": "-120.2045",
+            "latitude": "37.0066"
           }
         },
         {
           "point": {
-            "longitude": "-121.4744",
-            "latitude": "39.5067"
+            "longitude": "-121.55",
+            "latitude": "37.9369"
           }
         },
         {
           "point": {
-            "longitude": "-120.5835",
-            "latitude": "40.2314"
+            "longitude": "-121.3026",
+            "latitude": "38.9045"
           }
         },
         {
           "point": {
-            "longitude": "-117.9939",
-            "latitude": "39.7392"
+            "longitude": "-122.24",
+            "latitude": "39.7676"
           }
         },
         {
           "point": {
-            "longitude": "-116.2578",
-            "latitude": "40.5681"
+            "longitude": "-121.8172",
+            "latitude": "40.8711"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.668",
+            "latitude": "40.9515"
           }
         }
       ],
@@ -2583,9 +1791,9 @@
       }
     },
     {
-      "raw_text": "WAUS45 KKCI 190845 SLCS WA 190845 AIRMET SIERRA UPDT 1 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...NV CA FROM 30E BAM TO 40NNW ELY TO 30W ELY TO 20E OAL TO 20SE BTY TO 60S BTY TO 30E EHF TO 20NNE SAC TO 50SE RBL TO 60NW FMG TO 70SW BAM TO 30E BAM MTNS OBSC BY FU/HZ. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN ID MT WY WA OR BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T14:45:00Z",
+      "raw_text": "WAUS46 KKCI 191445 SFOS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...WA OR FROM 20N TOU TO 30NNW SEA TO BTG TO ONP TO 20NNW HQM TO 20N TOU MTNS OBSC BY CLDS/BR/FG. CONDS ENDG 18-21Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
       "hazard": {
         "type": "MTN OBSCN",
         "severity": "LT-MOD"
@@ -2594,186 +1802,20 @@
       "area": [
         {
           "point": {
-            "longitude": "-116.2578",
-            "latitude": "40.5681"
+            "longitude": "-124.63",
+            "latitude": "48.6324"
           }
         },
         {
           "point": {
-            "longitude": "-115.1817",
-            "latitude": "39.9137"
+            "longitude": "-122.5972",
+            "latitude": "47.9044"
           }
         },
         {
           "point": {
-            "longitude": "-115.5001",
-            "latitude": "39.2982"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.3482",
-            "latitude": "37.9992"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.4574",
-            "latitude": "36.5646"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.75",
-            "latitude": "35.8029"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.4822",
-            "latitude": "35.4784"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.3869",
-            "latitude": "38.747"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.4744",
-            "latitude": "39.5067"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.5835",
-            "latitude": "40.2314"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.9939",
-            "latitude": "39.7392"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-116.2578",
-            "latitude": "40.5681"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...WA OR FROM 60WSW YXC TO 20ESE GEG TO 40SE BKE TO 20WNW REO TO 50ESE LKV TO 20NE OED TO 20SSE EUG TO 30WNW YKM TO 30SSW YDC TO 60WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG BYD 15Z THRU 21Z. OTLK VALID 1500-2100Z...MTN OBSCN WA OR ID MT WY BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-117.1902",
-            "latitude": "49.2098"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1761",
-            "latitude": "47.4319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1525",
-            "latitude": "44.3681"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-118.288",
-            "latitude": "42.7164"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-119.4687",
-            "latitude": "42.1656"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.5901",
-            "latitude": "42.7146"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.0437",
-            "latitude": "43.8128"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-121.1284",
-            "latitude": "46.7605"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-120.8135",
-            "latitude": "49.0049"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-117.1902",
-            "latitude": "49.2098"
-          }
-        }
-      ],
-      "altitude": {
-      }
-    },
-    {
-      "raw_text": "WAUS46 KKCI 190845 SFOS WA 190845 AIRMET SIERRA UPDT 2 FOR IFR AND MTN OBSCN VALID UNTIL 191500 AIRMET MTN OBSCN...WA OR FROM 20NNW TOU TO 40E TOU TO 20SW SEA TO 40SW BTG TO ONP TO 20NNW HQM TO 20NNW TOU MTNS OBSC BY CLDS/BR/FG. CONDS CONTG BYD 15Z ENDG 18-21Z. OTLK VALID 1500-2100Z...MTN OBSCN WA OR ID MT WY BOUNDED BY 80WSW YXC-50W HLN-CZI-20SE DDY-40SE DBS-40NE BKE- 50ESE LKV-LKV-40SSW YDC-80WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG THRU 21Z.",
-      "valid_time_from": "2024-07-19T08:45:00Z",
-      "valid_time_to": "2024-07-19T15:00:00Z",
-      "hazard": {
-        "type": "MTN OBSCN",
-        "severity": "LT-MOD"
-      },
-      "airsigmet_type": "AIRMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-124.8224",
-            "latitude": "48.6069"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.6308",
-            "latitude": "48.2957"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-122.6559",
-            "latitude": "47.2045"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-123.258",
-            "latitude": "45.278"
+            "longitude": "-122.59",
+            "latitude": "45.75"
           }
         },
         {
@@ -2790,10 +1832,280 @@
         },
         {
           "point": {
-            "longitude": "-124.8224",
-            "latitude": "48.6069"
+            "longitude": "-124.63",
+            "latitude": "48.6324"
           }
         }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS46 KKCI 191445 SFOS WA 191445 AIRMET SIERRA UPDT 3 FOR IFR AND MTN OBSCN VALID UNTIL 192100 AIRMET MTN OBSCN...WA OR ID MT WY FROM 70WSW YXC TO 30NNW MLP TO 40SSW SHR TO 20NNE DDY TO 30WSW DDY TO 30W JAC TO 40NNW DNJ TO 40SW BKE TO 50NNW REO TO 60WSW REO TO 20N OED TO 20S EUG TO 50SSW YKM TO 30SSW YDC TO 70WSW YXC MTNS OBSC BY FU/HZ. CONDS CONTG BYD 21Z THRU 03Z.",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "hazard": {
+        "type": "MTN OBSCN",
+        "severity": "LT-MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-117.4293",
+            "latitude": "49.1413"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-115.9373",
+            "latitude": "47.9244"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-107.415",
+            "latitude": "44.2253"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.1049",
+            "latitude": "43.3969"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-106.9144",
+            "latitude": "42.8957"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-111.4249",
+            "latitude": "43.6179"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-116.5722",
+            "latitude": "45.3836"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.4675",
+            "latitude": "44.3681"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-118.3097",
+            "latitude": "43.361"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-119.1136",
+            "latitude": "42.2017"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-122.91",
+            "latitude": "42.8124"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-123.22",
+            "latitude": "43.7876"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.9085",
+            "latitude": "45.7972"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-120.8135",
+            "latitude": "49.0049"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-117.4293",
+            "latitude": "49.1413"
+          }
+        }
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS44 KKCI 191445 DFWZ WA 191445 AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 192100 AIRMET ICE...MS AL FROM 40NW MSL TO 40N ATL TO 40SSW LGC TO 30WNW IGB TO 30SSW SQS TO 50NW SQS TO MEM TO 40NW MSL MOD ICE BTN 150 AND FL260. CONDS ENDG 15-18Z. OTLK VALID 2100-0300Z...ICE TN AL KY BOUNDED BY 60NE LOZ-20WSW BKW-40SSW HMV-VXV-50NE VUZ-30S MSL-50SW BNA-60NE LOZ MOD ICE BTN 150 AND FL280. CONDS DVLPG 00-03Z. CONDS CONTG THRU 03Z. FRZLVL...RANGING FROM 140-165 ACRS AREA 160 ALG 30W INK-50SSE FST-DLF 160 BOUNDED BY 50W GGG-40WSW GGG-40SSW GGG-20NW LFK-30SSW LFK- 20ENE IAH-20WSW IAH-50W IAH-50SSE ACT-40SSE ACT-40E ACT- 70SE TTT-50W GGG",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "altitude": {
+        "min_ft_msl": "15000",
+        "max_ft_msl": "26000"
+      },
+      "hazard": {
+        "type": "ICE",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-88.055",
+            "latitude": "35.1687"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.44",
+            "latitude": "34.2948"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-85.5114",
+            "latitude": "32.4355"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.0785",
+            "latitude": "33.6713"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-90.5095",
+            "latitude": "32.995"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-90.993",
+            "latitude": "34.0487"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-89.98",
+            "latitude": "35.06"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-88.055",
+            "latitude": "35.1687"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS43 KKCI 191445 CHIZ WA 191445 AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 192100 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. OTLK VALID 2100-0300Z AREA 1...ICE KY TN AL BOUNDED BY 60NE LOZ-20WSW BKW-40SSW HMV-VXV-50NE VUZ-30S MSL-50SW BNA-60NE LOZ MOD ICE BTN 150 AND FL280. CONDS DVLPG 00-03Z. CONDS CONTG THRU 03Z. AREA 2...ICE NE KS IA MO BOUNDED BY 50WNW MCW-MCW-40E PWE-40N SLN-80SSW OBH-30SSE OBH-40WNW OVR-50WNW MCW MOD ICE BTN 140 AND FL260. CONDS DVLPG 00-03Z. CONDS CONTG THRU 03Z. FRZLVL...RANGING FROM 125-160 ACRS AREA",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "ICE"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS45 KKCI 191445 SLCZ WA 191445 AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 192100 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. FRZLVL...RANGING FROM 135-170 ACRS AREA 160 ALG 50SSE BTY-50E BTY-50ESE BAM-20WSW BPI-30SSE AKO-20E CME-30W INK",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "ICE"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS41 KKCI 191445 BOSZ WA 191445 AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 192100 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. OTLK VALID 2100-0300Z...ICE WV VA BOUNDED BY 20WSW BKW-LYH-20N GSO-40SSW HMV-HMV-20WSW BKW MOD ICE BTN 150 AND FL280. CONDS DVLPG 00-03Z. CONDS CONTG THRU 03Z. FRZLVL...RANGING FROM 105-155 ACRS AREA 120 ALG 20WSW YOW-70ENE MPV-40SSE HUL-40ESE HUL",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "ICE"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+
+      ],
+      "altitude": {
+      }
+    },
+    {
+      "raw_text": "WAUS42 KKCI 191445 MIAZ WA 191445 AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 192100 AIRMET ICE...GA FROM 40N ATL TO 30ESE ATL TO 30W MCN TO 40SSW LGC TO 40N ATL MOD ICE BTN 150 AND FL260. CONDS ENDG 15-18Z. FRZLVL...RANGING FROM 140-160 ACRS AREA",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T21:00:00Z",
+      "altitude": {
+        "min_ft_msl": "15000",
+        "max_ft_msl": "26000"
+      },
+      "hazard": {
+        "type": "ICE",
+        "severity": "MOD"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-84.44",
+            "latitude": "34.2948"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-83.8831",
+            "latitude": "33.4362"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.2477",
+            "latitude": "32.6886"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-85.5114",
+            "latitude": "32.4355"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-84.44",
+            "latitude": "34.2948"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WAUS46 KKCI 191445 SFOZ WA 191445 AIRMET ZULU UPDT 2 FOR ICE AND FRZLVL VALID UNTIL 192100 AIRMET NO SGFNT ICE EXP OUTSIDE OF CNVTV ACT. FRZLVL...RANGING FROM 125-175 ACRS AREA 160 ALG 80SW MZB-40WNW MZB-30SSW LAX-130SSW RZS-170SW RZS 160 ALG 150SW FOT-60WNW ENI-40SSE EHF-50WNW HEC-50SSE BTY",
+      "valid_time_from": "2024-07-19T14:45:00Z",
+      "valid_time_to": "2024-07-19T20:45:00Z",
+      "hazard": {
+        "type": "ICE"
+      },
+      "airsigmet_type": "AIRMET",
+      "area": [
+
       ],
       "altitude": {
       }
