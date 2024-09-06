@@ -14,6 +14,7 @@ on:
       - scripts/convert_vdl2gs_to_json
   schedule:
     - cron:  '35 * * * *'
+  workflow_dispatch:
 
 jobs:
   test:
