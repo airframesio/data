@@ -13,7 +13,7 @@ JSON_FILE = ARGV[0]
 
 BASE_URL = 'https://nfdc.faa.gov/nfdcApps/controllers/PublicDataController/getLidData'
 ORIGIN   = 'https://www.faa.gov'
-REFERER  = 'https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/loc_id_search/Fixes_Waypoints/'
+REFERER  = 'https://www.faa.gov/'
 
 def convert_dms_to_degrees(dms = '')
   dms.scan(/(\d+)-(\d+)-(\d+)/).map { |x,y,z| x.to_f + y.to_f/60 + z.to_f/3600 }.first
@@ -140,11 +140,13 @@ def retrieve_page(page, count = 1000)
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Origin': ORIGIN,
     'Referer': REFERER,
-    'Accept-Encoding': 'gzip, deflat, br'
+    'Accept-Encoding': 'gzip, deflat, br',
+    'User-Agent': 'Mozilla/5.0',
   }
+  start = page * count
   payload = {
     'dataType': 'LIDFIXESWAYPOINTS',
-    'start': page,
+    'start': start,
     'length': count,
     'sortcolumn': 'fix_identifier',
     'sortdir': 'asc',
@@ -163,10 +165,13 @@ if res.code == "200"
   total_pages = total_records / count
   puts "There are #{total_records} total records, so there is #{total_pages} pages of #{count} records at a time."
   fixes += process_data(results['data'])
+  puts "Retrieved #{fixes.count} records"
   # puts data.first
-  for i in 1..total_pages do
+  for i in 1..(total_pages-1) do
     res = retrieve_page(i)
     if res.code == "200"
+      results = JSON.parse(res.body)
+      puts "Retrieved #{results['data'].count} records"
       fixes += process_data(results['data'])
       sleep(0.2)
     else
@@ -183,6 +188,7 @@ content = {
     url: 'https://github.com/airframesio',
     email: 'kevin@airframes.io'
   },
+  last_updated: Time.now,
   attribution: {
     name: 'FAA NFDC',
     url: 'https://nfdc.faa.gov/nfdcApps/controllers/PublicDataController/getLidData'
