@@ -35,5 +35,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update NOAA Aircraft Reports - json/noaa/aircraft_reports.json"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}
