@@ -13,7 +13,7 @@ on:
       - .github/workflows/update-faa-fixes.yml
       - scripts/faa/faa_nfdc_get_fixes
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '5 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -35,5 +35,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update FAA NFDC Fixes/Waypoints - json/faa/nfdc/fixes.json"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}

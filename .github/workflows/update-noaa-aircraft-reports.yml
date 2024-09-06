@@ -13,7 +13,7 @@ on:
       - .github/workflows/update-noaa-aircraft-reports.yml
       - scripts/noaa/noaa_nws_awc_get_aircraft_reports
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '15 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -35,5 +35,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update NOAA Aircraft Reports - json/noaa/aircraft_reports.json"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}

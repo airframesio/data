@@ -13,7 +13,7 @@ on:
       - .github/workflows/update-faa-tfrs.yml
       - scripts/faa/faa_get_tfrs
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '10 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -39,5 +39,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update FAA TFRs - json/faa/tfrs.json and json/faa/tfrs.geojson"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}

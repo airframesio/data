@@ -34,5 +34,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update FAA d-TPP Metafile - json/faa/dtpp/current_metafile.json"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}
