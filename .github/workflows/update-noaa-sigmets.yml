@@ -34,5 +34,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update NOAA SIGMETs - json/noaa/sigmets.json"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}
