@@ -35,5 +35,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update FAA NFDC Fixes/Waypoints - json/faa/nfdc/fixes.json"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}
