@@ -39,5 +39,6 @@ jobs:
         author_email: code@airframes.io
         message: "Update FAA TFRs - json/faa/tfrs.json and json/faa/tfrs.geojson"
         add: "*.*json"
+        fetch: false
       env:
         GITHUB_TOKEN: ${{ github.token }}
