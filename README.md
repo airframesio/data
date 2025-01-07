@@ -4,6 +4,10 @@ This data is collected, crafted, curated, processed, pruned, and otherwise prepa
 
 We encourage additions and corrections to the scripts and data via Pull Requests.
 
+[![Contributors](https://img.shields.io/github/contributors/airframesio/acars-decoder-typescript)](https://github.com/airframesio/data/graphs/contributors)
+[![Activity](https://img.shields.io/github/commit-activity/m/airframesio/acars-decoder-typescript)](https://github.com/airframesio/data/pulse)
+[![Discord](https://img.shields.io/discord/1067697487927853077?logo=discord)](https://discord.gg/8Ksch7zE)
+
 If you do wish to use the data in your project, please be respectful of the licensing terms. There are three options:
 * Non-Commercial License
 * Non-Commercial Significant Contributor License
