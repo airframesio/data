@@ -9,7 +9,7 @@
     "url": "https://aviationweather.gov/data/cache/airsigmets.cache.xml.gz"
   },
   "resource_type": "airsigmets",
-  "count": 8,
+  "count": 7,
   "airsigmets": [
     {
       "raw_text": "WSUS05 KKCI 102317 SLCV WS 102317 SIGMET VICTOR 3 VALID UNTIL 110317 SIGMET ID MT WY FROM 30SSW HLN TO 40SSW MLS TO 40NNE CYS TO LAR TO BPI TO 30SSW HLN OCNL SEV TURB BLW 160. DUE TO STG LOW LVL WNDS AND STG UDDFS AND LLWS. RPTD BY ACFT. CONDS CONTG BYD 0317Z.",
@@ -64,9 +64,9 @@
       ]
     },
     {
-      "raw_text": "WSUS32 KKCI 102355 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 110155-110555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
+      "raw_text": "WSUS32 KKCI 110155 SIGC CONVECTIVE SIGMET...NONE OUTLOOK VALID 110355-110755 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2025-03-11T01:55:00Z",
+      "valid_time_to": "2025-03-11T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -702,9 +702,9 @@
       }
     },
     {
-      "raw_text": "WSUS31 KKCI 102355 SIGE CONVECTIVE SIGMET 65E VALID UNTIL 0155Z NC AND CSTL WTRS FROM 30N ILM-70ENE ILM-110ESE ILM-140SSE ILM-30WSW ILM-30N ILM AREA EMBD TS MOV FROM 20025KT. TOPS TO FL440. OUTLOOK VALID 110155-110555 AREA 1...FROM 210SE CHS-220ENE PBI-160E PBI-80E PBI-160SE MIA-70SE EYW-130ENE TRV-210SE CHS WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 80ESE ECG-190ESE ECG-140SE ILM-90SSE ILM-50E CHS-30NNW CHS-30NE CAE-60NW ILM-60S ECG-80ESE ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
+      "raw_text": "WSUS31 KKCI 110155 SIGE CONVECTIVE SIGMET 5E VALID UNTIL 0355Z NC AND CSTL WTRS FROM 60SE ECG-110SSE ECG-250ENE SAV-60NW ILM-60SE ECG AREA EMBD TS MOV FROM 21025KT. TOPS TO FL440. OUTLOOK VALID 110355-110755 AREA 1...FROM 210ENE TRV-220ENE PBI-160E PBI-100E PBI-210ENE TRV WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 190E ECG-190ESE ECG-160SE ILM-110ESE ILM-70SSE ILM-40E FLO-60NW ILM-190E ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2025-03-11T01:55:00Z",
+      "valid_time_to": "2025-03-11T03:55:00Z",
       "altitude": {
         "max_ft_msl": "44000"
       },
@@ -716,20 +716,59 @@
       "area": [
         {
           "point": {
-            "longitude": "-77.87",
-            "latitude": "34.8531"
+            "longitude": "-75.3135",
+            "latitude": "35.5418"
           }
         },
         {
           "point": {
-            "longitude": "-76.5562",
-            "latitude": "34.7899"
+            "longitude": "-75.3286",
+            "latitude": "34.5539"
           }
         },
         {
           "point": {
-            "longitude": "-75.8365",
-            "latitude": "33.6319"
+            "longitude": "-76.492",
+            "latitude": "33.668"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.7313",
+            "latitude": "35.0521"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-75.3135",
+            "latitude": "35.5418"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 110155 SIGE CONVECTIVE SIGMET 6E VALID UNTIL 0355Z NC SC CSTL WTRS FROM 140SSE ECG-180SE ILM-140SSE ILM-250ENE SAV-140SSE ECG AREA TS MOV FROM 23040KT. TOPS TO FL380. OUTLOOK VALID 110355-110755 AREA 1...FROM 210ENE TRV-220ENE PBI-160E PBI-100E PBI-210ENE TRV WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 190E ECG-190ESE ECG-160SE ILM-110ESE ILM-70SSE ILM-40E FLO-60NW ILM-190E ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2025-03-11T01:55:00Z",
+      "valid_time_to": "2025-03-11T03:55:00Z",
+      "altitude": {
+        "max_ft_msl": "38000"
+      },
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-75.105",
+            "latitude": "34.0956"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-75.3704",
+            "latitude": "32.2092"
           }
         },
         {
@@ -740,22 +779,112 @@
         },
         {
           "point": {
-            "longitude": "-78.4316",
-            "latitude": "34.1562"
+            "longitude": "-76.492",
+            "latitude": "33.668"
           }
         },
         {
           "point": {
-            "longitude": "-77.87",
-            "latitude": "34.8531"
+            "longitude": "-75.105",
+            "latitude": "34.0956"
           }
         }
       ]
     },
     {
-      "raw_text": "WSUS33 KKCI 102355 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 110155-110555 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
+      "raw_text": "WSUS31 KKCI 110155 SIGE CONVECTIVE SIGMET 7E VALID UNTIL 0355Z FL CSTL WTRS FROM 210ENE PBI-140E PBI LINE TS 50 NM WIDE MOV FROM 25050KT. TOPS TO FL420. REF INTL SIGMET ALFA SERIES. OUTLOOK VALID 110355-110755 AREA 1...FROM 210ENE TRV-220ENE PBI-160E PBI-100E PBI-210ENE TRV WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 190E ECG-190ESE ECG-160SE ILM-110ESE ILM-70SSE ILM-40E FLO-60NW ILM-190E ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2025-03-11T01:55:00Z",
+      "valid_time_to": "2025-03-11T03:55:00Z",
+      "altitude": {
+        "max_ft_msl": "42000"
+      },
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-76.8178",
+            "latitude": "28.2123"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.8654",
+            "latitude": "26.8983"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.1092",
+            "latitude": "26.4132"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.0526",
+            "latitude": "27.7273"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-76.8178",
+            "latitude": "28.2123"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS31 KKCI 110155 SIGE CONVECTIVE SIGMET 8E VALID UNTIL 0355Z FL CSTL WTRS FROM 110ESE MIA-120SSE MIA LINE TS 40 NM WIDE MOV FROM 25035KT. TOPS TO FL360. REF INTL SIGMET ALFA SERIES. OUTLOOK VALID 110355-110755 AREA 1...FROM 210ENE TRV-220ENE PBI-160E PBI-100E PBI-210ENE TRV WST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 190E ECG-190ESE ECG-160SE ILM-110ESE ILM-70SSE ILM-40E FLO-60NW ILM-190E ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
+      "valid_time_from": "2025-03-11T01:55:00Z",
+      "valid_time_to": "2025-03-11T03:55:00Z",
+      "altitude": {
+        "max_ft_msl": "36000"
+      },
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-78.7126",
+            "latitude": "25.3003"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-79.7446",
+            "latitude": "24.1687"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-79.1864",
+            "latitude": "23.7412"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.1495",
+            "latitude": "24.8728"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.7126",
+            "latitude": "25.3003"
+          }
+        }
+      ]
+    },
+    {
+      "raw_text": "WSUS33 KKCI 110155 SIGW CONVECTIVE SIGMET...NONE OUTLOOK VALID 110355-110755 TS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+      "valid_time_from": "2025-03-11T01:55:00Z",
+      "valid_time_to": "2025-03-11T03:55:00Z",
       "hazard": {
         "type": "CONVECTIVE",
         "severity": "NONE"
@@ -981,186 +1110,6 @@
       ],
       "altitude": {
       }
-    },
-    {
-      "raw_text": "WSUS31 KKCI 102355 SIGE CONVECTIVE SIGMET 66E VALID UNTIL 0155Z FL CSTL WTRS FROM 230SE CHS-260ENE TRV-140E PBI-70E PBI-230SE CHS AREA TS MOV FROM 24040KT. TOPS TO FL430. REF INTL SIGMET ALFA SERIES. OUTLOOK VALID 110155-110555 AREA 1...FROM 210SE CHS-220ENE PBI-160E PBI-80E PBI-160SE MIA-70SE EYW-130ENE TRV-210SE CHS WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 80ESE ECG-190ESE ECG-140SE ILM-90SSE ILM-50E CHS-30NNW CHS-30NE CAE-60NW ILM-60S ECG-80ESE ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "43000"
-      },
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-76.9116",
-            "latitude": "30.1449"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.9041",
-            "latitude": "29.2613"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.4865",
-            "latitude": "26.6563"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.7831",
-            "latitude": "26.674"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.9116",
-            "latitude": "30.1449"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS31 KKCI 102355 SIGE CONVECTIVE SIGMET 67E VALID UNTIL 0155Z NC CSTL WTRS FROM 100SE ECG-150SE ECG-170ESE ILM-110ESE ILM-100SE ECG AREA TS MOV FROM 24040KT. TOPS TO FL350. REF INTL SIGMET ALFA SERIES. OUTLOOK VALID 110155-110555 AREA 1...FROM 210SE CHS-220ENE PBI-160E PBI-80E PBI-160SE MIA-70SE EYW-130ENE TRV-210SE CHS WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 80ESE ECG-190ESE ECG-140SE ILM-90SSE ILM-50E CHS-30NNW CHS-30NE CAE-60NW ILM-60S ECG-80ESE ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "35000"
-      },
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-74.7443",
-            "latitude": "35.0662"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-74.0384",
-            "latitude": "34.4649"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-74.7445",
-            "latitude": "33.2273"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-75.8365",
-            "latitude": "33.6319"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-74.7443",
-            "latitude": "35.0662"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS31 KKCI 102355 SIGE CONVECTIVE SIGMET 68E VALID UNTIL 0155Z FL CSTL WTRS FROM 100E PBI-100ESE EYW DVLPG LINE TS 40 NM WIDE MOV FROM 25035KT. TOPS TO FL300. REF INTL SIGMET ALFA SERIES. OUTLOOK VALID 110155-110555 AREA 1...FROM 210SE CHS-220ENE PBI-160E PBI-80E PBI-160SE MIA-70SE EYW-130ENE TRV-210SE CHS WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 80ESE ECG-190ESE ECG-140SE ILM-90SSE ILM-50E CHS-30NNW CHS-30NE CAE-60NW ILM-60S ECG-80ESE ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "30000"
-      },
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-78.5447",
-            "latitude": "26.8464"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-80.4275",
-            "latitude": "24.1233"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-79.8134",
-            "latitude": "23.7656"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.9167",
-            "latitude": "26.4887"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.5447",
-            "latitude": "26.8464"
-          }
-        }
-      ]
-    },
-    {
-      "raw_text": "WSUS31 KKCI 102355 SIGE CONVECTIVE SIGMET 69E VALID UNTIL 0155Z FL SC GA CSTL WTRS FROM 150SSE ILM-190ENE OMN LINE TS 35 NM WIDE MOV FROM 24060KT. TOPS TO FL330. OUTLOOK VALID 110155-110555 AREA 1...FROM 210SE CHS-220ENE PBI-160E PBI-80E PBI-160SE MIA-70SE EYW-130ENE TRV-210SE CHS WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS. AREA 2...FROM 80ESE ECG-190ESE ECG-140SE ILM-90SSE ILM-50E CHS-30NNW CHS-30NE CAE-60NW ILM-60S ECG-80ESE ECG WST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM PREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.",
-      "valid_time_from": "2025-03-10T23:55:00Z",
-      "valid_time_to": "2025-03-11T01:55:00Z",
-      "altitude": {
-        "max_ft_msl": "33000"
-      },
-      "hazard": {
-        "type": "CONVECTIVE",
-        "severity": "SEV"
-      },
-      "airsigmet_type": "SIGMET",
-      "area": [
-        {
-          "point": {
-            "longitude": "-77.0458",
-            "latitude": "32.1751"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-78.0183",
-            "latitude": "30.6048"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.4233",
-            "latitude": "30.329"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-76.4409",
-            "latitude": "31.8993"
-          }
-        },
-        {
-          "point": {
-            "longitude": "-77.0458",
-            "latitude": "32.1751"
-          }
-        }
-      ]
     }
   ]
 }
