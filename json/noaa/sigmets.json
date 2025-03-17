@@ -9,7 +9,7 @@
     "url": "https://aviationweather.gov/data/cache/airsigmets.cache.xml.gz"
   },
   "resource_type": "airsigmets",
-  "count": 6,
+  "count": 7,
   "airsigmets": [
     {
       "raw_text": "WSUS05 KKCI 171215 SLCU WS 171215 SIGMET UNIFORM 6 VALID UNTIL 171615 SIGMET MT WY CO NM FROM 30ENE SHR TO CYS TO TBE TO 30SSE FTI TO JAC TO 30ENE SHR OCNL SEV TURB BLW 170. DUE TO STG LOW LVL WNDS AND STG UDDFS AND LLWS. RPTD BY ACFT. CONDS CONTG BYD 1615Z.",
@@ -881,6 +881,58 @@
       ],
       "altitude": {
       }
+    },
+    {
+      "raw_text": "WSUS01 KKCI 171322 BOSW WS 171322 SIGMET WHISKEY 1 VALID UNTIL 171722 SIGMET ME NH VT MA CT NY LO NJ PA WV MD DC DE VA NC AND CSTL WTRS FROM MSS TO 50W BGR TO 60E ORF TO RDU TO 60WSW SYR TO MSS OCNL SEV TURB BTN 170 AND FL280. DUE TO WNDSHR ASSOCD WITH JTST. RPTD BY ACFT. CONDS CONTG BYD 1722Z.",
+      "valid_time_from": "2025-03-17T13:22:00Z",
+      "valid_time_to": "2025-03-17T17:22:00Z",
+      "altitude": {
+        "min_ft_msl": "17000",
+        "max_ft_msl": "28000"
+      },
+      "hazard": {
+        "type": "TURB",
+        "severity": "SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-74.72",
+            "latitude": "44.91"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-70.0481",
+            "latitude": "44.8339"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-74.9533",
+            "latitude": "36.8835"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-78.78",
+            "latitude": "35.87"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-77.455",
+            "latitude": "42.7715"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-74.72",
+            "latitude": "44.91"
+          }
+        }
+      ]
     }
   ]
 }
