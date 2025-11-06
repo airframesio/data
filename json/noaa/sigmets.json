@@ -9,12 +9,15 @@
     "url": "https://aviationweather.gov/data/cache/airsigmets.cache.xml.gz"
   },
   "resource_type": "airsigmets",
-  "count": 2,
+  "count": 3,
   "airsigmets": [
     {
       "raw_text": null,
       "valid_time_from": "2025-11-06T14:59:00.000Z",
       "valid_time_to": "2025-11-06T18:59:00.000Z",
+      "altitude": {
+        "max_ft_msl": "18000"
+      },
       "hazard": {
         "type": "TURB",
         "severity": "SEV"
@@ -57,14 +60,15 @@
             "latitude": "42.3583"
           }
         }
-      ],
-      "altitude": {
-      }
+      ]
     },
     {
       "raw_text": null,
       "valid_time_from": "2025-11-06T14:59:00.000Z",
       "valid_time_to": "2025-11-06T18:59:00.000Z",
+      "altitude": {
+        "max_ft_msl": "18000"
+      },
       "hazard": {
         "type": "TURB",
         "severity": "SEV"
@@ -107,9 +111,54 @@
             "latitude": "42.3583"
           }
         }
-      ],
+      ]
+    },
+    {
+      "raw_text": null,
+      "valid_time_from": "2025-11-06T16:55:00.000Z",
+      "valid_time_to": "2025-11-06T18:55:00.000Z",
       "altitude": {
-      }
+        "max_ft_msl": "45000"
+      },
+      "movement_dir_degrees": "180",
+      "movement_spd_kt": "5",
+      "hazard": {
+        "type": "CONVECTIVE",
+        "severity": "SEV"
+      },
+      "airsigmet_type": "SIGMET",
+      "area": [
+        {
+          "point": {
+            "longitude": "-92.3005",
+            "latitude": "29.4324"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.1946",
+            "latitude": "28.4005"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.1100",
+            "latitude": "28.3074"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-93.4024",
+            "latitude": "29.5255"
+          }
+        },
+        {
+          "point": {
+            "longitude": "-92.3005",
+            "latitude": "29.4324"
+          }
+        }
+      ]
     }
   ]
 }
