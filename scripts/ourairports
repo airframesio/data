@@ -36,7 +36,7 @@ def map_airports_to_json(rows)
       :name => row['name'],
       :location => "#{row['municipality']}, #{region_name}, #{country_name}",
       :type => row['type'],
-      :elevation_ft => 11,
+      :elevation_ft => row['elevation_ft'].to_i,
       :ourairport_id => row['id'].to_i,
       :coordinates => {
         :longitude => row['longitude_deg'].to_f,
