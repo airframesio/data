@@ -1,0 +1,94 @@
+#!/usr/bin/env ruby
+
+require 'net/http'
+require 'csv'
+require 'json'
+require 'uri'
+require 'countries'
+
+# URLs for CSV data
+AIRPORTS_CSV_URL = 'https://davidmegginson.github.io/ourairports-data/airports.csv'
+FREQUENCIES_CSV_URL = 'https://davidmegginson.github.io/ourairports-data/airport-frequencies.csv'
+
+# Local JSON file paths
+AIRPORTS_JSON_PATH = 'json/airports.json'
+AIRPORTS_PRETTY_PATH = 'json/airports-pretty.json'
+FREQUENCIES_JSON_PATH = 'json/airport-frequencies.json'
+FREQUENCIES_PRETTY_PATH = 'json/airport-frequencies-pretty.json'
+
+def download_csv(url)
+  uri = URI(url)
+  response = Net::HTTP.get(uri)
+  response
+end
+
+def map_airports_to_json(rows)
+  airports = rows.map do |row|
+    country_data = ISO3166::Country[row['iso_country']]
+    country_name = country_data ? country_data.common_name : row['iso_country']
+    region_code = row['iso_region']&.split('-')&.last
+    subdivision = country_data&.subdivisions&.dig(region_code)
+    region_name = subdivision ? subdivision['name'] : row['iso_region']
+
+    {
+      :region => region_name,
+      :faa_lid => row['local_code'] || row['ident'],
+      :name => row['name'],
+      :location => "#{row['municipality']}, #{region_name}, #{country_name}",
+      :type => row['type'],
+      :elevation_ft => 11,
+      :ourairport_id => row['id'].to_i,
+      :coordinates => {
+        :longitude => row['longitude_deg'].to_f,
+        :latitude => row['latitude_deg'].to_f
+      },
+      :ident => row['ident'],
+      :municipality => row['municipality'],
+      :icao_code => row['icao_code'] || row['local_code'] || row['ident'],
+      :country => country_name
+    }.to_h
+  end
+  { :airports => airports }.to_h
+end
+
+def map_frequencies_to_json(rows)
+  frequencies = rows.map do |row|
+    {
+      :description => row['description'],
+      :frequency_mhz => row['frequency_mhz'],
+      :ident => row['airport_ident'],
+      :ourairports_airport_id => row['airport_ref'].to_i,
+      :our_airports_id => row['id'].to_i,
+      :type => row['type']
+    }.to_h
+  end
+  { :airport_frequencies => frequencies }.to_h
+end
+
+def write_pretty_json(path, data)
+  File.open(path, 'w') do |f|
+    f.write(JSON.pretty_generate(data))
+  end
+end
+
+def write_json(path, data)
+  File.open(path, 'w') do |f|
+    f.write(JSON.generate(data))
+  end
+end
+
+# Download and process airports.csv
+airports_csv = download_csv(AIRPORTS_CSV_URL)
+airports_rows = CSV.parse(airports_csv.force_encoding("UTF-8"), headers: true)
+airports_json = map_airports_to_json(airports_rows)
+write_pretty_json(AIRPORTS_PRETTY_PATH, airports_json)
+write_json(AIRPORTS_JSON_PATH, airports_json)
+puts "Updated #{AIRPORTS_JSON_PATH}"
+
+# Download and process airport-frequencies.csv
+frequencies_csv = download_csv(FREQUENCIES_CSV_URL)
+frequencies_rows = CSV.parse(frequencies_csv.force_encoding("UTF-8"), headers: true)
+frequencies_json = map_frequencies_to_json(frequencies_rows)
+write_pretty_json(FREQUENCIES_PRETTY_PATH, frequencies_json)
+write_json(FREQUENCIES_JSON_PATH, frequencies_json)
+puts "Updated #{FREQUENCIES_JSON_PATH}"
