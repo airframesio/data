@@ -26,7 +26,7 @@ jobs:
     - name: Convert the CSV source and save output as JSON
       run: ruby scripts/convert_vdl2gs_to_json csv/vdl/ground-stations.csv json/vdl/ground-stations.json
     - name: Commit changes
-      uses: EndBug/add-and-commit@v9
+      uses: EndBug/add-and-commit@v10
       if: github.event_name != 'pull_request'
       with:
         author_name: Airframes.io
