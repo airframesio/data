@@ -32,7 +32,7 @@ jobs:
     - name: Retrieve TFRs and save output as GeoJSON
       run: ruby scripts/faa/faa_get_tfrs --format=geojson json/faa/tfrs.geojson
     - name: Commit changes
-      uses: EndBug/add-and-commit@v9
+      uses: EndBug/add-and-commit@v10
       if: github.event_name != 'pull_request'
       with:
         author_name: Airframes.io
