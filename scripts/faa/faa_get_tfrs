@@ -1,206 +1,142 @@
 #!/usr/bin/env ruby
 
+# Retrieves the FAA's active Temporary Flight Restrictions and writes them as
+# JSON or GeoJSON.
+#
+# Sources (the tfr.faa.gov site that replaced tfr2/list.html in 2025):
+#   - list:     https://tfr.faa.gov/tfrapi/exportTfrList (JSON, every active TFR)
+#   - shapes:   the site's GeoServer WFS layer TFR:V_TFR_LOC (GeoJSON polygons)
+#
+# TFRs without a shape in the WFS layer (mostly standing security notices
+# described only in text; their XML has no boundary either) are kept in the
+# JSON output and left out of the GeoJSON.
+#
+# Exits non-zero when the list or the shapes cannot be retrieved, so the
+# workflow fails instead of committing an empty file.
+#
 # Prerequisites:
-#   gem install activesupport
-#   gem install nokogiri
 #   gem install slop
 
 require 'net/http'
 require 'json'
-require 'active_support/core_ext/string/inflections'
-require 'nokogiri'
 require 'slop'
 
 opts = Slop::Options.new
 opts.banner = "usage: faa_get_tfrs [options] <path-to-output-file>"
-opts.string '-f', '--format', 'output format (default: json, available: json/kml/geojson)', default: 'json'
+opts.string '-f', '--format', 'output format (default: json, available: json/geojson)', default: 'json'
 
-parser = Slop::Parser.new(opts)
-params = parser.parse(ARGV)
+params = Slop::Parser.new(opts).parse(ARGV)
 
 if params.arguments.size < 1
   puts opts
-  exit
+  exit 1
 end
 
 OUTPUT_FILE = params.arguments[0]
 
-LIST_URL = 'https://tfr.faa.gov/tfr2/list.html'
-BASE_URL = 'https://tfr.faa.gov/save_pages/'
-ORIGIN   = 'https://www.faa.gov'
-REFERER  = 'https://www.faa.gov'
+SITE_URL = ENV.fetch('TFR_SITE_URL', 'https://tfr.faa.gov')
+LIST_URL = "#{SITE_URL}/tfrapi/exportTfrList"
+WFS_URL  = "#{SITE_URL}/geoserver/TFR/ows?service=WFS&version=1.1.0&request=GetFeature" \
+           '&typeName=TFR:V_TFR_LOC&maxFeatures=1000&outputFormat=application/json&srsname=EPSG:4326'
+USER_AGENT = 'airframesio-data (+https://github.com/airframesio/data)'
 
-def convert_wgs_string_to_decimal(str)
-  match = str.match(/(.+)(\w{1})/)
-  if match && match.captures.size > 0
-    coord = match.captures[0].to_f
-    dir = match.captures[1]
-    coord = coord * -1 if ['S', 'W'].include?(dir)
-    coord
-  end
-end
-
-def convert_points_to_coordinates(points)
-  coords = []
-  points.each do |p|
-    if p && p[:longitude] && p[:latitude]
-      coords << [p[:longitude], p[:latitude]]
-    end
-  end
-  coords
-end
-
-def retrieve_list
-  puts "Retrieving list of TFRs"
-  uri = URI.parse(LIST_URL)
-  http = Net::HTTP.new(uri.host, uri.port)
-  http.use_ssl = true
-  http.get(uri.request_uri)
-end
-
-def process_list(html)
-  document = Nokogiri::HTML(html)
-  table = document.search('table table')[2]
-  rows = table.search('tr')[7..-4]
-  rows.map do |row|
-    columns = row.search('a')
-    next unless columns.size > 0
-    data = {
-      date: columns[0] ? columns[0].text.strip : nil,
-      notam: columns[1] ? columns[1].text.strip : nil,
-      facility: columns[2] ? columns[2].text.strip : nil,
-      state: columns[3] ? columns[3].text.strip : nil,
-      type: columns[4] ? columns[4].text.strip : nil,
-      short_description: columns[5] ? columns[5].text.strip : nil,
-      links: {
-        details: columns[1].attr('href').sub('..', 'https://tfr.faa.gov'),
-        zoom: columns[6] ? "https://tfr.faa.gov#{columns[6].attr('href')}" : nil,
-        xml: columns[1].attr('href').sub('..', 'https://tfr.faa.gov').sub('html', 'xml'),
-        aixm5: columns[1].attr('href').sub('..', 'https://tfr.faa.gov').sub('html', 'aixm5')
-      }
-    }
-    data
-  end.compact
-end
-
-def retrieve_detail(notam)
-end
-
-def retrieve_xml(notam, url)
-  puts "Retrieving XML for NOTAM #{notam}"
+def http_get(url)
   uri = URI.parse(url)
   http = Net::HTTP.new(uri.host, uri.port)
-  http.use_ssl = true
-  http.get(uri.request_uri)
+  http.use_ssl = uri.scheme == 'https'
+  http.open_timeout = 20
+  http.read_timeout = 60
+  http.get(uri.request_uri, 'User-Agent' => USER_AGENT, 'Accept' => '*/*')
 end
 
-def process_xml(tfr, xml)
-  doc = Nokogiri::XML(xml)
-  notam = doc.xpath('//Group/Add/Not')
-  tfr[:timezone] = notam.xpath('//codeTimeZone').text
-  uid = notam.xpath('//NotUid')
-  tfr[:local_name] = uid.xpath('//txtLocalName').text
-  tfr[:sequence_number] = uid.xpath('//noSeqNo').text
-  tfr[:date_issued] = uid.xpath('//dateIssued').text
-
-  tfr_notam = notam.xpath('//TfrNot')
-  tfr[:coordinating_facility_type] = notam.xpath('//codeCoordFacilityType').text
-  tfr[:control_facility_type] = tfr_notam.xpath('//codeCtrlFacilityType').text
-
-  area_group = tfr_notam.xpath('//TFRAreaGroup')
-  boundary_area = area_group.xpath('//abdMergedArea')
-  tfr[:area_group] = {}
-  tfr[:area_group][:boundary_area] = {}
-  tfr[:area_group][:boundary_area][:points] = boundary_area.xpath('//Avx').map do |avx|
-    p = {
-      datum: avx.xpath('codeDatum').text,
-      type: avx.xpath('codeType').text,
-      latitude: convert_wgs_string_to_decimal(avx.xpath('geoLat').text.strip),
-      longitude: convert_wgs_string_to_decimal(avx.xpath('geoLong').text.strip)
-    }
-    p
-  end.compact
-  if tfr[:area_group][:boundary_area][:points].size >= 3
-    tfr[:area_group][:boundary_area][:points].push(tfr[:area_group][:boundary_area][:points][0])
-  end
-
-  tfr[:description] = notam.xpath('//txtDescrTraditional').text
-  tfr[:description_usns] = notam.xpath('//txtDescrUSNS').text
-  tfr
+def get_json!(url, what)
+  res = http_get(url)
+  abort "Error: #{what} returned HTTP #{res.code}" unless res.code == '200'
+  JSON.parse(res.body)
+rescue JSON::ParserError => e
+  abort "Error: #{what} was not JSON (#{e.message})"
 end
 
-def retrieve_aixm5(notam)
+# "6/9306" -> "6_9306"
+def notam_path(notam)
+  notam.tr('/', '_')
 end
 
-def convert_notam_to_path(notam)
-  notam.gsub("/", "_")
+puts "Retrieving list of TFRs"
+list = get_json!(LIST_URL, 'TFR list')
+abort 'Error: TFR list is not an array' unless list.is_a?(Array)
+
+puts "Retrieving TFR shapes"
+wfs = get_json!(WFS_URL, 'TFR shapes')
+abort 'Error: TFR shapes have no features' unless wfs['features'].is_a?(Array)
+
+# NOTAM_KEY looks like "6/9306-1-FDC-F"; one NOTAM can have several shapes.
+shapes = Hash.new { |h, k| h[k] = [] }
+wfs['features'].each do |feature|
+  key = feature.dig('properties', 'NOTAM_KEY').to_s.split('-').first
+  geometry = feature['geometry']
+  next if key.nil? || key.empty? || geometry.nil?
+  polygons = case geometry['type']
+             when 'Polygon' then [geometry['coordinates']]
+             when 'MultiPolygon' then geometry['coordinates']
+             else []
+             end
+  shapes[key].concat(polygons)
 end
 
-tfrs = []
-res = retrieve_list
-if res.code == '200'
-  tfrs = process_list(res.body)
-else
-  puts "Error: #{res.code}"
+tfrs = list.map do |item|
+  notam = item['notam_id'].to_s
+  detail = "#{SITE_URL}/tfr3/?page=detail_#{notam_path(notam)}"
+  xml = "#{SITE_URL}/download/detail_#{notam_path(notam)}.xml"
+  polygons = shapes[notam]
+  {
+    notam: notam,
+    type: item['type'],
+    facility: item['facility'],
+    state: item['state'],
+    description: item['description'],
+    date: item['creation_date'],
+    links: { details: detail, xml: xml },
+    polygons: polygons
+  }
 end
 
-tfrs = tfrs.map do |tfr|
-  puts tfr.inspect
-  res = retrieve_xml(tfr[:notam], tfr[:links][:xml])
-  if res.code == '200'
-    tfr = process_xml(tfr, res.body)
-  else
-    puts "Error: #{res.code}"
-  end
-  tfr
-end
-
+shaped = tfrs.count { |tfr| tfr[:polygons].any? }
 
 case params[:format]
 when 'json'
   content = {
     resource_type: 'tfr',
-    attribution: {
-      name: 'FAA',
-      url: 'https://tfr.faa.gov/tfr2/list.html'
-    },
+    attribution: { name: 'FAA', url: "#{SITE_URL}/tfr3/" },
     count: tfrs.size,
-    tfrs: tfrs
+    tfrs: tfrs.map { |tfr| tfr.reject { |k, _| k == :polygons }.merge(has_geometry: tfr[:polygons].any?) }
   }
-
-  File.open(OUTPUT_FILE, 'w') do |f|
-    f.write(JSON.pretty_generate(content))
-  end
-  puts "Retrieved #{tfrs.size} TFRs and wrote to #{OUTPUT_FILE}."
 when 'geojson'
-  features = []
-  tfrs.each do |tfr|
-    if tfr[:area_group] && tfr[:area_group][:boundary_area][:points]
-      coordinates = convert_points_to_coordinates(tfr[:area_group][:boundary_area][:points].select { |p| puts p.inspect; p[:type] == 'GRC' })
-      if coordinates.size > 0
-        features << {
-          type: 'Feature',
-          geometry: {
-            type: 'Polygon',
-            coordinates: [coordinates],
-          },
-          properties: {
-            name: tfr[:short_description]
-          }
-        }
-      end
-    end
-  end
-
   content = {
-    'type': 'FeatureCollection',
-    'features': features
+    type: 'FeatureCollection',
+    features: tfrs.select { |tfr| tfr[:polygons].any? }.map do |tfr|
+      {
+        type: 'Feature',
+        id: tfr[:notam],
+        geometry: if tfr[:polygons].size == 1
+                    { type: 'Polygon', coordinates: tfr[:polygons].first }
+                  else
+                    { type: 'MultiPolygon', coordinates: tfr[:polygons] }
+                  end,
+        properties: {
+          name: tfr[:description],
+          notam: tfr[:notam],
+          type: tfr[:type],
+          facility: tfr[:facility],
+          state: tfr[:state],
+          url: tfr[:links][:details]
+        }
+      }
+    end
   }
-
-  File.open(OUTPUT_FILE, 'w') do |f|
-    f.write(JSON.pretty_generate(content))
-  end
-  puts "Retrieved #{tfrs.size} TFRs and wrote to #{OUTPUT_FILE}."
 else
-  puts "Unknown output format '#{params[:format]}', not saving."
+  abort "Unknown output format '#{params[:format]}', not saving."
 end
+
+File.write(OUTPUT_FILE, JSON.pretty_generate(content))
+puts "Retrieved #{tfrs.size} TFRs (#{shaped} with shapes) and wrote to #{OUTPUT_FILE}."
